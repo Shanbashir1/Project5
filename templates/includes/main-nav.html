@@ -1,50 +1,34 @@
-<div class="collapse navbar-collapse" id="main-nav">
+<div class="collapse navbar-collapse text-center mt-2 mt-lg-0" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item dropdown">
-            <a class="logo-font nav-link text-black mr-2" href="#" id="all-watches" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Watches
+        <li class="nav-item">
+            <a class="font-weight-bold color-burgundy mx-lg-3 {% if request.path == home %} current-page {% endif %}" href="{% url 'home' %}">
+                Home
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-watches">
-                <a href="{% url 'products' %}?category=by_price" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?category=by_rating" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}?category=by_category" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}?category=all_products" class="dropdown-item">All Products</a>
-            </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font nav-link text-black mr-2" href="#" id="brands" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Brands
+            <a class="logo-font font-weight-bold color-burgundy mx-lg-3 {% if request.path == products %} current-page {% endif %}" href="#" id="shop-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Shop
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="brands">
-                <a href="{% url 'products' %}?category=Rolex" class="dropdown-item">Rolex</a>
-                <a href="{% url 'products' %}?category=patex_phillipe" class="dropdown-item">Patex Phillipe</a>
-                <a href="{% url 'products' %}?category=omega" class="dropdown-item">Omega</a>
-                <a href="{% url 'products' %}?category=all_brands" class="dropdown-item">All Brands</a>
+            <div class="dropdown-menu border-0">
+                <a href="#" class="dropdown-item">All Products</a>
+                <a href="#">Rolex</a>
+                <a href="#">Patex Phillipe</a>
+                <a href="#">Omega</a>
+                <a href="#">Seiko</a>
             </div>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font nav-link text-black mr-2" href="#" id="watches-for" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Watches for: 
+        <li class="nav-item">
+            <a class="font-weight-bold color-burgundy mx-lg-3" href="#">
+                About Us
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="watches-for">
-                <a href="{% url 'products' %}?category=men" class="dropdown-item">Men</a>
-                <a href="{% url 'products' %}?category=men" class="dropdown-item">Women</a>
-                <a href="{% url 'products' %}?category=children" class="dropdown-item">Children</a>
-            </div>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font nav-link text-black mr-2" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
+        <li class="nav-item">
+            <a class="font-weight-bold color-burgundy mx-lg-3" href="#">
+                Contact
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
-            </div>
         </li>
     </ul>
 </div>
