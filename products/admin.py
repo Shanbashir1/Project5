@@ -9,9 +9,9 @@ class CategoryAdmin(admin.ModelAdmin):
     Class to access the Category model via Django Admin panel
     """
     list_display = (
-        'friendly_name', 'name',)
-    search_fields = (
-        'friendly_name', 'name',)
+     'friendly_name',
+     'name',
+    )
 
 
 @admin.register(Product)
@@ -26,6 +26,8 @@ class ProductAdmin(SummernoteModelAdmin):
         'price',
         'rating',
         'image',
+        'gender',
+        'in_stock',
     )
     search_fields = (
         'category', 'name',

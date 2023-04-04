@@ -34,21 +34,13 @@ class Product(models.Model):
         max_length=254, null=False, blank=False, unique=True
         )
     name = models.CharField(max_length=254)
+    gender = models.CharField(max_length=8)
     description = models.TextField()
+    features = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True
-        )
-    likes = models.ManyToManyField(
-        User,
-        related_name='product_likes',
-        blank=True
-        )
-    featured = models.BooleanField(default=False)
-    review_count = models.DecimalField(
-        max_digits=6, decimal_places=0, null=True, blank=True, default=0
-    )
+    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    in_stock = models.BooleanField(default=False, null=True, blank=True)
 
     def __str__(self):
         return self.name
