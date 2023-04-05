@@ -36,7 +36,7 @@ class Product(models.Model):
     gender = models.CharField(max_length=8, null=True, blank=True)
     description = models.TextField()
     features = models.TextField(null=True, blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
+    price = models.DecimalField(max_digits=8, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     in_stock = models.BooleanField(default=False, null=True, blank=True)
