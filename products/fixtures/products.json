@@ -12,7 +12,7 @@
         "price": 6400.00,
         "image": "omega_moonwatch_2021.png",
         "rating": 3,
-        "in_stock": "In Stock"
+        "in_stock": "True"
       }
     },
     {
@@ -28,7 +28,7 @@
           "price": 6200.00,
           "image": "omega_seamaster.png",
           "rating": 2,
-          "in_stock": "In Stock"
+          "in_stock": "True"
         }
       },
       {
@@ -44,7 +44,7 @@
           "price": 6500.00,
           "image": "omega_speedmaster.png",
           "rating": 4,
-          "in_stock": "In Stock"
+          "in_stock": "True"
         }
       },
       {
@@ -60,7 +60,7 @@
           "price": 2700.00,
           "image": "omega_de_ville.png",
           "rating": 4,
-          "in_stock": "In Stock"
+          "in_stock": "True"
         }
       },
       {
@@ -76,7 +76,7 @@
           "price": 65000.00,
           "image": "patek_philippe_aquanaut.png",
           "rating": 5,
-          "in_stock": "In Stock"
+          "in_stock": "True"
         }
       },
       {
@@ -92,7 +92,7 @@
           "price": 31000.00,
           "image": "patek_philippe_calatrava.png",
           "rating": 5,
-          "in_stock": "In Stock"
+          "in_stock": "True"
         }
       },
       {
@@ -108,7 +108,7 @@
           "price": 52000.00,
           "image": "patek_philippe_complication.png",
           "rating": 5,
-          "in_stock": "In Stock"
+          "in_stock": "True"
         }
       },
       {
@@ -124,7 +124,7 @@
           "price": 82000.00,
           "image": "patek_philippe_grand_complication.png",
           "rating": 5,
-          "in_stock": "In Stock"
+          "in_stock": "True"
         }
       },
       {
@@ -140,7 +140,7 @@
           "price": 88000.00,
           "image": "patek_philippe_grand_complication.png",
           "rating": 5,
-          "in_stock": "In Stock"
+          "in_stock": "True"
         }
       },
       {
@@ -156,7 +156,7 @@
           "price": 88000.00,
           "image": "patek_philippe_nautilus_black.png",
           "rating": 5,
-          "in_stock": "In Stock"
+          "in_stock": "True"
         }
       },
       {
@@ -172,7 +172,7 @@
           "price": 82000.00,
           "image": "patek_philippe_nautilus_gold.png",
           "rating": 5,
-          "in_stock": "In Stock"
+          "in_stock": "True"
         }
       },
       {
@@ -188,7 +188,7 @@
           "price": 78000.00,
           "image": "patek_philippe_nautilus_silver.png",
           "rating": 5,
-          "in_stock": "In Stock"
+          "in_stock": "True"
         }
       },
       {
@@ -204,7 +204,7 @@
           "price": 32000.00,
           "image": "rolex_air_king.png",
           "rating": 4,
-          "in_stock": "In Stock"
+          "in_stock": "True"
         }
       },
       {
@@ -220,7 +220,7 @@
           "price": 22000.00,
           "image": "rolex_cosmograph_men.png",
           "rating": 3,
-          "in_stock": "In Stock"
+          "in_stock": "True"
         }
       },
       {
@@ -236,7 +236,7 @@
           "price": 22000.00,
           "image": "rolex_cosmograph_women.png",
           "rating": 3,
-          "in_stock": "In Stock"
+          "in_stock": "True"
         }
       },
       {
@@ -252,7 +252,7 @@
           "price": 17000.00,
           "image": "rolex_datejust_31.png",
           "rating": 4,
-          "in_stock": "In Stock"
+          "in_stock": "True"
         }
       },
       {
@@ -268,7 +268,7 @@
         "price": 28000.00,
         "image": "rolex_datejust41_black.png",
         "rating": 4,
-        "in_stock": "In Stock"
+        "in_stock": "True"
       }
     },
     {
@@ -284,7 +284,7 @@
         "price": 28000.00,
         "image": "rolex_datejust41_gold.png",
         "rating": 4,
-        "in_stock": "In Stock"
+        "in_stock": "True"
       }
     },
     {
@@ -299,7 +299,7 @@
         "price": 32000.00,
         "image": "rolex_day_date_40.png",
         "rating": 4,
-        "in_stock": "In Stock"
+        "in_stock": "True"
       }
     },
     {
@@ -315,7 +315,7 @@
         "price": 36000.00,
         "image": "rolex_gmt_master.png",
         "rating": 4,
-        "in_stock": "In Stock"
+        "in_stock": "True"
       }
     },
     {
@@ -331,7 +331,7 @@
         "price": 26000.00,
         "image": "rolex_oyster_31.png",
         "rating": 5,
-        "in_stock": "In Stock"
+        "in_stock": "True"
       }
     },
     {
@@ -347,7 +347,7 @@
         "price": 11000.00,
         "image": "rolex_yacht_37.png",
         "rating": 2,
-        "in_stock": "In Stock"
+        "in_stock": "True"
       }
     },
     {
@@ -363,7 +363,7 @@
         "price": 500.00,
         "image": "seiko_22.png",
         "rating": 2,
-        "in_stock": "In Stock"
+        "in_stock": "True"
       }
     }
   ]
