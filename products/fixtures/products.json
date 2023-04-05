@@ -1,0 +1,369 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "category": 7,
+        "sku": "90000001",
+        "name": "Omega New 2021 Speedmaster Moonwatch",
+        "gender": "Men",
+        "description": "Inspired by the 4th generation Speedmaster style worn on the moon, The Speedmaster Moonwatch is one of Omega’s most iconic timepieces. Having been part of all six moon landings, this legendary watch captures the heart of brand’s pioneering spirit. Demonstrating the brand’s commitment to evolution, this new 2021 edition, offers even more reliability, precision and excellence with Master Chronometer certification.",
+        "features": "Inspired by the 4th generation Speedmaster style worn on the moon, Driven by the OMEGA Co-Axial Master Chronometer 3861 calibre movement",
+        "price": 6400.00,
+        "image": "omega_moonwatch_2021.png",
+        "rating": 3,
+        "in_stock": "In Stock"
+      }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+          "category": 7,
+          "sku": "90000002",
+          "name": "Omega Seamaster Planet Ocean",
+          "gender": "Men",
+          "description": "This model, with its scratch-resistant sapphire crystal, features a black ceramic dial with Arabic numerals and a date window at the 3 o’clock position. The black ceramic unidirectional bezel with OMEGA Liquidmetal™ diving scale is mounted on a 43.5 mm stainless steel case.",
+          "features":"Total product weight (approx.): 133 g, Between lugs: 21 mm, Thickness: 16.1 mm, Case: Steel, Case diameter: 43.5 mm, Water resistance: 60 bar (600 metres / 2000 feet)",
+          "price": 6200.00,
+          "image": "omega_seamaster.png",
+          "rating": 2,
+          "in_stock": "In Stock"
+        }
+      },
+      {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+          "category": 7,
+          "sku": "90000003",
+          "name": "Omega Speedmaster Moonwatch 2020",
+          "gender": "Women",
+          "description": "TThe Speedmaster Moonwatch is one of the world’s most iconic timepieces. Having been a part of all six moon landings, the legendary chronograph is an impressive representation of the brand’s adventurous pioneering spirit.",
+          "features":"Total product weight (approx.): 134 g, Between lugs: 20 mm, Thickness: 13.2 mm, Case: Steel, Case diameter: 42 mm, Water resistance: 5 bar (50 metres / 167 feet)",
+          "price": 6500.00,
+          "image": "omega_speedmaster.png",
+          "rating": 4,
+          "in_stock": "In Stock"
+        }
+      },
+      {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+          "category": 7,
+          "sku": "90000004",
+          "name": "Omega De Ville Prestige Quartz 27.5mm Ladies Watch Green",
+          "gender": "Women",
+          "description": "A timeless collection since 1994, the OMEGA De Ville Prestige is now in its third generation. Continuing to represent classical design and refined elegance, the timepieces offer a range of patterns, finishes and colours to suit different lifestyles and personalities.",
+          "features":"Roman Numerals, WATER RESISTANT 30 Metres, STRAP MATERIAL Stainless Steel, RECIPIENT For Her, CASE MATERIALStainless Steel, DIAMETER27.5mm",
+          "price": 2700.00,
+          "image": "omega_de_ville.png",
+          "rating": 4,
+          "in_stock": "In Stock"
+        }
+      },
+      {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+          "category": 2,
+          "sku": "90000005",
+          "name": "Patek Philippe Aquanaut",
+          "gender": "Men",
+          "description": "Patek Philippe is reasserting the contemporary casual chic spirit of the Aquanaut flyback chronograph with the first white gold version of this self-winding model, combined with an elegant midnight blue color for the dial and matching composite strap. The dial is enlivened by a black-gradient rim. Water-resistant to 120 m, the case is enhanced by polished and satin finishes. The 60-minute counter at 6 o'clock picks up the rounded octagonal shape of the bezel. The patented fold-over clasp is secured by four independent catches.",
+          "features":"Watch Markers Arabic Numerals, Water Resistant 120 Metres, Strap MaterialRubber, Recipient For Him, Movement Automatic",
+          "price": 65000.00,
+          "image": "patek_philippe_aquanaut.png",
+          "rating": 5,
+          "in_stock": "In Stock"
+        }
+      },
+      {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+          "category": 2,
+          "sku": "90000006",
+          "name": "Patek Philippe Calatrava",
+          "gender": "Women",
+          "description": "The Ladies' Calatrava with its guilloched lacquered dial features a slightly larger diameter (35mm) and a self-winding movement replacing the previous manually wound caliber. Finely adorned with concentric waves, the dial plate is coated with several successive layers of transparent midnight blue lacquer creating a subtle depth effect. The bezel is lit up by 76 round-cut internally flawless Top Wesselton diamonds. This new model comes with a brushed calfskin strap featuring a satinated finish in a color matching that of the dial.",
+          "features":"Dial Colour Blue, Case Material 18ct White Gold, Diameter 35mm",
+          "price": 31000.00,
+          "image": "patek_philippe_calatrava.png",
+          "rating": 5,
+          "in_stock": "In Stock"
+        }
+      },
+      {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+          "category": 2,
+          "sku": "90000007",
+          "name": "Patek Philippe Complication",
+          "gender": "Men",
+          "description": "As the first stainless steel version of a cult model, the new Ref. 5935A-001 self-winding World Time flyback chronograph stands out with its sporty vintage looks. The carbon motif in the center of the opaline rose gilt dial reflects a modern, dynamic spirit.",
+          "features":"Movement Automatic, Case Material Stainless Steel, Diameter 41mm",
+          "price": 52000.00,
+          "image": "patek_philippe_complication.png",
+          "rating": 5,
+          "in_stock": "In Stock"
+        }
+      },
+      {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+          "category": 2,
+          "sku": "90000008",
+          "name": "Patek Philippe Grand Complication",
+          "gender": "Men",
+          "description": "A paragon of visual balance and legibility, the perpetual calendar model bearing Reference 5320 was designed in 2017 in a white gold case with a cream-lacquered dial. Its vintage style is reinterpreted in a new white gold version fitted with a gilded opaline rose gold dial.",
+          "features":"Movement Automatic, Case Material 18ct White Gold, Diameter 41mm, Brand CollectionsGrand Complication",
+          "price": 82000.00,
+          "image": "patek_philippe_grand_complication.png",
+          "rating": 5,
+          "in_stock": "In Stock"
+        }
+      },
+      {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+          "category": 2,
+          "sku": "90000009",
+          "name": "Patek Philippe Nautilus Black Gold",
+          "gender": "Men",
+          "description": "Transforming the sports watch, the Nautilus collection from was launched in 1976 to accompany the most active of lifestyles. Showcasing octagonal shapes and horizontally embossed dials, the collection is expertly crafted from premium materials with extreme care and precision.",
+          "features":"Dial Colour Black, Case Material 18ct Rose Gold, Diameter 41mm, Brand Collections Nautilus",
+          "price": 88000.00,
+          "image": "patek_philippe_grand_complication.png",
+          "rating": 5,
+          "in_stock": "In Stock"
+        }
+      },
+      {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+          "category": 2,
+          "sku": "90000010",
+          "name": "Patek Philippe Nautilus Black Gold",
+          "gender": "Men",
+          "description": "Transforming the sports watch, the Nautilus collection from was launched in 1976 to accompany the most active of lifestyles. Showcasing octagonal shapes and horizontally embossed dials, the collection is expertly crafted from premium materials with extreme care and precision.",
+          "features":"Strap Material 18ct Rose Gold, Movement Automatic, Dial Colour Black, Case Material 18ct Rose Gold, Diameter 41mm, Brand Collections Nautilus",
+          "price": 88000.00,
+          "image": "patek_philippe_nautilus_black.png",
+          "rating": 5,
+          "in_stock": "In Stock"
+        }
+      },
+      {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+          "category": 2,
+          "sku": "90000011",
+          "name": "Patek Philippe Nautilus Gold Gold",
+          "gender": "Men",
+          "description": "Transforming the sports watch, the Nautilus collection from was launched in 1976 to accompany the most active of lifestyles. Showcasing octagonal shapes and horizontally embossed dials, the collection is expertly crafted from premium materials with extreme care and precision.",
+          "features":"Movement Automatic, Dial Colour Black, Case Material 18ct Rose Gold, Diameter 41mm, Brand Collections Nautilus",
+          "price": 82000.00,
+          "image": "patek_philippe_nautilus_gold.png",
+          "rating": 5,
+          "in_stock": "In Stock"
+        }
+      },
+      {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+          "category": 2,
+          "sku": "90000012",
+          "name": "Patek Philippe Nautilus Silver",
+          "gender": "Men",
+          "description": "Transforming the sports watch, the Nautilus collection from was launched in 1976 to accompany the most active of lifestyles. Showcasing octagonal shapes and horizontally embossed dials, the collection is expertly crafted from premium materials with extreme care and precision.",
+          "features":"Strap Material 18ct Rose Gold, Movement Automatic, Dial Colour Black, Case Material18ct Rose Gold, Diameter 41mm, Brand Collections Nautilus",
+          "price": 78000.00,
+          "image": "patek_philippe_nautilus_silver.png",
+          "rating": 5,
+          "in_stock": "In Stock"
+        }
+      },
+      {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+          "category": 1,
+          "sku": "90000013",
+          "name": "Rolex Air King",
+          "gender": "Men",
+          "description": "A tribute to explorers of the skies, the Air-King celebrates the pioneers of aviation and invites wearers to take command of their own destiny. Rolex is presenting the new-generation Oyster Perpetual Air-King. The watch features a completely redesigned case with a crown guard and straight sides like the majority of Professional category models. The proportions of the bracelet have also been revisited, and notably the centre link has been broadened. In a first for the model, it is equipped with an Oysterlock safety clasp. The watch’s display has also been refreshed and is perfectly balanced thanks to the addition of a “0” before the “5” on the minutes scale. Each five-minute interval is, therefore, now marked by two digits.",
+          "features":"Oyster, 40 mm, Oystersteel, Approximately 70 hours, BRACELET, Oyster, flat three-piece links, DIAL, Black",
+          "price": 32000.00,
+          "image": "rolex_air_king.png",
+          "rating": 4,
+          "in_stock": "In Stock"
+        }
+      },
+      {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+          "category": 1,
+          "sku": "90000014",
+          "name": "Rolex Cosmograph Daytona ",
+          "gender": "Men",
+          "description": "Launched in 1963, the Oyster Perpetual Cosmograph Daytona was designed to meet the needs of professional racing drivers. The Cosmograph Daytona is the benchmark for those with a passion for driving and speed. It is available in a variety of versions and materials, including with a dial made from metallic meteorite – a rare natural material from outer space – with black chronograph counters at 3, 6 and 9 o'clock.",
+          "features":"Oyster, 40 mm, Everose gold, Fixed, with engraved tachymetric scale, in 18 ct Everose gold, Waterproof to 100 metres / 330 feet",
+          "price": 22000.00,
+          "image": "rolex_cosmograph_men.png",
+          "rating": 3,
+          "in_stock": "In Stock"
+        }
+      },
+      {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+          "category": 1,
+          "sku": "90000015",
+          "name": "Rolex Cosmograph Daytona ",
+          "gender": "Women",
+          "description": "Launched in 1963, the Oyster Perpetual Cosmograph Daytona was designed to meet the needs of professional racing drivers. The Cosmograph Daytona is the benchmark for those with a passion for driving and speed. It is available in a variety of versions and materials, including with a dial made from metallic meteorite – a rare natural material from outer space – with black chronograph counters at 3, 6 and 9 o'clock.",
+          "features":"Waterproof to 100 metres / 330 feet, Perpetual, mechanical chronograph, self-winding, 4131, manufacture Rolex",
+          "price": 22000.00,
+          "image": "rolex_cosmograph_women.png",
+          "rating": 3,
+          "in_stock": "In Stock"
+        }
+      },
+      {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+          "category": 1,
+          "sku": "90000016",
+          "name": "Rolex Datejust 31 ",
+          "gender": "Men",
+          "description": "This dial features a large VI set with 11 diamonds. The sunray finish creates delicate light reflections on many dials in the Oyster Perpetual collection. It is obtained using masterful brushing techniques that create grooves running outwards from the centre of the dial.",
+          "features":"Waterproof to 100 metres / 330 feet, Perpetual, mechanical chronograph, self-winding, 4131, manufacture Rolex",
+          "price": 17000.00,
+          "image": "rolex_datejust_31.png",
+          "rating": 4,
+          "in_stock": "In Stock"
+        }
+      },
+      {
+      "pk": 17,
+      "model": "products.product",
+      "fields": {
+        "category": 1,
+        "sku": "90000017",
+        "name": "Rolex Datejust 41 Black",
+        "gender": "Men",
+        "description": "This dial features a large VI set with 11 diamonds. The sunray finish creates delicate light reflections on many dials in the Oyster Perpetual collection. It is obtained using masterful brushing techniques that create grooves running outwards from the centre of the dial.",
+        "features":"Waterproof to 100 metres / 330 feet, Perpetual, mechanical chronograph, self-winding, 4131, manufacture Rolex",
+        "price": 28000.00,
+        "image": "rolex_datejust41_black.png",
+        "rating": 4,
+        "in_stock": "In Stock"
+      }
+    },
+    {
+      "pk": 18,
+      "model": "products.product",
+      "fields": {
+        "category": 1,
+        "sku": "90000018",
+        "name": "Rolex Datejust 41 Gold",
+        "gender": "Men",
+        "description": "This dial features a large VI set with 11 diamonds. The sunray finish creates delicate light reflections on many dials in the Oyster Perpetual collection. It is obtained using masterful brushing techniques that create grooves running outwards from the centre of the dial.",
+        "features":"Waterproof to 100 metres / 330 feet, Perpetual, mechanical chronograph, self-winding, 4131, manufacture Rolex",
+        "price": 28000.00,
+        "image": "rolex_datejust41_gold.png",
+        "rating": 4,
+        "in_stock": "In Stock"
+      }
+    },
+    {
+      "pk": 19,
+      "model": "products.product",
+      "fields": {
+        "category": 1,
+        "sku": "90000019",
+        "name": "Rolex Day Date 40",
+        "gender": "Men",
+        "description": "Waterproof to 100 metres / 330 feet, Perpetual, mechanical chronograph, self-winding, 4131, manufacture Rolex",
+        "price": 32000.00,
+        "image": "rolex_day_date_40.png",
+        "rating": 4,
+        "in_stock": "In Stock"
+      }
+    },
+    {
+      "pk": 20,
+      "model": "products.product",
+      "fields": {
+        "category": 1,
+        "sku": "90000020",
+        "name": "Rolex GMT-Master II",
+        "gender": "Men",
+        "description": "The GMT-Master was made for airborne adventure. Now the watch of choice for travellers, it connects people beyond time zones. Rolex is unveiling a novel, unexpected version of the Oyster Perpetual GMT-Master II.",
+        "features":"Waterproof to 100 metres / 330 feet, Perpetual, mechanical chronograph, self-winding, 4131, manufacture Rolex",
+        "price": 36000.00,
+        "image": "rolex_gmt_master.png",
+        "rating": 4,
+        "in_stock": "In Stock"
+      }
+    },
+    {
+      "pk": 21,
+      "model": "products.product",
+      "fields": {
+        "category": 1,
+        "sku": "90000021",
+        "name": "Rolex Oyster Perpetual 31",
+        "gender": "Women",
+        "description": "The dial is the distinctive face of a Rolex watch, the feature most responsible for its identity and readability.",
+        "features":"Waterproof to 100 metres / 330 feet, Perpetual, mechanical chronograph, self-winding, 4131, manufacture Rolex",
+        "price": 26000.00,
+        "image": "rolex_oyster_31.png",
+        "rating": 5,
+        "in_stock": "In Stock"
+      }
+    },
+    {
+      "pk": 22,
+      "model": "products.product",
+      "fields": {
+        "category": 1,
+        "sku": "90000022",
+        "name": "Rolex Yacht Master 37",
+        "gender": "Men",
+        "description": "The Yacht-Master’s bidirectional rotatable 60-minute graduated bezel is made of precious materials. The raised polished numerals and graduations stand out clearly against a matt, sand-blasted background",
+        "features":"Waterproof to 100 metres / 330 feet, Perpetual, mechanical chronograph, self-winding, 4131, manufacture Rolex",
+        "price": 11000.00,
+        "image": "rolex_yacht_37.png",
+        "rating": 2,
+        "in_stock": "In Stock"
+      }
+    },
+    {
+      "pk": 23,
+      "model": "products.product",
+      "fields": {
+        "category": 8,
+        "sku": "90000023",
+        "name": "Seiko Astron GPS Solar",
+        "gender": "Men",
+        "description": "Astron GPS Solar communicates with the GPS network and adjusts to your time zone anywhere on Earth. With high-speed time zone adjustment and the time transfer function, the new Astron 5X is the most advanced in history.",
+        "features":"CATEGORY Watches, MOVEMENT Automatic, DIAL COLOUR Black, CASE MATERIAL Stainless Steel, DIAMETER 42.5mm",
+        "price": 500.00,
+        "image": "seiko_22.png",
+        "rating": 2,
+        "in_stock": "In Stock"
+      }
+    }
+  ]
