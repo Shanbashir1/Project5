@@ -11,7 +11,7 @@
       "pk": 2,
       "model": "products.category",
       "fields": {
-        "name": "patek philippe ",
+        "name": "patek_philippe ",
         "friendly_name": "Patek Philippe "
       }
     },
@@ -39,7 +39,7 @@
         "name": "men",
         "friendly_name": "Men"
       }
-    }
+    },
     {
         "pk": 6,
         "model": "products.category",
@@ -47,7 +47,7 @@
           "name": "women",
           "friendly_name": "Women"
         }
-      }
+      },
       {
         "pk": 7,
         "model": "products.category",
@@ -55,7 +55,7 @@
           "name": "omega",
           "friendly_name": "Omega"
         }
-      }
+      },
       {
         "pk": 8,
         "model": "products.category",
