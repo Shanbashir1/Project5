@@ -42,7 +42,9 @@
                                         <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
                                             {% if product.rating %}
-                                                <small class="text-muted"><i class="fas fa-star mr-2"></i>{{ product.rating }} / 5.00</small>
+                                                <small class="text-muted"><i class="rating fas fa-star mr-2"></i>{{ product.rating }} / 5</small>
+                                                <br>
+                                                <small class="text-muted"><i class="gender fa-solid fa-tag mr-1"></i>{{ product.gender }}</small>
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}

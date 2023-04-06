@@ -33,4 +33,5 @@ class ProductAdmin(SummernoteModelAdmin):
         'category', 'name',
         'price', 'rating',)
 
+    summernote_fields = "description, features"
     ordering = ('sku',)

@@ -188,6 +188,15 @@ body {
     z-index: -1;
 }
 
+   /* Font Awsome icon colour change */
+.gender { 
+    color: blue
+}
+
+.rating { 
+    color: yellow
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
