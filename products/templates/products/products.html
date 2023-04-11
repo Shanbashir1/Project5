@@ -81,7 +81,7 @@
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">
-                                    <h2 class="lead mb-0 text-left font-weight-bold">£{{ product.price}}</h2>
+                                    <h2 class="lead mb-0 text-left text-danger">£{{ product.price}}</h2>
                                     {% if product.category %}
                                     <p class="small mt-1 mb-0">
                                         <a class="text-muted"
@@ -90,11 +90,22 @@
                                         </a>
                                     </p>
                                     {% endif %}
+                                    {% if product.rating %}
+                                    <p class="small mt-1 mb-0">
+                                        <i class="text-muted"><i class="rating fas fa-star mr-2"></i>{{ product.rating }} / 5</i>
+                                    {% else %}
+                                    <p class="text-muted">No Rating</p>
+                                    </p>
+                                    {% endif %}
+                                    {% if product.gender %}
+                                    <p class=" mt-1 mb-0"></p>
+                                        <small class="text-muted"><i class="fa-regular fa-watch-smart"></i>{{ product.gender }}</small>
+                                    {% endif %}
                                     {% if request.user.is_superuser %}
-                                    <p class="ml-3">
-                                        <a class="edit-color" href="{% url 'edit_product' product.id %}">Edit
+                                    <p class="small mt-1 mb-0">
+                                        <a class="edit-color" href="#">Edit
                                         </a> |
-                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete
+                                        <a class="text-danger" href="#">Delete
                                         </a>
                                     </p>
                                     {% endif %}
@@ -139,6 +150,7 @@
     </a>
 </div>
 {% endblock %}
+
 {% block postloadjs %}
 {{ block.super }}
 <script>
