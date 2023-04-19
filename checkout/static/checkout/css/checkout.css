@@ -63,3 +63,13 @@ select option[value=""] {
   margin: 0;
   height: 100%;
 }
+
+.checkmark {
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 45px;
+  width: 22px;
+  margin-left: 15%; 
+  border-bottom: 7px solid #78b13f;
+  border-right: 7px solid #78b13f;
+}
