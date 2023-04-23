@@ -22,6 +22,8 @@ class OrderAdmin(admin.ModelAdmin):
         "delivery_cost",
         "order_total",
         "grand_total",
+        "original_bag",
+        "stripe_pid",
 
     )
 
@@ -40,6 +42,8 @@ class OrderAdmin(admin.ModelAdmin):
         "delivery_cost",
         "order_total",
         "grand_total",
+        "original_bag",
+        "stripe_pid",
 
     )
 
