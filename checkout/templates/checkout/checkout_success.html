@@ -179,25 +179,22 @@
          </div>
       </div>
    </div>
-   <div class="row">
-      <div class="col-12 col-lg-7">
-         {% if from_profile %}
-         <a href="#" aria-label="Go to the profile page" class="btn btn-black rounded-0 my-2">
-         <span class="icon mr-2">
-         <i class="fas fa-angle-left interactive-color"></i>
-         </span>
-         <span class="text-uppercase">Back to Profile</span>
-         </a>
-         {% else %}
-         <a href="{% url 'products' %}" aria-label="Go to the products page" class="btn btn-secondary rounded-0 my-2">
-         <span class="icon mr-2">
-            <i class="fa-regular fa-clock fa-beat"></i>
-         </span>
-         <span class="text-uppercase"> Continue Browsing Quality Watches </span>
-         </a>
-         {% endif %}
-      </div>
-   </div>
+   <div class="col-12 col-lg-7 text-right">
+      {% if from_profile %}
+      <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
+          <span class="icon mr-2">
+              <i class="fas fa-angle-left"></i>
+          </span>
+          <span class="text-uppercase">Back to Profile page</span>
+      </a>
+      {% else %}
+      <a href="{% url 'products' %}?category=new_arrivals,sale" class="btn btn-black rounded-0 my-2">
+          <span class="icon mr-2">
+              <i class="fas fa-gifts"></i>
+          </span>
+          <span class="text-uppercase">Now check out our special offers!</span>
+      </a>
+      {% endif %}
+  </div>
 </div>
-<!-- END OF CHECKOUT SUCESS SECTION -->
 {% endblock %}
