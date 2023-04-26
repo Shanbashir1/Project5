@@ -30,8 +30,8 @@ class ProductAdmin(SummernoteModelAdmin):
         'in_stock',
     )
     search_fields = (
-        'category', 'name',
-        'price', 'rating',)
+        'category__name', 'name',
+        'rating',)
 
     summernote_fields = "description, features"
     ordering = ('sku',)
