@@ -328,6 +328,14 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+.title {
+    font-size: 20px;
+    font-family: 'Lato';
+}
+.main-logo-link {
+    width: fit-content;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
