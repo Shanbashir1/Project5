@@ -1,61 +1,86 @@
-{% extends "base.html" %} 
-{% load static %} 
-{% block extra_title %} Blog {% endblock %} 
-{% block page_header %} 
+{% extends "base.html" %}
+{% load static %}
 
+{% block extra_title %} Blog {% endblock %}
+
+{% block page_header %}
 <div class="overlay"></div>
 <div class="container header-container">
-  <div class="row">
-    <div class="col"></div>
-  </div>
-</div> 
-{% endblock %} 
-
-{% block content %} 
-<div class="container-fluid d-flex flex-column all-pages-background">
-  <div class="row">
-    <div class="col text-center mt-3">
-      <h1 class="text-primary logo-font blog-title">Join The Blog</h1>
-      <p>
-        <strong>We are a diverse and world-wide group of watch experts.</strong>
-      </p>
-      <hr class="w-50 mb-1">
+    <div class="row">
+        <div class="col"></div>
     </div>
-  </div>
-  <div class="row blog-page"> {% for post in object_list %} <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-      <div class="card h-100 border-0"> {% if post.image %} <img class="card-img-top img-fluid" src="{{ post.image.url  }}" alt="{{ post.title }}">
-        </a> {% else %} <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.title }}">
-        </a> {% endif %} <div class="card-body pb-0">
-          <h2 class="title">{{ post.title }}</h2>
-          <hr>
-          <p class="card-text h6">{{ post.created_on}}
-          </p>
-        </div>
-        <h1>Welcome to our blog page</h1>
-      </div>
-    </div> {% if forloop.counter|divisibleby:1 %} <div class="col-12 d-sm-none mb-5">
-      <hr>
-    </div> {% endif %} {% if forloop.counter|divisibleby:2 %} <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-      <hr>
-    </div> {% endif %} {% if forloop.counter|divisibleby:3 %} <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-      <hr>
-    </div> {% endif %} {% if forloop.counter|divisibleby:4 %} <div class="col-12 d-none d-xl-block mb-5">
-      <hr>
-    </div> {% endif %} {% endfor %} </div>
 </div>
-<div class="btt-button shadow-sm rounded-0 border border-white">
-  <a class="btt-link d-flex h-100">
-    <i class="fas fa-arrow-up text-white mx-auto my-auto"></i>
-  </a>
-</div> 
 {% endblock %}
 
-<!-- JavaScript code taken from Code Institute Boutique Ado --> 
-{% block postloadjs %} 
+{% block content %}
+
+<div class="container-fluid d-flex flex-column">
+    <div class="row">
+        <div class="col text-center">
+            <hr class="w-50 mb-1">
+            <h1 class="logo-font">Join The Blog</h1>
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+    <div class="container-fluid d-flex flex-column">
+      <div class="row">
+        <h3 class="text-center text-black">View Our Latest Blogs</h3>
+      </div>
+    </div>
+
+    <div class="row">
+        {% for post in object_list %}
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <div class="card h-100 border-0">
+
+                {% if post.image %}
+                <a href="{% url 'post_blog' post.slug %}">
+                    <img class="card-img-top" src="{{ post.image.url  }}" alt="{{ post.title }}">
+                </a>
+                {% else %}
+                <a href="{% url 'post_blog' post.slug %}">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.title }}">
+                </a>
+                {% endif %}
+                <div class="card-body pb-0"></div>
+                <div class="card-footer bg-white pt-0 border-0 ">
+                    <h2 class="title"><strong>{{ post.title }}</strong></h2>
+                    <p class="card-text small">{{ post.created_on}}
+                </div>
+            </div>
+        </div>
+        {% if forloop.counter|divisibleby:1 %}
+        <div class="col-12 d-sm-none mb-5">
+            <hr>
+        </div>
+        {% endif %}
+        {% if forloop.counter|divisibleby:2 %}
+        <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+            <hr>
+        </div>
+        {% endif %}
+        {% if forloop.counter|divisibleby:3 %}
+        <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+            <hr>
+        </div>
+        {% endif %}
+        {% if forloop.counter|divisibleby:4 %}
+        <div class="col-12 d-none d-xl-block mb-5">
+            <hr>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
+
+<!-- code taken from Code Institute Boutique Ado -->
+{% block postloadjs %}
 {{ block.super }}
 <script>
-  $('.btt-link').click(function(e) {
-    window.scrollTo(0, 0);
-  });
-</script> 
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0);
+    });
+</script>
 {% endblock %}

@@ -1,14 +1,39 @@
 from django import forms
-from .models import Comment
+from django_summernote.widgets import SummernoteWidget
+from .models import Post
 
-
-
-class CommentForm(forms.ModelForm):
+class PostForm(forms.ModelForm):
     """
-   add comment on a post
+    Form for editing a blog post
     """
     class Meta:
-        model = Comment
+        model = Post
+        widgets = {
+            'body': SummernoteWidget()
+        }
         fields = [
+            'title',
+            'slug',
             'body',
+            'image',
         ]
+
+class AddPostForm(forms.ModelForm):
+    """
+    Form for adding a blog post
+    """
+    class Meta:
+        model = Post
+        widgets = {
+            'body': SummernoteWidget()
+        }
+
+        fields = [
+            'title',
+            'slug',
+            'body',
+            'image',
+        ]
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
