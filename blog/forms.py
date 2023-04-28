@@ -2,6 +2,7 @@ from django import forms
 from django_summernote.widgets import SummernoteWidget
 from .models import Post
 
+
 class PostForm(forms.ModelForm):
     """
     Form for editing a blog post
@@ -17,6 +18,7 @@ class PostForm(forms.ModelForm):
             'body',
             'image',
         ]
+
 
 class AddPostForm(forms.ModelForm):
     """

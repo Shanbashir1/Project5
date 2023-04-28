@@ -18,9 +18,13 @@
     <div class="col-12 col-md-6 col-lg-4">
       <div class="mb-5 mt-md-5">
         <h2 class="title">
+          <hr>
           <strong>{{ post.title }}</strong>
+          <hr>
         </h2>
-        <p class="mt-3 small text-info"> Created on: {{ post.created_on }}</p>
+        <p class="mt-3 small text-black">This Blog Was Created On:  <span class="mt-3 text-info">{{ post.created_on }}</span></p>
+        <!-- Post author goes before the | the post's created date goes after -->
+        <p class="mt-3 small text-black"> The Author of this blog was: <span class="mt-3 text-info">{{ post.author }}</span></p>
       </div>
       <div class="mb-2 mt-md-5">
         <p class="mt-3">{{ post.body|safe }}</p> {% if request.user.is_superuser %} <p class="ml-3">
