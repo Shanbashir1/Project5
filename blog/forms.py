@@ -1,5 +1,5 @@
 from django import forms
-from django_summernote.widgets import SummernoteWidget
+from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 from .widgets import CustomClearableFileInput
 from .models import Post
 
@@ -19,8 +19,9 @@ class PostForm(forms.ModelForm):
             'body',
             'image',
         ]
-        image = forms.ImageField(
-            label='Image', required=False, widget=CustomClearableFileInput)
+    image = forms.ImageField(
+        label="Image", required=False, widget=CustomClearableFileInput
+    )
 
 
 class AddPostForm(forms.ModelForm):
@@ -36,12 +37,14 @@ class AddPostForm(forms.ModelForm):
         fields = [
             'title',
             'slug',
+            'author',
             'body',
             'image',
         ]
 
     image = forms.ImageField(
-        label='Image', required=False, widget=CustomClearableFileInput)
+        label="Image", required=False, widget=CustomClearableFileInput
+    )
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

@@ -18,8 +18,8 @@
     <div class="row">
         <div class="col-12 col-md-6">
             <hr>
-            <h1 class="mb-4">Blog Management</h1>
-            <p class="text-muted">Add Blog</p>
+            <h2 class="mb-4 text-black"><i class="fa-solid fa-envelopes-bulk fa-beat"></i> Blog Management</h2>
+            <p class="text-primary">Add Blog</p>
             <hr>
         </div>
     </div>
@@ -34,12 +34,21 @@
                 {{ field }}
                 {% endif %}
                 {% endfor %}
-
                 <div class="col">
-                    <button type="submit" class="btn btn-black">Save</button>
+                    <button type="submit" class="btn btn-success">Save</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
+{% endblock %}
+{% block postloadjs %}
+{{ block.super }}
+<script>
+    // Add new image
+    $('#new-image').change(function() {
+        var file = $('#new-image')[0].files[0];
+        $('#filename').text(`Image will be set to: ${file.name}`);
+    });
+</script>
 {% endblock %}

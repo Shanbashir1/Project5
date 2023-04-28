@@ -3,7 +3,7 @@ from django.urls import reverse_lazy
 from django.views.generic import ListView
 from . import views
 from django.contrib import messages
-from .forms import PostForm
+from .forms import PostForm, AddPostForm
 from .models import Post, Comment
 
 
