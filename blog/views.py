@@ -1,6 +1,8 @@
 from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.urls import reverse_lazy
 from django.views.generic import ListView
+from django.views import generic, View
+from django.http import HttpResponseRedirect
 from . import views
 from django.contrib import messages
 from .forms import PostForm, AddPostForm
@@ -28,11 +30,15 @@ def post_blog(request, slug):
             body = request.POST.get('body', '')
             comment = Comment(user=user, body=body, blog_id=post)
             comment.save()
+    liked = False
+    if post.likes.filter(id=request.user.id).exists():
+        liked = True
 
     template = 'blog/post_blog.html'
     context = {
         'post': post,
         'comments': comments,
+        "liked": liked,
     }
 
     return render(request, template, context)
@@ -103,7 +109,7 @@ def deleteBlog(request, slug):
     return redirect(reverse('blog'))
 
 
-def addBlog(request,):
+def addBlog(request):
 
     """
     A view to add blog post &
@@ -137,3 +143,15 @@ def addBlog(request,):
         form = AddPostForm()
 
     return render(request, template, context)
+
+
+class PostLike(View):
+    
+    def post(self, request, slug, *args, **kwargs):
+        post = get_object_or_404(Post, slug=slug)
+        if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(request.user)
+        else:
+            post.likes.add(request.user)
+
+        return HttpResponseRedirect(reverse('post_blog', args=[slug]))
