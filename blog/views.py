@@ -13,7 +13,6 @@ class PostList(ListView):
     template_name = 'blog/blog.html'
 
 
-
 def post_blog(request, slug):
     """ A View to show posted blog"""
 
@@ -39,7 +38,6 @@ def post_blog(request, slug):
     return render(request, template, context)
 
 
-
 def delete_comment(request, comment_id):
     """
     The Admin is able to delete the comments
@@ -54,7 +52,6 @@ def delete_comment(request, comment_id):
     comment.delete()
     messages.success(request, 'This comment was removed!')
     return redirect(reverse('blog'))
-
 
 
 def editBlog(request, slug):
@@ -104,7 +101,6 @@ def deleteBlog(request, slug):
     post.delete()
     messages.success(request, 'The post was deleted!')
     return redirect(reverse('blog'))
-
 
 
 def addBlog(request,):
