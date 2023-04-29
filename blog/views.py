@@ -46,7 +46,7 @@ def post_blog(request, slug):
 
 def delete_comment(request, comment_id):
     """
-    The Admin is able to delete the comments
+    A view to allow the admin is to delete the comments
     """
     if not request.user.is_superuser:
         messages.error(
@@ -62,7 +62,7 @@ def delete_comment(request, comment_id):
 
 def editBlog(request, slug):
     """
-    A view for admin to edit blog posts
+    A view to allow the admin to edit blog posts
     """
     if not request.user.is_superuser:
         messages.error(
@@ -96,7 +96,7 @@ def editBlog(request, slug):
 
 def deleteBlog(request, slug):
     """
-    A view to delete posts
+    A view to allow the admin to delete posts
     """
     if not request.user.is_superuser:
         messages.error(
@@ -110,9 +110,8 @@ def deleteBlog(request, slug):
 
 
 def addBlog(request):
-
     """
-    A view to add blog post &
+    A view to allow the admin only to add blog post
     """
     if not request.user.is_superuser:
         messages.error(
@@ -146,12 +145,29 @@ def addBlog(request):
 
 
 class PostLike(View):
-    
+    """
+    A view to allow the logged in user to like posts
+    """
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
         if post.likes.filter(id=request.user.id).exists():
             post.likes.remove(request.user)
         else:
             post.likes.add(request.user)
+
+        return HttpResponseRedirect(reverse('post_blog', args=[slug]))
+
+
+class CommentLike(View):
+    """
+    A view to allow the logged in user to like comments
+    """
+    def post(self, request, comment_id, slug, *args, **kwargs):
+        comment = get_object_or_404(Comment, pk=comment_id)
+        print(comment)
+        if comment.likes.filter(id=request.user.id).exists():
+            comment.likes.remove(request.user)
+        else:
+            comment.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_blog', args=[slug]))

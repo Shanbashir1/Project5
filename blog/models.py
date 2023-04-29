@@ -18,6 +18,9 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    def number_of_likes(self):
+        return self.likes.count()
+
 
 class Comment(models.Model):
     user = models.ForeignKey(User, default=1, on_delete=models.CASCADE)
@@ -25,9 +28,13 @@ class Comment(models.Model):
     blog_id = models.ForeignKey(Post, on_delete=models.CASCADE)
     dateTime = models.DateTimeField(default=now)
     approved = models.BooleanField(default=False)
+    likes = models.ManyToManyField(User, related_name='blogcomments_like', blank=True)
 
     class Meta:
         ordering = ['-dateTime']
 
     def __str__(self):
         return self.user.username + " Comment: " + self.body
+
+    def number_of_likes(self):
+        return self.likes.count()

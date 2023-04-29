@@ -1,5 +1,5 @@
 from django.urls import path
-from .import views
+from . import views
 from .views import PostList
 
 urlpatterns = [
@@ -10,4 +10,5 @@ urlpatterns = [
     path('deleteBlog/<slug:slug>/', views.deleteBlog, name='delete_blog'),
     path('addBlog', views.addBlog, name='add_blog'),
     path('like/<slug:slug>', views.PostLike.as_view(), name='post_like'),
+    path('CommentLike/<int:comment_id>/<slug:slug>/', views.CommentLike.as_view(), name='comment_like'),
 ]
