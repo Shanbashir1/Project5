@@ -211,8 +211,8 @@ a.category-badge > span.badge:hover {
 
   /* Product html back to top page link  */
 .btt-button {
-    height: 42px;
-    width: 42px;
+    height: 22px;
+    width: 22px;
     position: fixed;
     bottom: 10px;
     right: 10px;

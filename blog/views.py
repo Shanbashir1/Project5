@@ -5,6 +5,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from . import views
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .forms import PostForm, AddPostForm
 from .models import Post, Comment
 
@@ -13,6 +14,7 @@ class PostList(ListView):
     """A view to create the post on the blog page"""
     model = Post
     template_name = 'blog/blog.html'
+    paginate_by = 4
 
 
 def post_blog(request, slug):
@@ -44,6 +46,7 @@ def post_blog(request, slug):
     return render(request, template, context)
 
 
+@login_required
 def delete_comment(request, comment_id):
     """
     A view to allow the admin is to delete the comments
@@ -60,6 +63,7 @@ def delete_comment(request, comment_id):
     return redirect(reverse('blog'))
 
 
+@login_required
 def editBlog(request, slug):
     """
     A view to allow the admin to edit blog posts
@@ -94,6 +98,7 @@ def editBlog(request, slug):
     return render(request, template, context)
 
 
+@login_required
 def deleteBlog(request, slug):
     """
     A view to allow the admin to delete posts
@@ -109,6 +114,7 @@ def deleteBlog(request, slug):
     return redirect(reverse('blog'))
 
 
+@login_required
 def addBlog(request):
     """
     A view to allow the admin only to add blog post
