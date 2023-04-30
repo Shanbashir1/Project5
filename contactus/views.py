@@ -8,6 +8,7 @@ from .models import ContactModel
 
 # Create your views here.
 
+
 class ContactUs(CreateView):
     '''
     Sends back a message to users who fill out a contact form
