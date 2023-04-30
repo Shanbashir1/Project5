@@ -157,6 +157,11 @@ body {
     width: 90%;
 }
 
+/* ------------------------------------ Search Box */
+
+input[name='q']::placeholder {
+    color: #730C02;
+}
 
 /* Marquee for free delivery text */
 .wrapper{

@@ -24,7 +24,7 @@
             <form action="{% url 'contactus' %}" method="POST" id="contact-form">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <button type="submit" class="btn btn-success btn-card my-4">Send</button>
+                <button type="submit" class="btn btn-success btn-card my-4">Send <i class="fa-solid fa-envelope-circle-check fa-beat"></i></button>
             </form>   
         </div>
     </div>
