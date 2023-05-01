@@ -4,6 +4,7 @@
 {% block extra_title %} Reviews {% endblock %}
 
 {% block page_header %}
+ <!-- Page Structure for Reviews  -->
 <div class="overlay"></div>
 <div class="container header-container">
     <div class="row">
@@ -13,61 +14,143 @@
 {% endblock %}
 
 {% block content %}
+<section id="reviews" class="container mt-5">
+    <div class="row p-3">
+        <div class="container-fluid d-flex flex-column">
+            <div class="col text-center">
+                <hr class="w-50 mb-1">
+                <h1 class="logo-font text-primary">Customer Reviews</h1>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
 
 <div class="container-fluid d-flex flex-column">
     <div class="row">
         <div class="col text-center">
-            <hr class="w-50 mb-1">
-            <h1 class="logo-font text-primary">Customer Reviews</h1>
-            <hr class="w-50 mb-1">
-        </div>
+            <h5 class="logo-font text-warning">View Our Customer Feedback</h5>
+            <hr class="text-black">
+      </div>
     </div>
+</div>
+    <!-- Customer Reviews -->
+    <div class="container-fluid">
+      {% for review in reviews_view %}
+      <div class="container-fluid">
 
-<div class="row">
-    {% for review in reviews_view %}
-    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-        <div class="card h-100 border-0">
-            <div class="review-box">
-            <hr>
-            <p class="text-black small"><i class="fas fa-user fa-lg text-primary small"></i>This review was by: {{ review.name  | slice:":10" }}</p>
-            <hr>
+            <p class="text-black"><i class="fas fa-user fa-lg text-primary small"></i>This review was by: {{ review.name  | slice:":10" }}</p>
+            <p class="mt-2 text-info small"><i class="fa fa-clock"></i> This review was published on: {{ review.created_on | date:"D d M Y" }}</p>
             <p class="text-info small">"{{ review.title}}"</p>
-            <hr>
+             <!-- Customer Ratings Stars-->
             <span>
-            {% if review.rating == 5 %}
-            <i class="fas fa-star text-warning"></i>
-            <i class="fas fa-star text-warning"></i>
-            <i class="fas fa-star text-warning"></i>
-            <i class="fas fa-star text-warning"></i>
-            <i class="fas fa-star text-warning"></i>
-            {% elif review.rating == 4 %}
-            <i class="fas fa-star text-warning"></i>
-            <i class="fas fa-star text-warning"></i>
-            <i class="fas fa-star text-warning"></i>
-            <i class="fas fa-star text-warning"></i>
-            <i class="fas fa-star text-dark"></i>
-            {% else%}
-            <i class="fas fa-star text-warning"></i>
-            <i class="fas fa-star text-warning"></i>
-            <i class="fas fa-star text-warning"></i>
-            <i class="fas fa-star text-dark"></i>
-            <i class="fas fa-star text-dark"></i>
-            {% endif %}
-            </span>
-        <hr>
-         <p class="mt-2 text-info small"><i class="fa fa-clock"></i> This review was published on: {{ review.created_on | date:"D d M Y" }}</p>
-         <hr>
-         <div class="review-text">
-            <p class="mt-3 text-black"> Customer Feedback</p>
-                <p class="mt-3 text-info small">{{ review.customer_review }}</p>
+               {% if review.rating == 5 %}
+               <i class="fas fa-star text-warning"></i>
+               <i class="fas fa-star text-warning"></i>
+               <i class="fas fa-star text-warning"></i>
+               <i class="fas fa-star text-warning"></i>
+               <i class="fas fa-star text-warning"></i>
+               {% elif review.rating == 4 %}
+               <i class="fas fa-star text-warning"></i>
+               <i class="fas fa-star text-warning"></i>
+               <i class="fas fa-star text-warning"></i>
+               <i class="fas fa-star text-warning"></i>
+               <i class="fas fa-star text-dark"></i>
+               {% else%}
+               <i class="fas fa-star text-warning"></i>
+               <i class="fas fa-star text-warning"></i>
+               <i class="fas fa-star text-warning"></i>
+               <i class="fas fa-star text-dark"></i>
+               <i class="fas fa-star text-dark"></i>
+               {% endif %}
+               </span>
+                <!-- Customer Reviews  -->
+               <div class="review-text">
+                  <p class="mt-3 text-black"> Customer Feedback</p>
+                      <p class="mt-3 text-info small">{{ review.customer_review }}</p>
+               </div>
+               <!-- Customer option to add image  -->
+               <div class="review-img">
+                  {% if review.image %}
+                  <img class="card-img-top col-md-3" src="{{ review.image.url }}" alt="{{ review.name }} Review Image">
+                  {% else %}
+                  <img class="card-img-top col-md-3"src="{{ MEDIA_URL }}noimage.png" alt="{{ review.name }} Review Image">
+                  {% endif %}
+               </div>
+            </div>
+               <hr>
+                  {% if forloop.counter|divisibleby:1 %}
+                  <div class="col-12 d-sm-none mb-5">
+                  </div>
+                  {% endif %}
+                  {% if forloop.counter|divisibleby:2 %}
+                  <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                  </div>
+                  {% endif %}
+                  {% if forloop.counter|divisibleby:3 %}
+                  <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                  </div>
+                  {% endif %}
+                  {% if forloop.counter|divisibleby:4 %}
+                  <div class="col-12 d-none d-xl-block mb-5">
+                  </div>
+                  {% endif %}
+                  {% endfor %}
+               </div>
+            </div>
          </div>
-         <div class="review-img">
-            {% if review.image %}
-            <img class="review-image card-img-top img-fluid mt-3" src="{{ review.image.url }}" alt="{{ review.name }} Review Image">
-            {% else %}
-            <img class="review-image card-img-top img-fluid mt-3" src="{{ MEDIA_URL }}noimage.png" alt="{{ review.name }} Review Image">
-            {% endif %}
+         {% if user.is_authenticated and user.username == review.name or user.is_superuser %}
+         <div class="text-center mt-3">
+            <a href="edit_review/{{review.id}}" aria-label="Go to edit review {{review.id}} page" class="btn btn-primary mb-3">Edit</a>
+            <a href="delete_review/{{review.id}}" type="button" class="btn btn-danger mb-3" data-bs-toggle="modal"
+               data-bs-target="delete-review-{{review.id}}" aria-label="Delete">Delete</a>
          </div>
-         {% endfor %}
-         {% endblock %}
-     
+                 <!-- Delete the review the customer has added-->
+        <div class="modal fade" id="delete-review-{{review.id}}" tabindex="-1" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title">Delete Review</h5>
+               </div>
+               <div class="modal-body">
+                  Are you sure you want to delete your review?
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary"
+                     data-bs-dismiss="modal" aria-label="Close Modal">Close</button>
+                  <a href="delete_review/{{review.id}}" aria-label="Delete review {{review.id}}" class="btn btn-danger">Delete</a>
+               </div>
+            </div>
+         </div>
+      </div>
+<!-- code taken from Code Institute Boutique Ado -->
+<div class="btt-button shadow-sm rounded-0 border border-black">
+    <a class="btt-link d-flex h-100">
+        <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+    </a>
+</div>
+
+{% if is_paginated %}
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+        {% if page_obj.has_previous %}
+        <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+        {% endif %}
+        {% if page_obj.has_next %}
+        <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+
+        {% endif %}
+    </ul>
+</nav>
+{% endif %}
+</div>
+{% endif %}
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script>
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0);
+    });
+</script>
+
+{% endblock %}

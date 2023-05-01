@@ -1,8 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from .models import Reviews
 from .forms import ReviewsForm
 from django.views.generic import CreateView, UpdateView
 from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 def reviews(request):
@@ -34,8 +37,18 @@ class EditReview(UpdateView):
     """
     Allows the user to edit the review
     """
-
     model = Reviews
     form_class = ReviewsForm
     template_name = "reviews/create_review.html"
     success_message = "Thank you the review has been updated successfully"
+
+
+@login_required
+def delete_review(request, review_id):
+    """
+    Allows the use to delete the view
+    """
+    reviews = get_object_or_404(Reviews, id=review_id)
+    reviews.delete()
+    messages.success(request, "This review has been deleted successfully")
+    return redirect("reviews")
