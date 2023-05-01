@@ -1,0 +1,67 @@
+{% extends "base.html" %} 
+{% load static %} 
+
+{% block page_header %}
+<div class="overlay"></div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <hr>
+            <h2 class="mb-4 text-black"><i class="fa-solid fa-envelopes-bulk fa-beat"></i> Create Reviews</h2>
+            <hr>
+            {% if reviews %}
+            <p><i class="fas fa-user fa-lg text-primary"></i> {{ user.username  | slice:":10" }}</p>
+        </div>
+        {% else %}
+ 
+        <p><i class="fas fa-user fa-lg text-primary"></i> {{ user.username  | slice:":10" }}</p>
+        {% endif %}
+     </div>
+         <div class="col-md-6 mt-5 p-2">
+            {% if reviews %}
+            <h3 class="mb-4 text-black">We Value Customer Feedback</h3>
+            {% else %}
+            <h3 class="mb-4 text-black">Your Reviews Matters!</h3>
+            {% endif %}
+            <p class="p-1 text-justify text-black">
+                Dear Customer, Thank you for ordering with our online store.
+                We welcome all kind of honest reviews, If you have placed an order with 
+                Prestige|Watches and have received postive or negative customer service, then
+                please make us aware, so we can improve on any service which is not of a 5 star rating. 
+            </p>
+            <p class="p-1 text-justify text-black">Thank You</p>
+            <p class="p-1 text-justify text-info">Prestige|Watches</p>
+
+
+            </p>
+         </div>
+         <div class="col-md-6 p-2">
+            <form method="post" enctype="multipart/form-data">
+               {% csrf_token %}
+               {% for field in form %}
+               {% if field.name != 'image' %}
+               {{ field | as_crispy_field }}
+               {% else %}
+               {{ field }}
+               {% endif %}
+               {% endfor %}
+            <div class="text-center">
+                  <button class="btn btn-success mb-4" type="submit" value="Save" aria-label="Submit Review">
+                  Submit
+                  </button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+{% endblock %}

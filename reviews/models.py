@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 from django.utils.timezone import now
 
 
@@ -21,3 +22,7 @@ class Reviews(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        """Creates a absolute urls for add/edit reviews"""
+        return reverse("reviews")
