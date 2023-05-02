@@ -10,9 +10,7 @@ class PostForm(forms.ModelForm):
     """
     class Meta:
         model = Post
-        widgets = {
-            'body': SummernoteWidget()
-        }
+
         fields = [
             'title',
             'slug',
@@ -30,9 +28,6 @@ class AddPostForm(forms.ModelForm):
     """
     class Meta:
         model = Post
-        widgets = {
-            'body': SummernoteWidget()
-        }
 
         fields = [
             'title',

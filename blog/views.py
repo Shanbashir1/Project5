@@ -11,7 +11,7 @@ from .models import Post, Comment
 
 
 class PostList(ListView):
-    """A view to create the post on the blog page"""
+    """A view to show the post on the blog page"""
     model = Post
     template_name = 'blog/blog.html'
     paginate_by = 4

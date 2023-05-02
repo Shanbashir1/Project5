@@ -6,12 +6,16 @@
     <header>
         <a href="{% url 'home' %}" aria-label="Home Page"><span class="logo interactive-color">Prestige|Watches</span></a>
      </header>
-<div class="overlay"></div>
-   <div class="text-box">
-      <h3 class="blink_me text-white"> The new collections are here</h3>
-      <p class="text-white">Explore the collection of prestigious, high-precision timepieces.</p>
-      <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3 text-white aria-label="Go to the home page">Shop Now <i
-         class="fas fa-arrow-right interactive-color"></i></a>
-   </div>
+     <div class="container-fluid d-flex flex-column">
+         <div class="row">
+            <div class="col mt-9 text-center">
+            <hr>
+               <h1 class="blink_me text-white"> The new collections are here</h1>
+               <p class="text-white">Explore the collection of prestigious, high-precision timepieces.</p>
+               <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3 text-white aria-label="Go to the home page">Shop Now <i
+                  class="fas fa-arrow-right interactive-color"></i></a>
+            </div>
+         </div>
+      </div>
 </main>
 {% endblock %}
