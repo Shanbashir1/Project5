@@ -12,8 +12,7 @@
 
 
 {% block content %}
-<div class="container-fluid flex-column"></div>
-    <div class="col-md-8 mt-3 offset-md-2">
+<div class="container-fluid flex-column">
         <div class="row">
             <div class="col text-center">
                 <hr>
@@ -30,26 +29,22 @@
         </div>
     </div>
 </div>
-    <div class="col-md-8 mt-3 offset-md-2">
-        <div class="row">
-            <div class="col text-center">
-            {% if reviews %}
-            <h3 class="mb-4 text-black">We Value Customer Feedback</h3>
-            {% else %}
-            <h3 class="mb-4 text-black">We Appreciate Your Honest Review!</h3>
-            {% endif %}
-            <p class="pt-lg-2 text-justify text-black">
-                Dear Customer, Thank you for ordering with our online store.
-                We welcome all kind of honest reviews, If you have placed an order with 
-                Prestige|Watches and have received postive or negative customer service, then
-                please make us aware, so we can improve on any service which is not of a 5 star rating. 
-            </p>
-            <p class="pt-lg-2 text-black">Thank You</p>
-            <p class="pt-lg-2 text-info">Prestige|Watches</p>
-            </p>
-            </div>
-        </div>
+    <div class="col md-12 text-center">
+        {% if reviews %}
+        <h3 class="mb-4 text-black">We Value Customer Feedback</h3>
+        {% else %}
+        <h3 class="mb-4 text-black">We Appreciate Your Honest Review!</h3>
+        {% endif %}
+        <p class="text-black">Dear Customer</p>
+        <p class="text-black">Thank you for ordering with our online store.</p>
+        <p class="text-black">We welcome all kind of honest reviews</p>
+        <p class="text-black">If you have placed an order with 
+            Prestige|Watches and have received postive or negative customer service</p>
+        <p class="text-black">Then please make us aware, so we can improve on any service which is not of a 5 star rating.</p>
+        <p class="text-black">Thank You</p>
+        <p class="text-info">Prestige|Watches</p>
     </div>
+</div>
     <div class="col-md-8 mt-3 offset-md-2">
         <div class="row">
             <div class="col text-center">

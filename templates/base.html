@@ -143,7 +143,7 @@
   {% block content %}
   {% endblock %}
 
-  <!-- footer -->
+  <!--------------------------------------- footer  -------------------------------------------------------------->
       <!-- Footer with links to pages-->
       <footer class="footer container-fluid">
         <div class="container p-4">
@@ -151,6 +151,19 @@
             <div class="col-lg-6 col-md-12 mb-4">
               <h5 class="mb-3"> Prestige|Watches </h5>
               <h6 class="logo-font my-0">Prestigious|<span class="high-precision">High-Precision</span>|Elegance</h6>
+              <p class="mb-1 text-white small">Our high-end Swiss watches guarantee precision, comfort and flair, in addition to 
+                lasting value. Expertly crafted, each contains an accurate clock, a distinctive watch face, and premium materials.
+                With a rich, illustrious history, we are uniquely positioned as the UK's largest authorised retailer of luxury watches, 
+                offering names as big as OMEGA, Rolex and TAG Heuer. Explore our designs for men and women to secure your dream 
+                designer watch today.</p>
+                
+                 <p class="text-warning"><i class="fa-solid fa-check fa-beat"></i> Authorised retailer for Luxury & Swiss Brands</p>
+                
+                 <p class="text-primary"><i class="fa-solid fa-check fa-beat"></i> Over 100 Stores providing Luxury Watches</p>
+                
+                 <p class="text-warning"><i class="fa-solid fa-check fa-beat"></i> Over 200 years of watch experience - Ask the Experts</p>
+                
+                 <p class="text-primary"><i class="fa-solid fa-check fa-beat"></i> 0% Interest Free Credit available on all Luxury Watches</p>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
               <h5 class="mb-3">Links</h5>
@@ -163,21 +176,34 @@
                   <a href="{% url 'account_login' %}" class="text-info">Login</a>
                 </li> {% endif %} <li class="mb-1">
                   <li class="mb-1">
-                    <a href="#" class="text-info">Join The Blog Us</a>
+                    <a href="{% url 'blog' %}" class="text-info">Join The Blog Us</a>
                   </li>
                   <li class="mb-1">
-                    <a href="#" class="text-info">Customer Reviews</a>
+                    <a href="{% url 'reviews' %}" class="text-info">Customer Reviews</a>
                   </li> 
                   <a href="{% url 'contactus' %}" class="text-info">Contact Us</a>
                 </li>
               </ul>
              </div>
+             <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-3">Policies & Newsletter</h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <a class="text-info" rel="noopener nofollow"
+                  href="#"
+                  target="_blank" role="button">Privacy Policy
+                  </a>
+                </li>
+                <li class="mb-1">
+                    <a class="text-info" href="#"> Sign up for our newsletter</a>
+                </li>
+            </div>
            
         <!-- Copyright -->
         <div class="container-fluid mt-3 social-media">
           <div class="row">
             <div class="col text-center">
-              <h3 class="social">Follow Us on Social Media:</h3>
+              <h6 class="logo-font my-0">Follow us on social media</h6>
               <ul class="list-inline social-media-icons">
                 <li class="list-inline-item">
                   <a href="https://www.facebook.com/" target="_blank">
@@ -201,8 +227,15 @@
                 </li>
               </ul>
               <div>
-                <p>&copy;Better Health Care <span class="Copyright">Copyright 2023</span>
-                </p>
+          <!-- Copyright -->
+          <div>
+            <p class="text-warning small">Prestige|Watches Copyright
+                <span>&copy;</span>
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                |All rights reserved |For educational purposes only
+            </p>
               </div>
             </div>
             </div>
