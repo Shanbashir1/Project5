@@ -1,0 +1,1 @@
+web: gunicorn prestige_watches.wsgi:application
