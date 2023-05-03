@@ -17,9 +17,9 @@
    <div class="row">
       <div class="col-12 col-md-6">
          <hr>
-         <h2 class="sub-title mb-4">Product Management</h2>
-         <h5 class="text-muted">Edit a Product as:</h5>
-         <h5 class="text-uppercase text-muted"><i class="fas fa-user fa-lg interactive-color"></i> {{ user }}</h5>
+         <h2 class="sub-title mb-4 text-black">Product Management</h2>
+         <h5 class="text-black">Edit a Product as:</h5>
+         <h5 class="text-uppercase text-black"><i class="fas fa-user text-primary"></i> {{ user }}</h5>
          <hr>
       </div>
    </div>
@@ -34,9 +34,9 @@
             {{ field }}
             {% endif %}
             {% endfor %}
-            <div class="text-right">
-               <a href="{% url 'products' %}" aria-label="Go to the products page" class="btn btn-outline-black rounded-0">Cancel</a>
-               <button class="btn btn-black rounded-0" type="submit" aria-label="Update Product">Update Product</button>
+            <div class="text-center">
+               <a href="{% url 'products' %}" aria-label="Go to the products page" class="btn btn-danger">Cancel</a>
+               <button class="btn btn-success" type="submit" aria-label="Update Product">Update Product</button>
             </div>
          </form>
       </div>
@@ -46,7 +46,7 @@
 {% block postloadjs %}
 {{ block.super }}
 <script>
-   // Add new image
+   // Js to a add new image
    $('#new-image').change(function() {
        var file = $('#new-image')[0].files[0];
        $('#filename').text(`Image will be set to: ${file.name}`);

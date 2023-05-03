@@ -137,9 +137,6 @@
 </div>
 {% endif %}
 
-  {% block page_header %}
-  {% endblock %}
-
   {% block content %}
   {% endblock %}
 
@@ -169,7 +166,7 @@
               <h5 class="mb-3">Links</h5>
               <ul class="list-unstyled mb-0">
                 <li class="mb-1">
-                  <a href="#" class="text-info">About Us</a>
+                  <a href="{% url 'about_us' %}" class="text-info">About Us</a>
                 </li> {% if user.is_authenticated %} <li class="mb-1">
                   <a href="{% url 'account_logout' %}" class="text-info">Logout</a>
                 </li> {% else %} <li class="mb-1">

@@ -27,14 +27,3 @@ class ContactUs(CreateView):
         will be contacting you shortly.")
         form.save()
         return super().form_valid(form)
-
-class AboutUs(View):
-    """
-    View to render about page.
-    """
-
-    def get(self, request):
-        """
-        Get method, to render about html.
-        """
-        return render(request, "about.html")

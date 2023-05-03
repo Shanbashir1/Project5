@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}About us {% endblock %}
+
+
+{% block page_header %}
+<div class="overlay"></div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid ">
+    <div class="row h-100">
+        <div class="col-12 text-center">
+            <hr class="w-50 mb-1">
+            <h1 class="mb-4">About us</h1>
+            <hr class="w-50 mb-1">
+            <p class="justify-content-center">
+                Prestige|Watches is a retailer of luxury watches with various supply<br>
+                networks and points of sale in many different countries all around the world. <br>
+                Prestige|Watches offers its valuable experiences gained in e-commerce and watch industry to the customers <br>
+                through the world-famous brands to create a product and marketing concept <br>
+                in line with the dynamics of the age. <br>
+                <br>
+                <hr>
+                Prestige|Watches always aim to contact strongly with the customers thanks to its professional customer support<br>
+                team before, during & after the buying process. <br>
+                The brand is aware of the need to achieve its share in terms of quality and reliability in the sector. <br>
+                Prestige|Watches continues to gain the attention of watch enthusiasts with its original products and fast solutions offered to consumers.<br>
+                <br>
+                <hr>
+                <strong class="text-black">Why Choose Prestige|Watches ?</strong><br>
+                Prestige|Watches is an authorized and regulated appointed representative of the brands it incorporates. <br>
+                Every product on the site is carefully selected for our valued customers.<br>
+                <hr>
+                <strong class="text-black">Fast Delivery</strong><br>
+                All orders are processed within 2-3 business days.<br>
+                <hr>
+                <strong class="text-black">Price Match</strong><br>
+                We are committed not only to offering you the best shopping experience but also the most competitive prices across our branded watches. <br>
+                If you see any of our branded watches elsewhere at a lower price, we will match the price for you once the conditions are met. <br>
+                Our experts will examine the product and reach you within 2 working days from the contact information you have given.<br>
+                <hr>
+                <strong class="text-black">Customer Support</strong><br>
+                Prestige|Watches customer support team are on hand to answer your questions.<br>
+                <hr>
+                <strong class="text-black">Free Shipping</strong><br>
+                Free delivery is available if you order from UK and your order is over the value of £1000.<br>
+                <hr>
+                <strong class="text-black">
+                If you have any comments or questions, you can reach us via phone or e-mail!
+                </strong><br>
+                Your Sincerely, <br>
+                <span class="text-info">Prestige|Watches</span>.
+            </p>
+        </div>
+        <div class="col-12 text-center mt-3">
+            <h2>
+                <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-white">Shop
+                    Now</a>
+            </h2>
+        </div>
+    </div>
+</div>
+{% endblock %}

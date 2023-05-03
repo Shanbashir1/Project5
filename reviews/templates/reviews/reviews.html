@@ -13,15 +13,17 @@
 {% endblock %}
 
 {% block content %}
+<div class="overlay"></div>
     <div class="container-fluid d-flex flex-column">
         <div class="row">
             <div class="col text-center">
                 <div class="card h-100 border-0">
-                <h1 class="logo-font text-black">Customer Reviews</h1>
+                    <h3 class="logo-font text-black"><i class="fa-solid fa-star text-warning"></i>Customer Review</h3>
                 <hr class="text-black">
             </div>
         </div>
     </div>
+</div>
 
     <div class="container-fluid d-flex flex-column">
         <div class="row">
@@ -30,14 +32,15 @@
             <h5 class="logo-font text-warning text-center">View Our Customer Feedback</h5>
             <hr class="text-black">
         </div>
+        </div>
     </div>
 </div>
 
     <!-- Customer Reviews -->
     <div class="container-fluid d-flex flex-column">
       {% for review in reviews_view %}
-      <div class="row">
-        <div class="col text-center">
+        <div class="row">
+            <div class="col text-center">
                 <div class="card h-100 border-0">
                     <p class="text-black"><i class="fas fa-user fa-lg text-primary small"></i>This review was by: {{ review.name  | slice:":10" }}</p>
                     <p class="mt-2 text-primary small"><i class="fa fa-clock"></i> This review was published on: {{ review.created_on | date:"D d M Y" }}</p>
@@ -45,6 +48,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <!-- Customer Ratings Stars-->
         <div class="container-fluid d-flex flex-column">
             <div class="row">
@@ -142,8 +146,6 @@
                   {% endif %}
                   {% endfor %}
                </div>
-            </div>
-        </div>
         <!-- Delete the review the customer has added-->
         <div class="modal fade" id="delete-review-{{review.id}}" tabindex="-1" aria-hidden="true">
          <div class="modal-dialog">
