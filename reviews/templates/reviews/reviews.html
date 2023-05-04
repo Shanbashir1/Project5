@@ -101,7 +101,7 @@
                             {% if review.image %}
                             <img class="card-img-top" src="{{ review.image.url }}" alt="{{ review.name }} Review Image">
                             {% else %}
-                            <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ review.name }} Review Image">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ review.name }} Review Image">
                             {% endif %}
                             <hr>
                         </div>
