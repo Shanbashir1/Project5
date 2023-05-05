@@ -8,20 +8,19 @@
 {% endblock %}
 
 {% block page_header %}
-<!-- BLOCK PAGE HEADER -->
+<div class="overlay">
     <div class="container header-container">
         <div class="row">
-            <div class="col"></div>
         </div>
     </div>
-    <!-- END OF BLOCK PAGE HEADER -->
+</div>
 {% endblock %}
 
 {% block content %}
 <!-- CHECKOUT SECTION -->
 <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
+<div class="container-fluid d-flex flex-column">
+    <div class="row">
             <div class="col">
                 <hr>
                 <h2 class="logo-font mb-4">Checkout</h2>
@@ -116,13 +115,13 @@
                     </fieldset>
 
                     <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'view_bag' %}" aria-label="Go to the view bag page" class="btn btn-outline-black rounded-0 btn-products">
+						<a href="{% url 'view_bag' %}" aria-label="Go to the view bag page" class="btn btn-danger btn-products">
 							<span class="icon">
 								<i class="fas fa-chevron-left interactive-color"></i>
 							</span>
 							<span class="font-weight-bold">Adjust Bag</span>
 						</a>
-						<button id="submit-button" class="btn btn-black rounded-0 btn-products mt-3 mb-3" aria-label="Complete Order">
+						<button id="submit-button" class="btn btn-success" aria-label="Complete Order">
 							<span class="font-weight-bold">Complete Order</span>
 							<span class="icon">
                                 <i class="fas fa-credit-card interactive-color ml-2"></i>
