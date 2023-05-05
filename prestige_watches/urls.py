@@ -30,6 +30,7 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('contact/', include('contactus.urls')),
     path('reviews/', include('reviews.urls')),
+    path('newsletter/', include('newsletter.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'prestige_watches.views.error_404_view'
