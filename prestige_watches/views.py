@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 # Function to alert a error 404 page
 def error_404_view(request, exception):
     return render(request, '404.html')

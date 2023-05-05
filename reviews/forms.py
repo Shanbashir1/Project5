@@ -12,7 +12,7 @@ class ReviewsForm(forms.ModelForm):
         model = Reviews
         fields = ("title", "customer_review", "rating", "image")
 
-
     image = forms.ImageField(
-        label="Image", required=False, widget=CustomClearableFileInput
+        label="Image", required=False,
+        widget=CustomClearableFileInput
     )

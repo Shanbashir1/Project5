@@ -1,9 +1,7 @@
 from django.shortcuts import render, reverse, redirect, get_object_or_404
-from django.urls import reverse_lazy
 from django.views.generic import ListView
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from . import views
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import PostForm, AddPostForm

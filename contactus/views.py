@@ -1,8 +1,6 @@
 from django.contrib import messages
-from django.views.generic.edit import FormView, CreateView, View
-from django.http import HttpResponseRedirect, request
-from django.urls import reverse, reverse_lazy
-from django.shortcuts import render
+from django.views.generic.edit import CreateView, View
+from django.urls import reverse_lazy
 from .forms import ContactForm
 from .models import ContactModel
 
