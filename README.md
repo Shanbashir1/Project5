@@ -118,4 +118,25 @@ All my user stories were completed and succesfully actioned. The design was base
 
 
  ## Wireframes
-Balsamiq wireframes was used to design the wireframes in the design phase of this project.
+Balsamiq wireframes was used to design the wireframes in the design phase of this project. [Balsamiq Wireframes](https://balsamiq.cloud/sbwg9ys/pn79h8b/r2278?f=N4IgUiBcCMA0IDkpxAYWfAMhkAhHAsjgFo4DSUA2gLoC%2BQA%3D "Balsamiq Wireframes")
+The wireframes was edited a few times during the project to be inline witht he project design, I had to make a few adjustments to the design, in order for the design to work. 
+
++ Home Page design
+
+<img src="docs/wireframes-images/home.png" alt = "Better | Health | Care" style="height: 400px; width: 100%;">
+
++ Product Page design
+
+<img src="docs/wireframes-images/product.png" alt = "Better | Health | Care" style="height: 400px; width: 100%;">
+
++ Blog Page design
+
+<img src="docs/wireframes-images/blog.png" alt = "Better | Health | Care" style="height: 400px; width: 100%;">
+
++ Review Page design
+
+<img src="docs/wireframes-images/reviews.png" alt = "Better | Health | Care" style="height: 400px; width: 100%;">
+
++ Contact Page design
+
+<img src="docs/wireframes-images/contact.png" alt = "Better | Health | Care" style="height: 400px; width: 100%;">
