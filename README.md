@@ -1,108 +1,121 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Project 5 - Prestige|Watches Full Stack Web Developer Ecommerce Project
 
-Welcome Shanbashir1,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of content
++ [Introduction](#introduction)
++ [User Experience](#user-experience---ux)
++ [Agile Methodology](#agile-methodology)
++ [Wireframes](#wireframes)
++ [Database Diagram](#database-diagram)
++ [Color Contrast](#colour-contrast)
++ [Site Features](#site-features)
+    + [Favicon Icon](#favicon-icon)
+    + [Header](#header)
+    + [Footer](#footer)
+    + [Site Navigation](#site-navigation)
+    + [Home Page](#home-page)
+    + [About Us Page](#about-us-page)
+    + [Booking Appointment Page](#booking-appointment-page-create-booking)
+    + [Manage Booking Page](#manage-booking-page-readview-booking)
+    + [Update Booking Page](#update-booking-page-update-booking)
+    + [Delete Booking Page](#delete-booking-page-delete-booking)
+    + [Contact us Page](#contact-us-page)
+    + [Sign In](#sign-in--login)
+    + [Register](#register)
+    + [Sign Out](#logout)
+    + [Admin](#admin-model)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
++ [Future Features](#future-features)
++ [Testing](#testing)
++ [Technologies](#technologies)
++ [Libraries](#libraries)
++ [Security Features](#security-features-and-defensive-design)
++ [Form Features](#form-feature--validation)
++ [Database Security](#database-security)
++ [Deployment](#deployment)
+    + [Local Deployment](#local-deployment)
+    + [Heroku Deployment](#heroku-deployment-initial-stage-as-advised-by-code-institute)
+    + [Elephant Postgressql](#postgresql-database-elephantsql)
+    + [Github](#github)
 
-## Gitpod Reminders
++ [Credits](#credits)
++ [Acknowledgement](#acknowledgement)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
+## Introduction
+```diff 
+Prestige|Watches A Full Stack Web Development for the Eccommerce Module Project using (Create, Read, Update, Delete)
 ```
 
-**Anything more?**
+This project is a B2C e-commerce store that is designed and implemented with Python and Django, HTML, CSS and some Javascript. Prestige Watches is online ecommerce store. The store allows the user to purchase a item, view blogs, make comments on blogs, add and delete customer reviews and sign up to newsletters. 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Some the key functions of the services are as below:
++ Purchase Items From The Online Store.
++ Login, Logout and Register Facility.
++ Admin to create, read, edit and delete Products.
++ Users to create, read, edit and delete reviews. 
++ Login and Logout Facilities.
++ Create feedback via the Contact Us Page.
++ About Us page.
++ User to view blogs and able to like blogs.
++ User to create comments, and function to delte comments. 
++ User to be able to like comments.
 
----
+<img src="docs/readme-images/am-i-responsive.png" alt = "Prestige|Watches" style="height: 400px; width: 100%;">
 
-Happy coding!
+[View link to my project 5](https://prestige-watches.herokuapp.com/)
+
+
+## User Experience - UX
++ Site User Experience
+1. As a site user I can create or edit my account so that I can update my details accordingly
+2. As a site user I can login in my account so that I can view my order history
+3. As a site user I can search for products so that I can find specific products
+4. As a site user I can sort products on criteria such as price and category so that I can I have a method of ordering the products products as I prefer
+5. As a site user I can browse through products so that I can decide what I may be interested in buying
+6. As a site user I can look at product details so that I can decide if I want to purchase it
+7. As a site user I can easily add products I want to purchase to a basket so that I can decide whether to purchase or not
+8. As a site user I can view the contents of my shopping basket so that I can be able to make any adjustments
+9. As a site user I can update my bag by adding more or remove products so that I can decide on the number of products I intend to buy
+10. As a site user I can view my order summary so that I can verify it before confirming
+11. As a site user I can checkout securely so that I can I maintain the level of trust on the site
+12. As a site user I can view paginated posts so that I can select which posts to view
+13. As a site user I can view all posts so that I can decide what I may be interested in reading
+14. As a site user I can comment to the blog posts so that I can express my opinion to the post
+15. As a site user I can use the contact form so that I can contact the site owners
+16. As a site user I can sign up to newsletter so that I can keep updated on the latest news
+17. As a site user I can add, view, delete and edit reviews which customers can view on the main site. 
+18. As a site user I can read the sites About us page
+19. As a site user I can like blogs and comments created by other users.
+20. As a site user I can view paginated reviews so that I can select which review to view
+
+
++ Site Admin Experience
+1. As a admin I can manage users' accounts so that I can make any required changes to them if needed
+2. As a admin I can manage products so that I can add , update or delete products when necessary
+3. As a admin I can view created orders so that I can full fill the orders or amend if needed
+4. As a Admin I can delete any of comments so that I can remove them if I nolonger feel they are still necessary or needed
+5. As a Admin I can view messages sent via contact form so that I can act upon them
+6. As an admin I can manage and create blogs for users to view and like. 
+7. As an admin I can manage the blog comments so that I can make amendments if needed
+8. As an admin I can manage the review page so that I can make amendments if needed
+9. As an admin I can manage the Facebook page in order to attract further customers. 
+
+
+## Agile Methodology
+An Agile Approach was used to develop this site. This was achieved by breaking the project down into smaller tasks.
+To complete the overall aim of the website, 21 issues were created as specific tasks called User Stories. These User Stories are small sections of the project designed to accomplish a specific goal. Once the User Story was working effectively it was moved across the Kanban board, in the following working order. 
++ To do
++ In Progress
++ Done
+
+<img src="docs/readme-images/user-stories.png" alt = "Prestige|Watches" style="height: 300px; width: 100%;">
+
+All my user stories were completed and succesfully actioned. The design was based on the Agile Methodology.
+
+
+ My Projects and User Stories can be viewed here :  [Issues and Projects](https://github.com/users/Shanbashir1/projects/6/views/1 "Github Issues")
+
+
+ ## Wireframes
+Balsamiq wireframes was used to design the wireframes in the design phase of this project.
