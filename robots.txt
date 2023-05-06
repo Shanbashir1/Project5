@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://prestige-watches.herokuapp.com//sitemap.xml

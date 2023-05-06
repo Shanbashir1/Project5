@@ -343,10 +343,25 @@ input[name='q']::placeholder {
     width: fit-content;
 }
 
+/* Footer template css*/
 .footer {
 
     background-color: #555;
     color: #fff;
+}
+
+/* Newsletter app css and Mailchimp */
+
+.newsletter:hover,
+.privacy-policy:hover {
+    color: #fff;
+}
+
+#mc_embed_signup {
+    background: #fff;
+    font: 14px;
+    width: 600px;
+
 }
 /* -------------------------------- Media Queries */
 
