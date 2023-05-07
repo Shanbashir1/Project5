@@ -6,7 +6,7 @@
 + [User Experience](#user-experience---ux)
 + [Agile Methodology](#agile-methodology)
 + [Wireframes](#wireframes)
-+ [Database Diagram](#database-diagram)
++ [Database Schema](#database-schema)
 + [Color Contrast](#colour-contrast)
 + [Site Features](#site-features)
     + [Favicon Icon](#favicon-icon)
