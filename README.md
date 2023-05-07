@@ -17,13 +17,18 @@
     + [About Us Page](#about-us-page)
     + [Product Page](#product-main-page)
     + [Product Detail Page](#product-detail-page)
-    + [Update Booking Page](#update-booking-page-update-booking)
-    + [Delete Booking Page](#delete-booking-page-delete-booking)
+    + [Product Shopping Bag Page](#product-shopping-bag-page)
+    + [Product Shopping Checkout Page](#product-shopping-bag-page)
+    + [Product Shopping Checkout Success Page](#product-shopping-checkout-success-page)
+    + [Product Management Page](#product-management-page)
+    + [My Profile Page](#my-profile-page)
+    + [Blog Page](#blog-page)
+    + [Customer Reviews Page](#customer-reviews-page)
     + [Contact us Page](#contact-us-page)
-    + [Sign In](#sign-in--login)
-    + [Register](#register)
-    + [Sign Out](#logout)
-    + [Admin](#admin-model)
+    + [Sign Up Page](#sign-up-page)
+    + [Sign In Page](#sign-in-page)
+    + [Sign Out Page](#sign-out-page)
+    + [Error 404 Page](#error-404-page)
 
 + [Future Features](#future-features)
 + [Testing](#testing)
@@ -275,22 +280,19 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 <img src="docs/readme-images/shopping_checkout.png" alt = "Product" style="height:300px; width: 100%;">
 
 ### Product Shopping Checkout Success Page
-
 + Once the user has completed the checkout they will be direct to the success checkout page, with a receipt confirmation and order reference. The order confirmation will be displayed as follows: 
-
-+ Order Info:
++ Order Info
 + Order Number
 + Order Date
-+ Order Details:
-+ Omega Speedmaster Moonwatch 2020
-+ Delivering To:
++ Order Details
++ Delivering To
 + Full Name
 + Address 1
 + Town or City
 + Postal Code
 + Country
 + Phone Number
-+ Billing Info:
++ Billing Info
 + Order Total
 + Delivery
 + Grand Total
@@ -302,7 +304,79 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 
 <img src="docs/readme-images/product_management.png" alt = "Product" style="height:300px; width: 100%;">
 
+## My Profile Page
++ The profile page is available when the user logs in, the user is able to add his details and view a order history. By adding a profile the user does not need to add his details the next time they place an order, as the information is kept saved.
++ A "Update my delivery info" button is available to the user to acknowlege the changes. 
 
+<img src="docs/readme-images/myprofile.png" alt = "Profile" style="height:300px; width: 100%;">
 
+## Blog Page
++ The blog page is only administrated by the admin, who can add, delete and edit blogs. 
++ The user has the option to like the blogs. Once like the heart will have a number one selected. 
 
+<img src="docs/readme-images/join_blog.png" alt = "Blog" style="height:300px; width: 100%;">
 
++ The user has option to create, read, update, delete comments. in the comment section. 
++ The user can also like and unlike a comment.
+
+<img src="docs/readme-images/comments.png" alt = "Comments" style="height:200px; width: 100%;">
+
++ Only the admin can add, edit and delete blogs. The blogs can be ammended via the blog management tab, which is located in the "My Accounts" icon. This can also be managed in the admin panel. 
+
+<img src="docs/readme-images/blog_manage.png" alt = "Blog" style="height:200px; width: 100%;">
+
+## Customer Reviews Page
++ The customer review page is located in the Help navigation links. The user will scroll down fromt help section and select the customer review page. 
++ All logged in users will be able to created a review. The review will however need to be approved by the admin.
++ Once the review has been approved it will display on the customer review main page. 
++ The customer review page will have show star ratings and a comment section for the customer to express it views. 
+
+<img src="docs/readme-images/customer_review.png" alt = "Reviews" style="height:200px; width: 100%;">
+
++ The user will be able to add a review if they are logged in. The add review tab will be accessible from the "My Account" tab. 
++ The form will be easy to submit for the user 
++ The review will need to be approved by the admin before being allowed to be published. 
+
+<img src="docs/readme-images/add_review.png" alt = "Reviews" style="height:200px; width: 100%;">
+
++ Admin Reviews - requires approval from the admin, before being published to the site. 
+
+<img src="docs/readme-images/admin_review.png" alt = "Reviews" style="height:200px; width: 100%;">
+
+## Contact Us Page
++ A contact us page is available for users who need to get in touch with the store owners. They have to put their name, email, the subject and the overall message before sending the form, which is then sent to the admin for viewing. 
+
+<img src="docs/readme-images/contactus.png" alt = "Contact Us Page" style="height:300px; width: 100%;">
+
+## Sign Up Page
++ For first time users the user will need to register his/her details and submit the form. 
++ The form will then send a email, the user will need to verify the email so they can activate their account. 
+
+<img src="docs/readme-images/signup.png" alt = "Reviews" style="height:200px; width: 100%;">
+
++ Verification required via email. With a success message. 
+
+<img src="docs/readme-images/verify_signup.png" alt = "Signup" style="height:120px; width: 100%;">
+
++ Once user has accepted the link via his email, they redirected back to the site, and requested to verify the email address. 
+
+<img src="docs/readme-images/verify_2.png" alt = "Signup" style="height:100px; width: 100%;">
+
+## Sign In Page
+
++ On the Login Page, users can log in to the website by inputting their username and password. The user is now registered and will have access to the Registered User website services.
+
+<img src="docs/readme-images/sign_in.png" alt = "SignIn" style="height:100px; width: 100%;">
+
++ Once signed in the user is naviagted the "Home Page".
+
+## Sign Out Page
+
++ On the Signout Page, users can confirm that they wish to exit the website.
+
+<img src="docs/readme-images/sign_out.png" alt = "SignOut" style="height:100px; width: 100%;">
+
+## Error 404 Page
++ A 404 page is also available to handle navigation errors with a home link button to take them back to the home page
+
+<img src="docs/readme-images/404_page.png" alt = "404 page" style="height:400px; width: 100%;">
