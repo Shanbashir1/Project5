@@ -15,8 +15,8 @@
     + [Site Navigation](#site-navigation)
     + [Home Page](#home-page)
     + [About Us Page](#about-us-page)
-    + [Booking Appointment Page](#booking-appointment-page-create-booking)
-    + [Manage Booking Page](#manage-booking-page-readview-booking)
+    + [Product Page](#product-main-page)
+    + [Product Detail Page](#product-detail-page)
     + [Update Booking Page](#update-booking-page-update-booking)
     + [Delete Booking Page](#delete-booking-page-delete-booking)
     + [Contact us Page](#contact-us-page)
@@ -135,7 +135,7 @@ The wireframes was edited a few times during the project to be inline witht he p
 
 <img src="docs/wireframes-images/bag.png" alt = "Prestige Watche" style="height: 400px; width: 100%;">
 
-<img src="docs/wireframes-images/checkout.png" alt = "Prestige Watche" style="height: 400px; width: 100%;">
+<img src="docs/wireframes-images/checkout.png" alt = "Prestige Watche" style="height: 600px; width: 100%;">
 
 + Blog Page design
 
@@ -143,11 +143,11 @@ The wireframes was edited a few times during the project to be inline witht he p
 
 + Review Page design
 
-<img src="docs/wireframes-images/reviews.png" alt = "Prestige Watche" style="height: 400px; width: 100%;">
+<img src="docs/wireframes-images/reviews.png" alt = "Prestige Watche" style="height: 600px; width: 100%;">
 
 + Contact Page design
 
-<img src="docs/wireframes-images/contact.png" alt = "Prestige Watches" style="height: 400px; width: 100%;">
+<img src="docs/wireframes-images/contact.png" alt = "Prestige Watches" style="height: 600px; width: 100%;">
 
 ## Database Schema
 Lucid Charts was used to design the unique models used in this project.
@@ -159,4 +159,150 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 
 <img src="docs/readme-images/Prestige_Watches.png" alt = "Color Contrast" style="height: 400px; width: 100%;">
 
-## Site Features 
+## Site Features
+
+### Favicon Icon 
+<img src="docs/readme-images/watch_favicon.png" alt = "Favicon" style="height: 200px; width: 40%;">
+
++ The selected icon was a image of a watch. 
++ The image is displayed on all the pages, throughout the website to give a unique design for the users.
++ The favicon image is a design which contributes to the overall web design.
+
+### Home Page
+<img src="docs/readme-images/home.png" alt = "Home" style="height:400px; width: 100%;">
+
++ The home page is the first page the user lands on when visiting the site. 
++ The home page user the header and the delivery banner feature but does not include the footer. 
++ The home page has a shop now flashing button, which navigates the user to the product page. 
++ The home page also has flashing text to give the page a special feature. 
+
+### Header
+<img src="docs/readme-images/header.png" alt = "Header" style="height:70px; width: 100%;">
+
++ The header is located at the top of the page, displaying the logo-text, The sub-heading, the navigation links, the search bar, my account icon and the shopping basket.
++ The color used for the header was #fffff (white), which was one of the main color used throughout the site to display the background and some area of colour text. 
++ The logo text was black, however the sub-heading text had a combination of gold. 
++ The search button had a link reference of selecting items from the product store. 
++ The navigation link bars had scrolls and redirected users to pages through out the site. The navigation link were simple and easy to navigate through out the site. The navigation links bars also had a hover of underline, to clearly display to the user which tab they were hovering over. 
++ The my account icon, directed the user to the login page, logout page and register page. 
++ The basket had the total cost of the items added and navigated the user to the bag page. 
++ Clicking on the logo header will redirect the user to the home page. 
+
+### Delivery Banner 
+<img src="docs/readme-images/banner.png" alt = "Delivery Banner" style="height:30px; width: 100%;">
+
++ The delivery banner displays to the user a "Free delivery charge on orders over £1000"
++ The banner has been designed using a marquee, with floating text offer the free delivery charge. 
++ A delivery van has been used as the icon for the banner. 
++ The colour contrast has been used of a dark grey background with white text.
+
+### Footer
+<img src="docs/readme-images/footer.png" alt = "Footer" style="height:200px; width: 100%;">
+
++ The footer is contrasted in line with the header banner of dark grey with white text, the bootstrap of text-info has been used for the navigation links. 
++ All links direct the users to pages through out the site.
++ The footer is quite detailed for user to explore relevant information while navigating through the site. 
++ The footer contains the following features 
+1. Header Logo 
+2. Sub Header 
+3. Text Description 
+4. Navigation Links 
+5. Policies and Newsletters 
+6. Social Media Links 
+7. Copyright 
+
+### Site Navigation
+<img src="docs/readme-images/nav1.png" alt = "Menu" style="height:60px; width: 100%;">
+
++ Site Navigation is available on both the header and the footer. 
++ All Products, contains the following sub-headings, Price, Rating, Category, All Products, these links navigate the user to the relevant requirements. 
+2. Special Offer, contains the following sub-headings, New Arrival, Sale, All Specials these links navigate the user to the relevant requirements. 
+3. Join our blog
+4. Help contains the following sub-headings, Contact Us, Customer Reviews and About Us these links navigate the user to the relevant requirements. 
+5. Account - All Auth, gives the user to Login, Logout, Register
+6. Account Admin option - Allows the Admin user to view Product Management, Blog Management, My Profile and Add Reviews.
+
++ Account Navigation
+<img src="docs/readme-images/nav2.png" alt = "Menu" style="height:300px; width: 100%;">
+
++ Footer Navigations
+<img src="docs/readme-images/nav3.png" alt = "Menu" style="height:200px; width: 100%;">
+
+### About Us Page
++ The About us page contains information of the companies information and history. 
++ The format is text based and design has been designed using bootstrap. 
++ The about us page contains information a shop now button which redirects the user to the products page. 
+
+
+<img src="docs/readme-images/about1.png" alt = "About" style="height:800px; width: 100%;">
+<img src="docs/readme-images/about2.png" alt = "About" style="height:800px; width: 100%;">
+
+### Product Main Page
++ On this page, users will see all the products available on the website. All the watches will be displayed on the main page when the user has selected "All Products" or any other product relating links. 
+<img src="docs/readme-images/product1.png" alt = "Product" style="height:200px; width: 100%;">
++ The user will be able to sort the products and filter the requirements they would like to search by
++ Once the user selects the product he will be forwarded to the product detail page.
+
+<img src="docs/readme-images/product3.png" alt = "Product" style="height:200px; width: 100%;">
+
++ Mobile Devices View
+
+<img src="docs/readme-images/product2.png" alt = "Product" style="height:600px; width: 100%;">
+
++ If the user sign in via the admin login details they will be able to delete, add and edit the products page. 
++ Admin users will have the complete the rights to change and add products on the page. 
+<img src="docs/readme-images/product4.png" alt = "Product" style="height:200px; width: 100%;">
+
++ Mobile Devices View
+<img src="docs/readme-images/product5.png" alt = "Product" style="height:500px; width: 100%;">
+
+### Product Detail Page
+
++ On this page the user will see the selected products with product descriptions and features. 
++  The user will be able to select the quantity, which can be added and then removed using the "+" and "-" icons. 
++ There will also be 2 buttons, 1 button will allow the user to go back the products page to continue shopping, the other button will take the user to the bags page, displaying the qty and order details.  
+<img src="docs/readme-images/product6.png" alt = "Product" style="height:300px; width: 100%;">
+
+### Product Shopping Bag Page
++ This feature is called the Shopping bag. Here, users can add products and quantities. Check the total price, and delivery costs and go to the secure checkout to finish the order. Before secure checkout. the user can also change the quantity and remove unwanted products. The user can also leave this page by pressing the button "Keep Shopping", if the user would like to continue than they will proceed to the "secure checkout" page.
+
+<img src="docs/readme-images/shopping_bag.png" alt = "Product" style="height:300px; width: 100%;">
+
+### Product Shopping Checkout Page
++ On this page the user will need to enter his details and credit/debits cards details. The order will also be displayed. The total cost and delivery charges will also be visible to the user. 
++ The user will be able to "adjust the bag" or "complete order" via the buttons. 
+
+<img src="docs/readme-images/shopping_checkout.png" alt = "Product" style="height:300px; width: 100%;">
+
+### Product Shopping Checkout Success Page
+
++ Once the user has completed the checkout they will be direct to the success checkout page, with a receipt confirmation and order reference. The order confirmation will be displayed as follows: 
+
++ Order Info:
++ Order Number
++ Order Date
++ Order Details:
++ Omega Speedmaster Moonwatch 2020
++ Delivering To:
++ Full Name
++ Address 1
++ Town or City
++ Postal Code
++ Country
++ Phone Number
++ Billing Info:
++ Order Total
++ Delivery
++ Grand Total
+<img src="docs/readme-images/checkout_success.png" alt = "Product" style="height:300px; width: 100%;">
+
+### Product Management Page
++ For Admin only 
++ When the website admin is logged in on this page, they can add a new product to the website without going to the admin panel.
+
+<img src="docs/readme-images/product_management.png" alt = "Product" style="height:300px; width: 100%;">
+
+
+
+
+
