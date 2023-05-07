@@ -123,20 +123,40 @@ The wireframes was edited a few times during the project to be inline witht he p
 
 + Home Page design
 
-<img src="docs/wireframes-images/home.png" alt = "Better | Health | Care" style="height: 400px; width: 100%;">
+<img src="docs/wireframes-images/home.png" alt = "Prestige Watche" style="height: 400px; width: 100%;">
 
 + Product Page design
 
-<img src="docs/wireframes-images/product.png" alt = "Better | Health | Care" style="height: 400px; width: 100%;">
+<img src="docs/wireframes-images/product.png" alt = "Prestige Watche" style="height: 400px; width: 100%;">
+
+<img src="docs/wireframes-images/product_detail.png" alt = "Prestige Watche" style="height: 400px; width: 100%;">
+
++ Checkout design
+
+<img src="docs/wireframes-images/bag.png" alt = "Prestige Watche" style="height: 400px; width: 100%;">
+
+<img src="docs/wireframes-images/checkout.png" alt = "Prestige Watche" style="height: 400px; width: 100%;">
 
 + Blog Page design
 
-<img src="docs/wireframes-images/blog.png" alt = "Better | Health | Care" style="height: 400px; width: 100%;">
+<img src="docs/wireframes-images/blog.png" alt = "Prestige Watche" style="height: 400px; width: 100%;">
 
 + Review Page design
 
-<img src="docs/wireframes-images/reviews.png" alt = "Better | Health | Care" style="height: 400px; width: 100%;">
+<img src="docs/wireframes-images/reviews.png" alt = "Prestige Watche" style="height: 400px; width: 100%;">
 
 + Contact Page design
 
-<img src="docs/wireframes-images/contact.png" alt = "Better | Health | Care" style="height: 400px; width: 100%;">
+<img src="docs/wireframes-images/contact.png" alt = "Prestige Watches" style="height: 400px; width: 100%;">
+
+## Database Schema
+Lucid Charts was used to design the unique models used in this project.
+
+<img src="docs/readme-images/lucida.png" alt = "Prestige Watche" style="height: 400px; width: 100%;">
+
+## Colour Contrast
+The selection of the colours for the web page was chosen from Color Hex. The colour contrast tried to remain basic and have a good flow of similiar colours throughout the design. However most of my colour code was used via the Bootstrap contrast which was available from the framework, this included colour text and button colours. 
+
+<img src="docs/readme-images/Prestige_Watches.png" alt = "Color Contrast" style="height: 400px; width: 100%;">
+
+## Site Features 
