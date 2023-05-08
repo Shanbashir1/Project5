@@ -123,6 +123,24 @@
                    </div>
                </div>
            </div>
+            <!-- Delete the review the customer has added-->
+            <div class="modal fade" id="delete-review-{{review.id}}" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Delete Review</h5>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to delete your review?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal" aria-label="Close Modal">Close</button>
+                        <a href="delete_review/{{review.id}}" aria-label="Delete review {{review.id}}" class="btn btn-danger">Delete</a>
+                    </div>
+                </div>
+                </div>
+            </div>
            {% endif %}
                   {% if forloop.counter|divisibleby:1 %}
                   <div class="col-12 d-sm-none mb-5">
@@ -146,24 +164,6 @@
                   {% endif %}
                   {% endfor %}
                </div>
-        <!-- Delete the review the customer has added-->
-        <div class="modal fade" id="delete-review-{{review.id}}" tabindex="-1" aria-hidden="true">
-         <div class="modal-dialog">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title">Delete Review</h5>
-               </div>
-               <div class="modal-body">
-                  Are you sure you want to delete your review?
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary"
-                     data-bs-dismiss="modal" aria-label="Close Modal">Close</button>
-                  <a href="delete_review/{{review.id}}" aria-label="Delete review {{review.id}}" class="btn btn-danger">Delete</a>
-               </div>
-            </div>
-         </div>
-      </div>
       
 <!-- code taken from Code Institute Boutique Ado -->
 <div class="btt-button shadow-sm rounded-0 border border-black">

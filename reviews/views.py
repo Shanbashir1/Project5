@@ -46,12 +46,11 @@ class EditReview(SuccessMessageMixin, UpdateView):
 
 
 @login_required
-def delete_review(SuccessMessageMixin, request, review_id):
+def delete_review(request, review_id):
     """
-    Allows the use to delete the view
+    Delete User Review
     """
     reviews = get_object_or_404(Reviews, id=review_id)
     reviews.delete()
-    messages.success(request, "This review has been\
-         deleted successfully")
+    messages.success(request, "The review was deleted successfully")
     return redirect("reviews")
