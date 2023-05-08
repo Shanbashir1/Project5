@@ -30,7 +30,7 @@
     + [Sign Out Page](#sign-out-page)
     + [Error 404 Page](#error-404-page)
     + [Admin Page](#admin-page)
-
++ [User Interaction Messages](#user-interaction-messages)
 + [Future Features](#future-features)
 + [Testing](#testing)
 + [Technologies](#technologies)
@@ -310,13 +310,13 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 
 <img src="docs/readme-images/product_management.png" alt = "Product" style="height:300px; width: 100%;">
 
-## My Profile Page
+### My Profile Page
 + The profile page is available when the user logs in, the user is able to add his details and view a order history. By adding a profile the user does not need to add his details the next time they place an order, as the information is kept saved.
 + A "Update my delivery info" button is available to the user to acknowlege the changes. 
 
 <img src="docs/readme-images/myprofile.png" alt = "Profile" style="height:300px; width: 100%;">
 
-## Blog Page
+### Blog Page
 + The blog page is only administrated by the admin, who can add, delete and edit blogs. 
 + The user has the option to like the blogs. Once like the heart will have a number one selected. 
 
@@ -331,7 +331,7 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 
 <img src="docs/readme-images/blog_manage.png" alt = "Blog" style="height:200px; width: 100%;">
 
-## Customer Reviews Page
+### Customer Reviews Page
 + The customer review page is located in the Help navigation links. The user will scroll down fromt help section and select the customer review page. 
 + All logged in users will be able to created a review. The review will however need to be approved by the admin.
 + Once the review has been approved it will display on the customer review main page. 
@@ -349,12 +349,12 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 
 <img src="docs/readme-images/admin_review.png" alt = "Reviews" style="height:200px; width: 100%;">
 
-## Contact Us Page
+### Contact Us Page
 + A contact us page is available for users who need to get in touch with the store owners. They have to put their name, email, the subject and the overall message before sending the form, which is then sent to the admin for viewing. 
 
 <img src="docs/readme-images/contactus.png" alt = "Contact Us Page" style="height:300px; width: 100%;">
 
-## Sign Up Page
+### Sign Up Page
 + For first time users the user will need to register his/her details and submit the form. 
 + The form will then send a email, the user will need to verify the email so they can activate their account. 
 
@@ -371,7 +371,7 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 
 <img src="docs/readme-images/verify_2.png" alt = "Signup" style="height:100px; width: 100%;">
 
-## Sign In Page
+### Sign In Page
 
 + On the Login Page, users can log in to the website by inputting their username and password. The user is now registered and will have access to the Registered User website services.
 
@@ -379,18 +379,18 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 
 + Once signed in the user is naviagted the "Home Page".
 
-## Sign Out Page
+### Sign Out Page
 
 + On the Signout Page, users can confirm that they wish to exit the website.
 
 <img src="docs/readme-images/sign_out.png" alt = "SignOut" style="height:100px; width: 100%;">
 
-## Error 404 Page
+### Error 404 Page
 + A 404 page is also available to handle navigation errors with a home link button to take them back to the home page
 
 <img src="docs/readme-images/404_page.png" alt = "404 page" style="height:400px; width: 100%;">
 
-## Admin Page 
+### Admin Page 
 + The admin models contains a list of created models in the app.
 + The admin models has a list of action of data which has been inputed by the user.
 + Admin users have more functionality than regular users and have full CRUD functionality over information such as order, blogs, reviews, contact us feedbacks and profile information.
@@ -422,3 +422,6 @@ Product List Admin Page - Django Administration
 
 Customer Reviews Admin Page - Django Administration
 <img src="docs/readme-images/admin8.png" alt = "Admin page" style="height:150px; width: 100%;">
+
+
+## User Interaction Messages
