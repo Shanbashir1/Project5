@@ -29,6 +29,7 @@
     + [Sign In Page](#sign-in-page)
     + [Sign Out Page](#sign-out-page)
     + [Error 404 Page](#error-404-page)
+    + [Admin Page](#admin-page)
 
 + [Future Features](#future-features)
 + [Testing](#testing)
@@ -59,11 +60,10 @@ Some the key functions of the services are as below:
 + Login, Logout and Register Facility.
 + Admin to create, read, edit and delete Products.
 + Users to create, read, edit and delete reviews. 
-+ Login and Logout Facilities.
 + Create feedback via the Contact Us Page.
 + About Us page.
 + User to view blogs and able to like blogs.
-+ User to create comments, and function to delte comments. 
++ User to create comments, and function to delete comments. 
 + User to be able to like comments.
 
 <img src="docs/readme-images/am-i-responsive.png" alt = "Prestige|Watches" style="height: 400px; width: 100%;">
@@ -76,11 +76,11 @@ Some the key functions of the services are as below:
 1. As a site user I can create or edit my account so that I can update my details accordingly
 2. As a site user I can login in my account so that I can view my order history
 3. As a site user I can search for products so that I can find specific products
-4. As a site user I can sort products on criteria such as price and category so that I can I have a method of ordering the products products as I prefer
+4. As a site user I can sort products on criteria such as price and category so that I can I have a method of ordering the products which I prefer.
 5. As a site user I can browse through products so that I can decide what I may be interested in buying
 6. As a site user I can look at product details so that I can decide if I want to purchase it
 7. As a site user I can easily add products I want to purchase to a basket so that I can decide whether to purchase or not
-8. As a site user I can view the contents of my shopping basket so that I can be able to make any adjustments
+8. As a site user I can view the contents of my shopping basket so that I can be able to make any adjustments, if required. 
 9. As a site user I can update my bag by adding more or remove products so that I can decide on the number of products I intend to buy
 10. As a site user I can view my order summary so that I can verify it before confirming
 11. As a site user I can checkout securely so that I can I maintain the level of trust on the site
@@ -92,14 +92,14 @@ Some the key functions of the services are as below:
 17. As a site user I can add, view, delete and edit reviews which customers can view on the main site. 
 18. As a site user I can read the sites About us page
 19. As a site user I can like blogs and comments created by other users.
-20. As a site user I can view paginated reviews so that I can select which review to view
+20. As a site user I can view paginated reviews so that I can select which review to view.
 
 
 + Site Admin Experience
 1. As a admin I can manage users' accounts so that I can make any required changes to them if needed
 2. As a admin I can manage products so that I can add , update or delete products when necessary
-3. As a admin I can view created orders so that I can full fill the orders or amend if needed
-4. As a Admin I can delete any of comments so that I can remove them if I nolonger feel they are still necessary or needed
+3. As a admin I can view created orders so that I can full fill the orders or ammend if needed
+4. As a Admin I can delete any of comments so that I can remove them if I no longer feel they are still necessary or needed
 5. As a Admin I can view messages sent via contact form so that I can act upon them
 6. As an admin I can manage and create blogs for users to view and like. 
 7. As an admin I can manage the blog comments so that I can make amendments if needed
@@ -123,7 +123,7 @@ All my user stories were completed and succesfully actioned. The design was base
 
 
  ## Wireframes
-Balsamiq wireframes was used to design the wireframes in the design phase of this project. [Balsamiq Wireframes](https://balsamiq.cloud/sbwg9ys/pn79h8b/r2278?f=N4IgUiBcCMA0IDkpxAYWfAMhkAhHAsjgFo4DSUA2gLoC%2BQA%3D "Balsamiq Wireframes")
+Balsamiq wireframes was used to design the wireframes in the design phase of this project. [Balsamiq Wireframes - Click here to view the wireframes](https://balsamiq.cloud/sbwg9ys/pn79h8b/r2278?f=N4IgUiBcCMA0IDkpxAYWfAMhkAhHAsjgFo4DSUA2gLoC%2BQA%3D "Click here to view the wireframes")
 The wireframes was edited a few times during the project to be inline witht he project design, I had to make a few adjustments to the design, in order for the design to work. 
 
 + Home Page design
@@ -132,13 +132,13 @@ The wireframes was edited a few times during the project to be inline witht he p
 
 + Product Page design
 
-<img src="docs/wireframes-images/product.png" alt = "Prestige Watche" style="height: 400px; width: 100%;">
+<img src="docs/wireframes-images/product.png" alt = "Prestige Watche" style="height: 600px; width: 100%;">
 
-<img src="docs/wireframes-images/product_detail.png" alt = "Prestige Watche" style="height: 400px; width: 100%;">
+<img src="docs/wireframes-images/product_detail.png" alt = "Prestige Watche" style="height: 600px; width: 100%;">
 
 + Checkout design
 
-<img src="docs/wireframes-images/bag.png" alt = "Prestige Watche" style="height: 400px; width: 100%;">
+<img src="docs/wireframes-images/bag.png" alt = "Prestige Watche" style="height: 600px; width: 100%;">
 
 <img src="docs/wireframes-images/checkout.png" alt = "Prestige Watche" style="height: 600px; width: 100%;">
 
@@ -157,7 +157,7 @@ The wireframes was edited a few times during the project to be inline witht he p
 ## Database Schema
 Lucid Charts was used to design the unique models used in this project.
 
-<img src="docs/readme-images/lucida.png" alt = "Prestige Watche" style="height: 400px; width: 100%;">
+<img src="docs/readme-images/lucida.png" alt = "Prestige Watche" style="height: 450px; width: 100%;">
 
 ## Colour Contrast
 The selection of the colours for the web page was chosen from Color Hex. The colour contrast tried to remain basic and have a good flow of similiar colours throughout the design. However most of my colour code was used via the Bootstrap contrast which was available from the framework, this included colour text and button colours. 
@@ -167,14 +167,14 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 ## Site Features
 
 ### Favicon Icon 
-<img src="docs/readme-images/watch_favicon.png" alt = "Favicon" style="height: 200px; width: 40%;">
+<img src="docs/readme-images/watch_favicon.png" alt = "Favicon" style="height: 100px; width: 20%;">
 
 + The selected icon was a image of a watch. 
 + The image is displayed on all the pages, throughout the website to give a unique design for the users.
 + The favicon image is a design which contributes to the overall web design.
 
 ### Home Page
-<img src="docs/readme-images/home.png" alt = "Home" style="height:400px; width: 100%;">
+<img src="docs/readme-images/home.png" alt = "Home" style="height:300px; width: 100%;">
 
 + The home page is the first page the user lands on when visiting the site. 
 + The home page user the header and the delivery banner feature but does not include the footer. 
@@ -228,10 +228,10 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 6. Account Admin option - Allows the Admin user to view Product Management, Blog Management, My Profile and Add Reviews.
 
 + Account Navigation
-<img src="docs/readme-images/nav2.png" alt = "Menu" style="height:300px; width: 100%;">
+<img src="docs/readme-images/nav2.png" alt = "Menu" style="height:300px; width: 50%;">
 
 + Footer Navigations
-<img src="docs/readme-images/nav3.png" alt = "Menu" style="height:200px; width: 100%;">
+<img src="docs/readme-images/nav3.png" alt = "Menu" style="height:200px; width: 80%;">
 
 ### About Us Page
 + The About us page contains information of the companies information and history. 
@@ -239,12 +239,14 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 + The about us page contains information a shop now button which redirects the user to the products page. 
 
 
-<img src="docs/readme-images/about1.png" alt = "About" style="height:800px; width: 100%;">
-<img src="docs/readme-images/about2.png" alt = "About" style="height:800px; width: 100%;">
+<img src="docs/readme-images/about1.png" alt = "About" style="height:800px; width: 80%;">
+<img src="docs/readme-images/about2.png" alt = "About" style="height:800px; width: 80%;">
 
 ### Product Main Page
 + On this page, users will see all the products available on the website. All the watches will be displayed on the main page when the user has selected "All Products" or any other product relating links. 
+
 <img src="docs/readme-images/product1.png" alt = "Product" style="height:200px; width: 100%;">
+
 + The user will be able to sort the products and filter the requirements they would like to search by
 + Once the user selects the product he will be forwarded to the product detail page.
 
@@ -252,7 +254,7 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 
 + Mobile Devices View
 
-<img src="docs/readme-images/product2.png" alt = "Product" style="height:600px; width: 100%;">
+<img src="docs/readme-images/product2.png" alt = "Product" style="height:600px; width: 80%;">
 
 + If the user sign in via the admin login details they will be able to delete, add and edit the products page. 
 + Admin users will have the complete the rights to change and add products on the page. 
@@ -266,7 +268,7 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 + On this page the user will see the selected products with product descriptions and features. 
 +  The user will be able to select the quantity, which can be added and then removed using the "+" and "-" icons. 
 + There will also be 2 buttons, 1 button will allow the user to go back the products page to continue shopping, the other button will take the user to the bags page, displaying the qty and order details.  
-<img src="docs/readme-images/product6.png" alt = "Product" style="height:300px; width: 100%;">
+<img src="docs/readme-images/product6.png" alt = "Product" style="height:300px; width: 80%;">
 
 ### Product Shopping Bag Page
 + This feature is called the Shopping bag. Here, users can add products and quantities. Check the total price, and delivery costs and go to the secure checkout to finish the order. Before secure checkout. the user can also change the quantity and remove unwanted products. The user can also leave this page by pressing the button "Keep Shopping", if the user would like to continue than they will proceed to the "secure checkout" page.
@@ -277,7 +279,7 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 + On this page the user will need to enter his details and credit/debits cards details. The order will also be displayed. The total cost and delivery charges will also be visible to the user. 
 + The user will be able to "adjust the bag" or "complete order" via the buttons. 
 
-<img src="docs/readme-images/shopping_checkout.png" alt = "Product" style="height:300px; width: 100%;">
+<img src="docs/readme-images/shopping_checkout.png" alt = "Checkout" style="height:300px; width: 100%;">
 
 ### Product Shopping Checkout Success Page
 + Once the user has completed the checkout they will be direct to the success checkout page, with a receipt confirmation and order reference. The order confirmation will be displayed as follows: 
@@ -296,7 +298,11 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 + Order Total
 + Delivery
 + Grand Total
-<img src="docs/readme-images/checkout_success.png" alt = "Product" style="height:300px; width: 100%;">
+<img src="docs/readme-images/checkout_success.png" alt = "Checkout" style="height:300px; width: 100%;">
+
++ Email sent by the server - order confirmation. 
+<img src="docs/readme-images/email2.png" alt = "Checkout" style="height:500px; width: 100%;">
+
 
 ### Product Management Page
 + For Admin only 
@@ -358,6 +364,9 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 
 <img src="docs/readme-images/verify_signup.png" alt = "Signup" style="height:120px; width: 100%;">
 
++ Email sent by the server 
+<img src="docs/readme-images/email1.png" alt = "Signup" style="height:200px; width: 100%;">
+
 + Once user has accepted the link via his email, they redirected back to the site, and requested to verify the email address. 
 
 <img src="docs/readme-images/verify_2.png" alt = "Signup" style="height:100px; width: 100%;">
@@ -380,3 +389,36 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 + A 404 page is also available to handle navigation errors with a home link button to take them back to the home page
 
 <img src="docs/readme-images/404_page.png" alt = "404 page" style="height:400px; width: 100%;">
+
+## Admin Page 
++ The admin models contains a list of created models in the app.
++ The admin models has a list of action of data which has been inputed by the user.
++ Admin users have more functionality than regular users and have full CRUD functionality over information such as order, blogs, reviews, contact us feedbacks and profile information.
+Only approved admin users can access this section of the site. It is accessed by adding /admin to the URL home page and signing in.
++ The admin models have all user information, which was entered during sign in , orders etc. 
++ Inputed data can be deleted and edited by the admin. 
++ Orders, reviews, comments, blog and profile can be viewed by the admin and may requrie some approval before being published on the site. 
+
++ Main Admin Page - Django Administration
+<img src="docs/readme-images/admin1.png" alt = "Admin page" style="height:300px; width: 100%;">
+
+Email Address Admin Page - Django Administration
+<img src="docs/readme-images/admin2.png" alt = "Admin page" style="height:200px; width: 100%;">
+
+Blog Admin Page - Django Administration
+<img src="docs/readme-images/admin3.png" alt = "Admin page" style="height:150px; width: 100%;">
+
+Order Admin Page - Django Administration
+<img src="docs/readme-images/admin4.png" alt = "Admin page" style="height:200px; width: 100%;">
+
+Contact Us Message Admin Page - Django Administration
+<img src="docs/readme-images/admin5.png" alt = "Admin page" style="height:200px; width: 100%;">
+
+Product Category Admin Page - Django Administration
+<img src="docs/readme-images/admin6.png" alt = "Admin page" style="height:200px; width: 100%;">
+
+Product List Admin Page - Django Administration
+<img src="docs/readme-images/admin7.png" alt = "Admin page" style="height:250px; width: 100%;">
+
+Customer Reviews Admin Page - Django Administration
+<img src="docs/readme-images/admin8.png" alt = "Admin page" style="height:150px; width: 100%;">
