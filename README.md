@@ -425,3 +425,35 @@ Customer Reviews Admin Page - Django Administration
 
 
 ## User Interaction Messages
++ The site benefits from messages which alert the user of action they have completed. Below is not a exhausted list but shows some evidence of messages the user recieves. 
+
++ Checkout Success page for user ordering online. 
+<img src="docs/readme-images/checkout_success.png" alt = "Admin page" style="height:300px; width: 100%;">
+
++ Admin succesfully added blog on the blog page 
+<img src="docs/readme-images/add_blog.png" alt = "Admin page" style="height:400px; width: 70%;">
+
++ Admin succesfully delete product on the product page
+<img src="docs/readme-images/product_delete.png" alt = "Admin page" style="height:200px; width: 50%;">
+
++ Admin succesfully edit product on the product page
+<img src="docs/readme-images/product_edit.png" alt = "Admin page" style="height:200px; width: 80%;">
+
++ Customer review successfully waiting approval
+<img src="docs/readme-images/review_approval.png" alt = "Admin page" style="height:200px; width: 80%;">
+
++ Customer review successfully deleted
+<img src="docs/readme-images/review_delete.png" alt = "Admin page" style="height:200px; width: 70%;">
+
++ New user registers to the site 
+<img src="docs/readme-images/email_sent.png" alt = "Admin page" style="height:200px; width: 80%;">
+
+## Future Features
+While creating the Project, I realised that the vast input I could add to the design to allow it to have more functionalities. As we have all learnt the timescope involved limits the overall scope.
+
+What I could possibily add as a Future Feature? 
+
+1. Add more variety of products and create better categories for user to apply its search facilities. 
+2. Better products layout, with the limited time scope I was not abel to cut the images to the correct length, which resulted in the images being slighly off design and scope. However with limited time and resources the images would be much more user friendly. 
+3. User being able to add comments and reviews on the products page .
+4. Generally so much to add, to make the site much more efficient and user friendly. 
