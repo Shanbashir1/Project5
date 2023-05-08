@@ -32,6 +32,12 @@
     + [Admin Page](#admin-page)
 + [User Interaction Messages](#user-interaction-messages)
 + [Future Features](#future-features)
++ [Web Marketing](#web-marketing)
+    + [Facebook Page](#social-media)
+    + [Search engine optimization](#search-engine-optimization)
+         + [Sitemap.xml](#sitemap.xml)
+         + [Robots.txt](#robots.txt)
+    + [Mailchimp Email marketing](#mailchimp-email-marketing)
 + [Testing](#testing)
 + [Technologies](#technologies)
 + [Libraries](#libraries)
@@ -194,7 +200,7 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 + Clicking on the logo header will redirect the user to the home page. 
 
 ### Delivery Banner 
-<img src="docs/readme-images/banner.png" alt = "Delivery Banner" style="height:30px; width: 100%;">
+<img src="docs/readme-images/banner.png" alt = "Delivery Banner" style="height:70px; width: 100%;">
 
 + The delivery banner displays to the user a "Free delivery charge on orders over £1000"
 + The banner has been designed using a marquee, with floating text offer the free delivery charge. 
@@ -220,7 +226,7 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 <img src="docs/readme-images/nav1.png" alt = "Menu" style="height:60px; width: 100%;">
 
 + Site Navigation is available on both the header and the footer. 
-+ All Products, contains the following sub-headings, Price, Rating, Category, All Products, these links navigate the user to the relevant requirements. 
+1. All Products, contains the following sub-headings, Price, Rating, Category, All Products, these links navigate the user to the relevant requirements. 
 2. Special Offer, contains the following sub-headings, New Arrival, Sale, All Specials these links navigate the user to the relevant requirements. 
 3. Join our blog
 4. Help contains the following sub-headings, Contact Us, Customer Reviews and About Us these links navigate the user to the relevant requirements. 
@@ -358,14 +364,14 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 + For first time users the user will need to register his/her details and submit the form. 
 + The form will then send a email, the user will need to verify the email so they can activate their account. 
 
-<img src="docs/readme-images/signup.png" alt = "Reviews" style="height:200px; width: 100%;">
+<img src="docs/readme-images/signup.png" alt = "Reviews" style="height:250px; width: 100%;">
 
 + Verification required via email. With a success message. 
 
 <img src="docs/readme-images/verify_signup.png" alt = "Signup" style="height:120px; width: 100%;">
 
 + Email sent by the server 
-<img src="docs/readme-images/email1.png" alt = "Signup" style="height:200px; width: 100%;">
+<img src="docs/readme-images/email1.png" alt = "Signup" style="height:280px; width: 100%;">
 
 + Once user has accepted the link via his email, they redirected back to the site, and requested to verify the email address. 
 
@@ -375,7 +381,7 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 
 + On the Login Page, users can log in to the website by inputting their username and password. The user is now registered and will have access to the Registered User website services.
 
-<img src="docs/readme-images/sign_in.png" alt = "SignIn" style="height:100px; width: 100%;">
+<img src="docs/readme-images/sign_in.png" alt = "SignIn" style="height:180px; width: 100%;">
 
 + Once signed in the user is naviagted the "Home Page".
 
@@ -383,17 +389,39 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 
 + On the Signout Page, users can confirm that they wish to exit the website.
 
-<img src="docs/readme-images/sign_out.png" alt = "SignOut" style="height:100px; width: 100%;">
+<img src="docs/readme-images/sign_out.png" alt = "SignOut" style="height:180px; width: 100%;">
 
 ### Error 404 Page
 + A 404 page is also available to handle navigation errors with a home link button to take them back to the home page
 
 <img src="docs/readme-images/404_page.png" alt = "404 page" style="height:400px; width: 100%;">
 
+### Newsletter 
++ Users can sign up using their email to receive news, offers and deals straight into their inbox.
++ The newsletter link is located in the footer. 
++ The user will need to subscribe using their email address.
+
+<img src="docs/readme-images/newsletter.png" alt = "404 page" style="height:300px; width: 100%;">
+
+### Privacy Policy
++ The privacy policy is located in the footer 
++ The privacy is a GDPR policy which must be included in to sites which collect data and information of users. 
+
+<img src="docs/readme-images/privacy_policy.png" alt = "404 page" style="height:300px; width: 100%;">
+
+### Facebook Page
++ In terms of marketing, the site has a facebook page to push content and targets some of it's customers through content creation. 
+
+<img src="docs/readme-images/facebook.png" alt = "Facebook page" style="height:300px; width: 100%;">
+
++ The facebook page targets users and audience to attract further business.
+
+<img src="docs/readme-images/facebook2.png" alt = "Facebook page" style="height:300px; width: 100%;">
+
 ### Admin Page 
 + The admin models contains a list of created models in the app.
 + The admin models has a list of action of data which has been inputed by the user.
-+ Admin users have more functionality than regular users and have full CRUD functionality over information such as order, blogs, reviews, contact us feedbacks and profile information.
++ Admin users have more functionality than regular users and have full CRUD functionality over information such as products, order, blogs, reviews, contact us feedbacks and profile information.
 Only approved admin users can access this section of the site. It is accessed by adding /admin to the URL home page and signing in.
 + The admin models have all user information, which was entered during sign in , orders etc. 
 + Inputed data can be deleted and edited by the admin. 
@@ -418,35 +446,35 @@ Product Category Admin Page - Django Administration
 <img src="docs/readme-images/admin6.png" alt = "Admin page" style="height:200px; width: 100%;">
 
 Product List Admin Page - Django Administration
-<img src="docs/readme-images/admin7.png" alt = "Admin page" style="height:250px; width: 100%;">
+<img src="docs/readme-images/admin7.png" alt = "Admin page" style="height:400px; width: 100%;">
 
 Customer Reviews Admin Page - Django Administration
-<img src="docs/readme-images/admin8.png" alt = "Admin page" style="height:150px; width: 100%;">
+<img src="docs/readme-images/admin8.png" alt = "Admin page" style="height:180px; width: 100%;">
 
 
 ## User Interaction Messages
 + The site benefits from messages which alert the user of action they have completed. Below is not a exhausted list but shows some evidence of messages the user recieves. 
 
 + Checkout Success page for user ordering online. 
-<img src="docs/readme-images/checkout_success.png" alt = "Admin page" style="height:300px; width: 100%;">
+<img src="docs/readme-images/checkout_success.png" alt = "Message" style="height:300px; width: 100%;">
 
 + Admin succesfully added blog on the blog page 
-<img src="docs/readme-images/add_blog.png" alt = "Admin page" style="height:400px; width: 70%;">
+<img src="docs/readme-images/add_blog.png" alt = "Message" style="height:400px; width: 70%;">
 
 + Admin succesfully delete product on the product page
-<img src="docs/readme-images/product_delete.png" alt = "Admin page" style="height:200px; width: 50%;">
+<img src="docs/readme-images/product_delete.png" alt = "Message" style="height:200px; width: 50%;">
 
 + Admin succesfully edit product on the product page
-<img src="docs/readme-images/product_edit.png" alt = "Admin page" style="height:200px; width: 80%;">
+<img src="docs/readme-images/product_edit.png" alt = "Message" style="height:200px; width: 80%;">
 
 + Customer review successfully waiting approval
-<img src="docs/readme-images/review_approval.png" alt = "Admin page" style="height:200px; width: 80%;">
+<img src="docs/readme-images/review_approval.png" alt = "Message" style="height:200px; width: 80%;">
 
 + Customer review successfully deleted
-<img src="docs/readme-images/review_delete.png" alt = "Admin page" style="height:200px; width: 70%;">
+<img src="docs/readme-images/review_delete.png" alt = "Message style="height:200px; width: 70%;">
 
 + New user registers to the site 
-<img src="docs/readme-images/email_sent.png" alt = "Admin page" style="height:200px; width: 80%;">
+<img src="docs/readme-images/email_sent.png" alt = "Message" style="height:200px; width: 80%;">
 
 ## Future Features
 While creating the Project, I realised that the vast input I could add to the design to allow it to have more functionalities. As we have all learnt the timescope involved limits the overall scope.
@@ -457,3 +485,29 @@ What I could possibily add as a Future Feature?
 2. Better products layout, with the limited time scope I was not abel to cut the images to the correct length, which resulted in the images being slighly off design and scope. However with limited time and resources the images would be much more user friendly. 
 3. User being able to add comments and reviews on the products page .
 4. Generally so much to add, to make the site much more efficient and user friendly. 
+
+## Web Marketing 
+
+### Social Media
++ A facebook page was created to build community from the target market. Facebook is free and it also takes little to no time to set up and also it has so many users whom a business can strive to maintain a certain relationship, create content and connect with a target audience. 
+
+<img src="docs/readme-images/facebook.png" alt = "Facebook page" style="height:300px; width: 100%;">
+
+### Search engine optimization
++ Keywords SEO are important for search engines to pick up keywords while users are searching online. 
++ Below are some of the keywords I have used for the site 
+
+<img src="docs/readme-images/seo.png" alt = "SEO" style="height:200px; width: 100%;">
+
+#### Sitemap.xml 
++ A sitemap file with a list of important URLs was added to ensure that search engines are able to easily navigate through the site and understand its structure. This was made using XML-sitemaps.com by following the steps:
+1. Paste the URL of the deployed site into XML-sitemaps
+2. Download the XML sitemap file
+3. Add the file into the projects root folder, named as sitemap.xml
+
+#### Robots.txt
+A robots.txt file was created to tell search engines where not to go on the website and increase the quality of the site, ultimately improving the SEO rating.
+
+### Mailchimp Email Marketing
++ Users can subscribe to newsletters by entering their email address.
++ Email Marketing can alert users to special offers and important information. 
