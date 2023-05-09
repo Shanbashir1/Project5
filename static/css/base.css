@@ -180,7 +180,7 @@ input[name='q']::placeholder {
 
 /* index page, header text to flash */
 .blink_me {
-    animation: blinker 3s linear infinite;
+    animation: blinker 15s linear infinite;
     }
     
     @keyframes blinker {

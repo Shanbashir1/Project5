@@ -116,11 +116,11 @@
           {% include 'includes/main-nav.html' %}
       </nav>
   </div>
-    <div class="delivery-banner row text-center wrapper">
-        <div class="col bg-secondary text-white">
-        <marquee class="alternate text-uppercase"><i class="fa-solid fa-flip-horizontal fa-truck banner-icon"></i> We are pleased to inform you of a free delivery offer on orders over £{{ free_delivery_threshold }} !</marquee>              
-        </div>            
-    </div>
+  <div class="delivery-banner row text-center wrapper">
+    <div class="container-fluid">
+        <div class="blink_me text-uppercase text-warning"><i class="fa-solid fa-flip-horizontal fa-truck banner-icon text-secondary"></i> We are pleased to inform you of a free delivery offer on orders over £{{ free_delivery_threshold }} !</div>            
+    </div>            
+  </div>
 </header>
 {% if messages %}
 <div class="message-container">
@@ -249,7 +249,6 @@
   </script>
   {% endblock %}
 
-  
 </body>
 
 </html>
