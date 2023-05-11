@@ -513,4 +513,4 @@ A robots.txt file was created to tell search engines where not to go on the webs
 + Email Marketing can alert users to special offers and important information. 
 
 ## Testing
-All of the testing and validation for the project can be viewed here  [Testing and Validation](Testing.md)
+All of the testing and validation for the project can be viewed here  [Testing and Validation](TESTING.md)

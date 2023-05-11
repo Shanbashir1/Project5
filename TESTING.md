@@ -219,7 +219,7 @@ All code was checked via the CI Python Linter, all code received no errors and w
 
 Lighthouse was used to test Performance, Best Practices, Accessibility and SEO on Desktop.
 
-<img src="docs/test-images/lighthouse.png" alt = "Python" style="height:400px; width: 100%;">
+<img src="docs/test-images/lighthouse.png" alt = "Testing" style="height:400px; width: 100%;">
 
 + Some imporovements could of have been done, to make the score reach the high 90's, images sizes was the main factor with why the scores were quite low. These can be changed to have all the same class, which would improve the scores.
 
@@ -231,7 +231,7 @@ The project was tested on a multitude of devices: several iPhones, android phone
 
 ## Manual Testing
 ### Home Page 
-Manual Testing was carried out throughout the site to check the wether the site met the requirements of the expected results. 
+Manual Testing was carried out throughout the site to check the wether the site met the requirements of the expected results below. 
 
 | Element                    | Location       | Action          | Expected Result               | Pass/Fail |
 | -------------------------- | -------------- | --------------- | ----------------------------- | --------- |
@@ -247,3 +247,23 @@ Manual Testing was carried out throughout the site to check the wether the site 
 | My Account - Login Mode    | Navigation Bar | Click + Display | Display Logout, Add Review and My Profile              | Pass      |
 | Shop Now Button            | Navigation Bar | Click + Display | Direct user to All Products   | Pass      |
 
+<img src="docs/test-images/home.site.png" alt = "Testing" style="height:400px; width: 100%;">
+
+### Products Page
+Manual Testing was carried out throughout the site to check the wether the site met the requirements of the expected results below.
+
+| Element                    | Location       | Action          | Expected Result                                                    | Pass/Fail |
+| -------------------------- | -------------- | --------------- | -------------------------------------------------------------------| --------- |
+| Product Count              | Product Page   | Display         | Product Count to display total amount of product loaded on site    | Pass      |
+| Sort By Filter             | Product Page   | Click + Display | Filter by Price, Name, Category ascending and descending order     | Pass      |
+| Products                   | Product Page   | Display         | Display product image, name, price, gender, rating and brand       | Pass      |
+| Products Display           | Product Page   | Display         | Display 4 products on each line                                    | Pass      |
+| Product Detail Display     | Product detail | Display         | Display product image, name, price, gender, rating, brand, description, features, qty, keep shopping & add to bag button | Pass      |
+| Keep Shopping Button       | Product detail | Click + Direct  | Click keep shopping button redirects user to products page         | Pass      |
+| Add to bag button          | Product detail | Click + Display | Success Message, Mini checkout screen display with image and cost  | Pass      |
+| Add to bag button          | Product detail | Click + Display | Item added to shopping basket, basket updated with new cost        | Pass      |
+| Add to bag button          | Product detail | Click + Display | If order over £1000 user given free delivery                       | Pass      |
+| Quantity                   | Product detail | Click + Display | Qty increment working + = increase - = decrease qty                | Pass      |
+| Go to checkout button      | Product detail | Click + Display | Button taken user to bag page, display order details & costings    | Pass      |
+
+<img src="docs/test-images/testing1.png" alt = "Testing" style="height:400px; width: 100%;">
