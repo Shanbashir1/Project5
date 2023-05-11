@@ -20,16 +20,8 @@
         + Product App - [Product App](#product-app)
         + Profiles App - [Profiles App](#profile-app)
         + Reviews App - [Reviews App](#reviews-app)
-        + Manage.py - [Manage.py](#manage.py)
-
-    
-+ Lighthouse Testing 
-    + [Home Page](#lighthouse-testing---home-page)
-    + [About Us Page](#lighthouse-testing---about-us-page)
-    + [Booking Appointment Page](#lighthouse-testing---booking-appointment-page)
-    + [Manage Booking Page](#lighthouse-testing---manage-appointment-page)
-    + [Contact Us Page](#lighthouse-testing---contact-us-page)
-
+        + Manage.py - [Manage.py](#manage.py) 
++ [Lighthouse Testing](#lighthouse-testing)
 + [Browser Testing](#browser-testing)
 + [Device Testing](#device-testing)
 + [Manual Testing](#manual-testing)
@@ -223,6 +215,35 @@ All code was checked via the CI Python Linter, all code received no errors and w
 
 <img src="docs/test-images/manage.py.png" alt = "Python" style="height:260px; width: 100%;">
 
-
 ## Lighthouse Testing
+
+Lighthouse was used to test Performance, Best Practices, Accessibility and SEO on Desktop.
+
+<img src="docs/test-images/lighthouse.png" alt = "Python" style="height:400px; width: 100%;">
+
++ Some imporovements could of have been done, to make the score reach the high 90's, images sizes was the main factor with why the scores were quite low. These can be changed to have all the same class, which would improve the scores.
+
+## Browser Testing
+The project was tested extensively on Google Chrome and Safari browsers, where no browser compatibility issues came up.
+
+## Device Testing
+The project was tested on a multitude of devices: several iPhones, android phones, linux laptops and Macbook Pro. The website was properly responsive on all devices.
+
+## Manual Testing
+### Home Page 
+Manual Testing was carried out throughout the site to check the wether the site met the requirements of the expected results. 
+
+| Element                    | Location       | Action          | Expected Result               | Pass/Fail |
+| -------------------------- | -------------- | --------------- | ----------------------------- | --------- |
+| Site Logo                  | Navigation Bar | Click           | Redirect to home page         | Pass      |
+| Header Text                | Navigation Bar | Click           | Redirect to home page         | Pass      |
+| Search bar                 | Navigation Bar | Click + Search  | Product item is searched      | Pass      |
+| My Account - Logout Mode   | Navigation Bar | Click + Display | Display Login & Register      | Pass      |
+| Checkout basket            | Navigation Bar | Click + Display | Display £0.00, direct to bag page | Pass      |
+| All Product Links          | Navigation Bar | Click + Display | Scroll down display options and direct user to directed searches         | Pass      |
+| Special Offer Links        | Navigation Bar | Click + Display | Scroll down display options and direct user to directed searches         | Pass      |
+| Join our Blog              | Navigation Bar | Click + Display | Direct user to blog page      | Pass      |
+| Help Links                 | Navigation Bar | Click + Display | Scroll down display options and direct user to directed pages           | Pass      |
+| My Account - Login Mode    | Navigation Bar | Click + Display | Display Logout, Add Review and My Profile              | Pass      |
+| Shop Now Button            | Navigation Bar | Click + Display | Direct user to All Products   | Pass      |
 

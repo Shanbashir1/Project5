@@ -511,3 +511,6 @@ A robots.txt file was created to tell search engines where not to go on the webs
 ### Mailchimp Email Marketing
 + Users can subscribe to newsletters by entering their email address.
 + Email Marketing can alert users to special offers and important information. 
+
+## Testing
+All of the testing and validation for the project can be viewed here  [Testing and Validation](Testing.md)
