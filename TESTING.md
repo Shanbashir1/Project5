@@ -10,15 +10,17 @@
     + Javascript 
         + [JShint](#javascript--jquery-using-jshint)
     + Python Pep8 Online Checker
-        + Main App - [URLs](#main-app---better-health-care---urls-file)
-        + Booking App - [Admin File](#booking-app---admin-file)
-        + Booking App - [Form File](#booking-app---form-file)
-        + Booking App - [Urls File](#booking-app---urls-file)
-        + Booking App - [Views File](#booking-app---views-file)
-        + Contact App - [Urls File](#contact-app---urls-file)
-        + Contact App - [Forms File](#contact-app---form-file)
-        + Contact App - [Models File](#contact-app---models-file)
-        + Contact App - [Views File](#contact-app---views-file)
+        + Bag App - [Bag App](#bag-app)
+        + Checkout App - [Checkout App](#checkout-app)
+        + Blog App - [Blog App](#blog-app)
+        + Contact Us App - [Contact Us App](#contact-us-app)
+        + Home App - [Home App](#home-app)
+        + Newsletter App - [Newsletter App](#newsletter-app)
+        + Prestige_Watches App - [Main App](#prestige_watches-app)
+        + Product App - [Product App](#product-app)
+        + Profiles App - [Profiles App](#profile-app)
+        + Reviews App - [Reviews App](#reviews-app)
+        + Manage.py - [Manage.py](#manage.py)
 
     
 + Lighthouse Testing 
@@ -80,13 +82,13 @@ All my pages was checked via nu-html-checker, initally i got 25 errors, mostly d
 All my check for Javascript and JQuery was checked using JShint. I received no errors or warning at the time of checking the code. The code was checked by pasting in the relevant scripts in to Jshint and checking for errors. 
 
 + Jshint Validator
-<img src="docs/test-images/jshint1.png" alt = "Jshint" style="height:220px; width: 100%;">
+<img src="docs/test-images/jshint1.png" alt = "Jshint" style="height:280px; width: 100%;">
 
-<img src="docs/test-images/jshint2.png" alt = "Jshint" style="height:220px; width: 100%;">
+<img src="docs/test-images/jshint2.png" alt = "Jshint" style="height:280px; width: 100%;">
 
-<img src="docs/test-images/jshint3.png" alt = "Jshint" style="height:220px; width: 100%;">
+<img src="docs/test-images/jshint3.png" alt = "Jshint" style="height:280px; width: 100%;">
 
-<img src="docs/test-images/jshint4.png" alt = "Jshint" style="height:150px; width: 100%;">
+<img src="docs/test-images/jshint4.png" alt = "Jshint" style="height:250px; width: 100%;">
 
 ## Python - PEP8 Online checker (Code Institute Version)
 
@@ -96,82 +98,131 @@ All code was checked via the CI Python Linter, all code received no errors and w
 
 + For the bag app the CI Python Linter was used to check the python code, for the following files Urls.py, Context.py and Views.py.
 
-<img src="docs/test-images/bag_urls.png" alt = "Python" style="height:150px; width: 100%;">
+<img src="docs/test-images/bag_urls.png" alt = "Python" style="height:250px; width: 100%;">
 
-<img src="docs/test-images/bag_context.png" alt = "Python" style="height:150px; width: 100%;">
+<img src="docs/test-images/bag_context.png" alt = "Python" style="height:250px; width: 100%;">
 
-<img src="docs/test-images/bag_views.png" alt = "Python" style="height:150px; width: 100%;">
+<img src="docs/test-images/bag_views.png" alt = "Python" style="height:250px; width: 100%;">
 
 ### Checkout App
 
 + For the checkout app the CI Python Linter was used to check the python code, for the following files Urls.py, Context.py, signals, admin, webhooks and views.
 
-<img src="docs/test-images/checkout_url.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/checkout_url.png" alt = "Python" style="height:260px; width: 100%;">
 
-<img src="docs/test-images/checkout_form.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/checkout_form.png" alt = "Python" style="height:260px; width: 100%;">
 
-<img src="docs/test-images/checkout_signal.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/checkout_signal.png" alt = "Python" style="height:260px; width: 100%;">
 
-<img src="docs/test-images/checkout_views.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/checkout_views.png" alt = "Python" style="height:260px; width: 100%;">
 
-<img src="docs/test-images/checkout_webhook_handler.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/checkout_webhook_handler.png" alt = "Python" style="height:260px; width: 100%;">
 
-<img src="docs/test-images/checkout_webhook.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/checkout_webhook.png" alt = "Python" style="height:260px; width: 100%;">
 
 ### Blog App
 
 + For the blog app the CI Python Linter was used to check the python code, for the following files Urls.py, signals, widget, admin and views.
 
-<img src="docs/test-images/blog_admin.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/blog_admin.png" alt = "Python" style="height:260px; width: 100%;">
 
-<img src="docs/test-images/blog_form.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/blog_form.png" alt = "Python" style="height:260px; width: 100%;">
 
-<img src="docs/test-images/blog_models.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/blog_models.png" alt = "Python" style="height:260px; width: 100%;">
 
-<img src="docs/test-images/blog_url.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/blog_url.png" alt = "Python" style="height:260px; width: 100%;">
 
-<img src="docs/test-images/blog_view.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/blog_view.png" alt = "Python" style="height:260px; width: 100%;">
 
-<img src="docs/test-images/blog_widget.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/blog_widget.png" alt = "Python" style="height:260px; width: 100%;">
 
 ### Contact Us App
 
 + For the contact us app the CI Python Linter was used to check the python code, for the following files Urls.py, signals, widget, admin and views.
 
-<img src="docs/test-images/contact_form.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/contact_form.png" alt = "Python" style="height:260px; width: 100%;">
 
-<img src="docs/test-images/contact_admin.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/contact_admin.png" alt = "Python" style="height:260px; width: 100%;">
 
-<img src="docs/test-images/contact_model.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/contact_model.png" alt = "Python" style="height:260px; width: 100%;">
 
-<img src="docs/test-images/contact_views.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/contact_views.png" alt = "Python" style="height:260px; width: 100%;">
 
 ### Home App
 
 + For the home app the CI Python Linter was used to check the python code, for the following files Urls.py and Views.py.
 
-<img src="docs/test-images/home_views.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/home_views.png" alt = "Python" style="height:260px; width: 100%;">
 
-<img src="docs/test-images/home_url.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/home_url.png" alt = "Python" style="height:260px; width: 100%;">
 
 ### Newsletter App 
 
 + For the newsletter app the CI Python Linter was used to check the python code, for the following files Urls.py and Views.py.
 
-<img src="docs/test-images/newsletter_view.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/newsletter_view.png" alt = "Python" style="height:260px; width: 100%;">
 
-<img src="docs/test-images/newsletter_url.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/newsletter_url.png" alt = "Python" style="height:260px; width: 100%;">
 
 ### Prestige_Watches App (Main)
 
 + For the main app the CI Python Linter was used to check the python code, for the following files setting, Urls.py and views.
 
-<img src="docs/test-images/main_setting.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/main_setting.png" alt = "Python" style="height:260px; width: 100%;">
 
 + I had few errors/warnings on the settings.py which displayed that some lines were too long, however after getting confirmation from Tutor Support, I was advised these can be left alone, as these were on not to be edited as they were involved with the django auth_password validators. 
 
-<img src="docs/test-images/main_url.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/main_url.png" alt = "Python" style="height:260px; width: 100%;">
 
-<img src="docs/test-images/main_view.png" alt = "Python" style="height:200px; width: 100%;">
+<img src="docs/test-images/main_view.png" alt = "Python" style="height:260px; width: 100%;">
 
+### Product App
++ For the main app the CI Python Linter was used to check the python code, for the following files admin, forms, models, urls, views and widgets.
+
+<img src="docs/test-images/product_admin.png" alt = "Python" style="height:260px; width: 100%;">
+
+<img src="docs/test-images/product_form.png" alt = "Python" style="height:260px; width: 100%;">
+
+<img src="docs/test-images/product_model.png" alt = "Python" style="height:260px; width: 100%;">
+
+<img src="docs/test-images/product_url.png" alt = "Python" style="height:260px; width: 100%;">
+
+<img src="docs/test-images/product_views.png" alt = "Python" style="height:260px; width: 100%;">
+
+<img src="docs/test-images/product_widgets.png" alt = "Python" style="height:260px; width: 100%;">
+
+### Profiles App
++ For the main app the CI Python Linter was used to check the python code, for the following files admin, forms, models, urls and views.
+
+<img src="docs/test-images/profile_form.png" alt = "Python" style="height:260px; width: 100%;">
+
+<img src="docs/test-images/profile_model.png" alt = "Python" style="height:260px; width: 100%;">
+
+<img src="docs/test-images/profile_url.png" alt = "Python" style="height:260px; width: 100%;">
+
+<img src="docs/test-images/profile_views.png" alt = "Python" style="height:260px; width: 100%;">
+
+### Reviews App
++ For the main app the CI Python Linter was used to check the python code, for the following files admin, forms, models, urls and views.
+
+<img src="docs/test-images/reviews_admin.png" alt = "Python" style="height:260px; width: 100%;">
+
+<img src="docs/test-images/reviews_form.png" alt = "Python" style="height:260px; width: 100%;">
+
+<img src="docs/test-images/reviews_model.png" alt = "Python" style="height:260px; width: 100%;">
+
+<img src="docs/test-images/reviews_url.png" alt = "Python" style="height:260px; width: 100%;">
+
+<img src="docs/test-images/reviews_views.png" alt = "Python" style="height:260px; width: 100%;">
+
+<img src="docs/test-images/reviews_widgets.png" alt = "Python" style="height:260px; width: 100%;">
+
+
+### Manage.py
++ The manage.py was also checked using the CI Python Linter.
+
+<img src="docs/test-images/manage.py.png" alt = "Python" style="height:260px; width: 100%;">
+
+
+## Lighthouse Testing
 
