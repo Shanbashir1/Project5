@@ -51,3 +51,127 @@
     + [Unfixed Bugs](#unfixed-bugs)
 
 ## Testing & Validation Checks 
+
+## HTML Testing using NU-HTML-CHECKER
+
++ Testing Mode - No Warnings and Errors
+
+<img src="docs/test-images/nu-html1.png" alt = "Nu HTML Checker" style="height:280px; width: 100%;">
+
++ Deployed Mode - No Warnings and Errors
+
+<img src="docs/test-images/nu-html2.png" alt = "Nu HTML Checker" style="height:280px; width: 100%;">
+
+All my pages was checked via nu-html-checker, initally i got 25 errors, mostly due to unclosed div tags or stray tags, these were quickly rectified and the code was rechecked and recieved no errors or warnings. The main error I had was a marquee tag I used for the banner, the marquee is no longer a valid tag and so I had to remove it and change this over. 
+
+## CSS Validator using JIGSAW.W3
+
++ Base CSS checker by direct input - Found no errors
+<img src="docs/test-images/css-validator.png" alt = "CSS Validator" style="height:220px; width: 100%;">
+
++ Checkout CSS checker by direct input - Found no errors
+<img src="docs/test-images/css-validator2.png" alt = "CSS Validator" style="height:220px; width: 100%;">
+
++ Full deployed site - Found no errors
+<img src="docs/test-images/css-validator3.png" alt = "CSS Validator" style="height:220px; width: 100%;">
+
+## Javascript & JQuery using JSHINT
+
+All my check for Javascript and JQuery was checked using JShint. I received no errors or warning at the time of checking the code. The code was checked by pasting in the relevant scripts in to Jshint and checking for errors. 
+
++ Jshint Validator
+<img src="docs/test-images/jshint1.png" alt = "Jshint" style="height:220px; width: 100%;">
+
+<img src="docs/test-images/jshint2.png" alt = "Jshint" style="height:220px; width: 100%;">
+
+<img src="docs/test-images/jshint3.png" alt = "Jshint" style="height:220px; width: 100%;">
+
+<img src="docs/test-images/jshint4.png" alt = "Jshint" style="height:150px; width: 100%;">
+
+## Python - PEP8 Online checker (Code Institute Version)
+
+All code was checked via the CI Python Linter, all code received no errors and warnings. 
+
+### Bag App
+
++ For the bag app the CI Python Linter was used to check the python code, for the following files Urls.py, Context.py and Views.py.
+
+<img src="docs/test-images/bag_urls.png" alt = "Python" style="height:150px; width: 100%;">
+
+<img src="docs/test-images/bag_context.png" alt = "Python" style="height:150px; width: 100%;">
+
+<img src="docs/test-images/bag_views.png" alt = "Python" style="height:150px; width: 100%;">
+
+### Checkout App
+
++ For the checkout app the CI Python Linter was used to check the python code, for the following files Urls.py, Context.py, signals, admin, webhooks and views.
+
+<img src="docs/test-images/checkout_url.png" alt = "Python" style="height:200px; width: 100%;">
+
+<img src="docs/test-images/checkout_form.png" alt = "Python" style="height:200px; width: 100%;">
+
+<img src="docs/test-images/checkout_signal.png" alt = "Python" style="height:200px; width: 100%;">
+
+<img src="docs/test-images/checkout_views.png" alt = "Python" style="height:200px; width: 100%;">
+
+<img src="docs/test-images/checkout_webhook_handler.png" alt = "Python" style="height:200px; width: 100%;">
+
+<img src="docs/test-images/checkout_webhook.png" alt = "Python" style="height:200px; width: 100%;">
+
+### Blog App
+
++ For the blog app the CI Python Linter was used to check the python code, for the following files Urls.py, signals, widget, admin and views.
+
+<img src="docs/test-images/blog_admin.png" alt = "Python" style="height:200px; width: 100%;">
+
+<img src="docs/test-images/blog_form.png" alt = "Python" style="height:200px; width: 100%;">
+
+<img src="docs/test-images/blog_models.png" alt = "Python" style="height:200px; width: 100%;">
+
+<img src="docs/test-images/blog_url.png" alt = "Python" style="height:200px; width: 100%;">
+
+<img src="docs/test-images/blog_view.png" alt = "Python" style="height:200px; width: 100%;">
+
+<img src="docs/test-images/blog_widget.png" alt = "Python" style="height:200px; width: 100%;">
+
+### Contact Us App
+
++ For the contact us app the CI Python Linter was used to check the python code, for the following files Urls.py, signals, widget, admin and views.
+
+<img src="docs/test-images/contact_form.png" alt = "Python" style="height:200px; width: 100%;">
+
+<img src="docs/test-images/contact_admin.png" alt = "Python" style="height:200px; width: 100%;">
+
+<img src="docs/test-images/contact_model.png" alt = "Python" style="height:200px; width: 100%;">
+
+<img src="docs/test-images/contact_views.png" alt = "Python" style="height:200px; width: 100%;">
+
+### Home App
+
++ For the home app the CI Python Linter was used to check the python code, for the following files Urls.py and Views.py.
+
+<img src="docs/test-images/home_views.png" alt = "Python" style="height:200px; width: 100%;">
+
+<img src="docs/test-images/home_url.png" alt = "Python" style="height:200px; width: 100%;">
+
+### Newsletter App 
+
++ For the newsletter app the CI Python Linter was used to check the python code, for the following files Urls.py and Views.py.
+
+<img src="docs/test-images/newsletter_view.png" alt = "Python" style="height:200px; width: 100%;">
+
+<img src="docs/test-images/newsletter_url.png" alt = "Python" style="height:200px; width: 100%;">
+
+### Prestige_Watches App (Main)
+
++ For the main app the CI Python Linter was used to check the python code, for the following files setting, Urls.py and views.
+
+<img src="docs/test-images/main_setting.png" alt = "Python" style="height:200px; width: 100%;">
+
++ I had few errors/warnings on the settings.py which displayed that some lines were too long, however after getting confirmation from Tutor Support, I was advised these can be left alone, as these were on not to be edited as they were involved with the django auth_password validators. 
+
+<img src="docs/test-images/main_url.png" alt = "Python" style="height:200px; width: 100%;">
+
+<img src="docs/test-images/main_view.png" alt = "Python" style="height:200px; width: 100%;">
+
+
