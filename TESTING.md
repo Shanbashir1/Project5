@@ -32,11 +32,11 @@
     + [Contact Us Page](#contact-us-page)
     + [Reviews Page](#reviews-page)
     + [Profile Page](#profile-page)
+    + [404 Error Page](#404-error-page)
     + [Login Page](#login-page)
     + [Register Page](#register-page)
     + [Logout Page](#logout)
     + [Django Admin Page](#admin-page)
-    + [404 Error Page](#404-error-page)
 
 + [Automated Testing](#automated-testing)
 
@@ -360,4 +360,104 @@ Manual Testing was carried out throughout the site to check the whether the site
 | Order History              | Profile Page   | Display         | View order History and click order number to see checkout success  | Pass      |
 
 
-<img src="docs/test-images/profile.png" alt = "Testing" style="height:200px; width: 100%;">
+<img src="docs/test-images/profile.png" alt = "Testing" style="height:300px; width: 100%;">
+
+### Login Page
+Manual Testing was carried out throughout the site to check the whether the site met the requirements of the expected results below.
+
+| Element                    | Location       | Action          | Expected Result                                                    | Pass/Fail |
+| -------------------------- | -------------- | --------------- | -------------------------------------------------------------------| --------- |
+| Username                   | Sign In Page   | Display & Fill  | If field not completed then directed to field to be filled         | Pass      |
+| Password                   | Sign In Page   | Display & Fill  | If field not completed then directed to field to be filled         | Pass      |
+| Remember me                | Sign In Page   | Display & Fill  | Able to tick to remember login details                             | Pass      |
+| Home Button                | Sign In Page   | Redirect page   | Page is redirected back to the home page                           | Pass      |
+| Sign In Button             | Sign In Page   | Sign In         | Sign in using the credentials - page success                       | Pass      |
+| Once_signed_in             | Sign In Page   | Display         | You have successfully signed in as {first_name}                    | Pass      |
+| Forgot Password            | Sign In Page   | Display & Fill  | Fill email address to be emailed a link to reset password          | Pass      |
+
+<img src="docs/test-images/login.png" alt = "Testing" style="height:300px; width: 100%;">
+
+### Register Page
+
+| Element         | Location      | Action           | Expected Result                                                              | Pass/Fail |
+| --------------- | ------------- | ---------------- | ---------------------------------------------------------------------------- | --------- |
+| Username        | Register Page | Insert Data      | 1\. Field fill in compulsary                                                 | Pass      |
+| Email           | Register Page | Insert Data      | 1\. Field fill in optional                                                   | Pass      |
+| Password        | Register Page | Insert Data      | 1\. Field fill in compulsary                                                 | Pass      |
+| Password(again) | Register Page | Insert Data      | 1\. Field fill in compulsary - same as password                              | Pass      |
+| Sign Up Button  | Register Page | Click, Send data | Once information has been submitted correctly the form is sent to Admin Page | Pass      |
+| Once_Registered | Home Page     | Success Message  | Success message and keep user signed in                                      | Pass      |
+
+<img src="docs/test-images/register.png" alt = "Testing" style="height:300px; width: 100%;">
+
+
+### Logout
+| Element         | Location    | Action          | Expected Result                       | Pass/Fail |
+| --------------- | ----------- | --------------- | ------------------------------------- | --------- |
+| Main Page       | Logout Page | View            | Display logout page confirmation      | Pass      |
+| Sign Out Button | Logout Page | Click + Logout  | Log user out                          | Pass      |
+| Sign Out Button | Logout Page | Success Message | Successfully Logged out               | Pass      |
+| Sign Out Button | Home Page   | Home Page       | Redirect to Home page once logged out | Pass      
+
+<img src="docs/readme-images/sign_out.png" alt = "Login" style="height:300px; width: 100%;">
+
+### 404 Error Page
+
+| Element           | Location | Action          | Expected Result                                                                       | Pass/Fail |
+| ----------------- | -------- | --------------- | ------------------------------------------------------------------------------------- | --------- |
+| Page not found    | 404 Page | View            | Any page not recognised or typing error the page will direct the user to the 404 page | Pass      |
+| Url error         | 404 page | view            | Any URL not correctly displayed will take the user to the 404 page                    | Pass      |
+| Home Page Buttton | 404 page | Click + Display | The home page button redirects the user from the 404 page back to the home page       | Pass      |
+
+<img src="docs/readme-images/404_page.png" alt = "Admin" style="height:300px; width: 100%;">
+
+
+### Admin Page
+
++ Admin data for Join our Blog Page 
+
+<img src="docs/test-images/blog_test.png" alt = "Admin" style="height:300px; width: 100%;">
+
++ Comments data for Join our blog Page
+
+<img src="docs/test-images/comment_test.png" alt = "Admin" style="height:300px; width: 100%;">
+
++ Admin data for Contact Page
+
+<img src="docs/test-images/contact_test.png" alt = "Admin" style="height:300px; width: 100%;">
+
++ Admin data for Register Email Address
+
+<img src="docs/test-images/email_test.png" alt = "Admin" style="height:300px; width: 100%;">
+
++ Admin data for Confirmed Orders 
+
+<img src="docs/test-images/orders_test.png" alt = "Admin" style="height:300px; width: 100%;">
+
++ Admin data for uploaded products
+
+<img src="docs/test-images/product_test.png" alt = "Admin" style="height:300px; width: 100%;">
+
++ Admin data for customer reviews - also waiting for approval
+
+<img src="docs/test-images/reviews_test.png" alt = "Admin" style="height:300px; width: 100%;">
+
++ Admin data for users registered 
+
+<img src="docs/test-images/user_test.png" alt = "Admin" style="height:300px; width: 100%;">
+
+| Element         | Location      | Action           | Expected Result                                                              | Pass/Fail |
+| --------------- | ------------- | ---------------- | ---------------------------------------------------------------------------- | --------- |
+| Email Address   | Admin Page    | Post Data        | Registered email address display in the admin panel                          | Pass      |
+| User            | Admin Page    | Post Data        | Registered users display in the admin panel                                  | Pass      |
+| Comments        | Admin Page    | Post Data        | Returned comments display in the admin panel                                 | Pass      |
+| Blog            | Admin Page    | Post Data        | Blogs created by the admin only can be viewed her and created her            | Pass      |
+| Checkout Orders | Admin Page    | Post Data        | Orders placed by user which are successful are displayed here                | Pass      |
+| Contact         | Admin Page    | Post Data        | Returned comments display in the admin panel                                 | Pass      |
+| Products        | Admin Page    | Post Data        | Uploaded products are displayed here, they can be edited and deleted         | Pass      |
+| Reviews         | Admin Page    | Post Data        | Customer reviews can be viewed her but require approval                      | Pass      |
+
+
+## Automated Testing 
+
+I managed to get some automated tests done for my project. Ideally I wanted to use the automated testing way of coding as this prevents writing additional code which may not be required. However they way I started my project, prevented me from this approach. Automated Testing is handy in case packages need upgrading, or major changes to the app are made. In this case, automated tests can be run first, to find obvious errors caused by the changes. After that, manual testing should still be performed.
