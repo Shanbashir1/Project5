@@ -26,12 +26,12 @@
 + [Device Testing](#device-testing)
 + [Manual Testing](#manual-testing)
     + [Home Page](#home-page)
-    + [About Us Page](#about-us-page)
-    + [Booking Appointment Page](#booking-appointment-page)
-    + [Manage Appointment Page](#manage-appointment-page)
-    + [Update Appointment Page](#update-appointment-page)
-    + [Delete Appointment Page](#delete-appointments-page)
+    + [Product Page and Bag Page](#product-page--bag-page)
+    + [Checkout Page](#checkout-page)
+    + [Join Our Blog Page](#join-our-blog)
     + [Contact Us Page](#contact-us-page)
+    + [Reviews Page](#reviews-page)
+    + [Profile Page](#profile-page)
     + [Login Page](#login-page)
     + [Register Page](#register-page)
     + [Logout Page](#logout)
@@ -231,7 +231,7 @@ The project was tested on a multitude of devices: several iPhones, android phone
 
 ## Manual Testing
 ### Home Page 
-Manual Testing was carried out throughout the site to check the wether the site met the requirements of the expected results below. 
+Manual Testing was carried out throughout the site to check the whether the site met the requirements of the expected results below. 
 
 | Element                    | Location       | Action          | Expected Result               | Pass/Fail |
 | -------------------------- | -------------- | --------------- | ----------------------------- | --------- |
@@ -249,8 +249,8 @@ Manual Testing was carried out throughout the site to check the wether the site 
 
 <img src="docs/test-images/home.site.png" alt = "Testing" style="height:400px; width: 100%;">
 
-### Products Page
-Manual Testing was carried out throughout the site to check the wether the site met the requirements of the expected results below.
+### Product Page & Bag Page
+Manual Testing was carried out throughout the site to check the whether the site met the requirements of the expected results below.
 
 | Element                    | Location       | Action          | Expected Result                                                    | Pass/Fail |
 | -------------------------- | -------------- | --------------- | -------------------------------------------------------------------| --------- |
@@ -267,3 +267,97 @@ Manual Testing was carried out throughout the site to check the wether the site 
 | Go to checkout button      | Product detail | Click + Display | Button taken user to bag page, display order details & costings    | Pass      |
 
 <img src="docs/test-images/testing1.png" alt = "Testing" style="height:400px; width: 100%;">
+
+### Checkout Page
+Manual Testing was carried out throughout the site to check the whether the site met the requirements of the expected results below.
+
+| Element                    | Location       | Action          | Expected Result                                                    | Pass/Fail |
+| -------------------------- | -------------- | --------------- | -------------------------------------------------------------------| --------- |
+| Checkout Page              | Checkout Page  | Display         | Order details and totals, a form to show customer details and card information| Pass      |
+| First Name Field           | Checkout Page  | Display & Fill  | If field not completed then directed to field to be filled         | Pass      |
+| Email Field                | Checkout Page  | Display & Fill  | If field not completed then directed to field to be filled         | Pass      |
+| Delivery Field             | Checkout Page  | Display & Fill  | If field not completed then directed to field to be filled         | Pass      |
+| Card Field                 | Checkout Page  | Display & Fill  | If field not completed or entered incorrectly the field is rejected and directed to field to be re-filled         | Pass      |
+| Complete Order Button      | Checkout Page   | Click + Direct | Click complete order button redirects user to checkout success     | Pass      |
+| Checkout Success           | Checkout success| Display        | Success Message and form showing users completed order             | Pass      |
+| Checkout out offers button | Checkout success| Click + Direct | Direct the user to the product special offer page                  | Pass      |
+| Order sent to user email   | Checkout success| Form Sent      | Order confirmation sent to the user via email                      | Pass      |
+| Order saved in Admin       | Admin           | Form Sent      | Order send to admin panel                                          | Pass      |
+
+<img src="docs/test-images/checkout_success.png" alt = "Testing" style="height:400px; width: 100%;">
+
+### Join Our Blog
+Manual Testing was carried out throughout the site to check the whether the site met the requirements of the expected results below.
+
+| Element                    | Location       | Action          | Expected Result                                                    | Pass/Fail |
+| -------------------------- | -------------- | --------------- | -------------------------------------------------------------------| --------- |
+| Join our blog page         | Blog Page      | Display         | Display blog post from admin                                       | Pass      |
+| Features                   | Blog Page      | Display         | Display blog title, header, date, time, author and like icon       | Pass      |
+| Blog                       | Post Blog      | Click + Direct  | When clicked user is direct to blog                                | Pass      |
+| Post Blog                  | Post Blog      | Display         | Display blog, date, time created on, author, likes and description of blog.    | Pass      |
+| Product Detail Display     | Product detail | Display         | Display product image, name, price, gender, rating, brand, description, features, qty, keep shopping & add to bag button | Pass      |
+| Blog Home Page button      | Post Blog      | Click + Direct  | When clicked user is direct to blog                                | Pass      |
+| User Logged Out Mode       | Post Blog      | Display         | Unable to comment or like blogs and comments. Request user to login| Pass      |
+| User Logged In Mode        | Post Blog      | Click + Login   | User able to like comments and blogs, user able to write comments  | Pass      |
+| Login Button               | Post Blog      | Click + Direct  | User redirected to sign in page                                    | Pass      |
+| Comments                   | Post Blog      | Display         | Display date, time created on, and like option                     | Pass      |
+| Pagination                 | Blog Page      | Display         | Display 4 blogs on a page, paginated to 4 blogs, next & previous page working | Pass      |
+
+
+<img src="docs/readme-images/join_blog.png" alt = "Testing" style="height:400px; width: 100%;">
+
+### Contact Us Page 
+Manual Testing was carried out throughout the site to check the whether the site met the requirements of the expected results below.
+
+| Element                    | Location       | Action          | Expected Result                                                    | Pass/Fail |
+| -------------------------- | -------------- | --------------- | -------------------------------------------------------------------| --------- |
+| First Name Field           | Contact Us     | Display & Fill  | If field not completed then directed to field to be filled         | Pass      |
+| Last Name Field            | Contact Us     | Display & Fill  |If field not completed then directed to field to be filled          | Pass      |
+| Email Field                | Contact Us     | Display & Fill  | If field not completed then directed to field to be filled         | Pass      |
+| Subject Field              | Contact Us     | Display & Fill  | If field not completed then directed to field to be filled         | Pass      |
+| Message Field              | Contact Us     | Display & Fill  | If field not completed then directed to field to be filled         | Pass      |
+| Send Button                | Contact Us     | Click & Display | If any field not completed then directed to fields to be filled    | Pass      |
+| Form Post                  | Contact Us     | Post            | Post form to admin panel for viewing                               | Pass      |
+
+<img src="docs/test-images/contact_error.png" alt = "Testing" style="height:200px; width: 100%;">
+
+### Reviews Page 
+Manual Testing was carried out throughout the site to check the whether the site met the requirements of the expected results below.
+
+| Element                    | Location       | Action          | Expected Result                                                    | Pass/Fail |
+| -------------------------- | -------------- | --------------- | -------------------------------------------------------------------| --------- |
+| Reviews                    | Review Page    | Display         | Display review by, created on, subject, rating stars, review and image|     Pass      |
+| User Logged Out Mode       | Review Page    | Display         | Unable to edit/delete a created review                             | Pass      |
+| User Logged Out Mode       | Account Icon   | Display         | Unable to add a review                                             | Pass      |
+| User Logged In Mode        | Account Icon   | Display         | Able to add a review                                               | Pass      |
+| User Logged In Mode        | Review Page    | Display         | Able to edit and delete a review                                   | Pass      |
+| Logged in Edit review      | Review Page    | Click & Redirect| Click edit review, redirect page to edit review and view form      | Pass      |
+| Edit review                | Edit Review    | Click & Display | Make changes to edit form and submit form using button, POST changes| Pass      |
+| Submit Button              | Edit Review    | Click & Redirect| Submit button and page directed to review page, POST FORM          | Pass      |
+| Delete Review              | Review Page    | Click & Delete  | Delete review, display success message confirming deletion         | Pass      |
+| Delete Review              | Review Page    | Display         | Remove delete review                                               | Pass      |
+| Add Review                 | Account Icon   | Click & Redirect| Remove delete review                                               | Pass      |
+| Title Field                | Add Review     | Display & Fill  | If field not completed then directed to field to be filled         | Pass      |
+| Customer Review Field      | Add Review     | Display & Fill  | If field not completed then directed to field to be filled         | Pass      |
+| Rating Field               | Add Review     | Display & Fill  | If field not completed then directed to field to be filled         | Pass      |
+| Select Image Field         | Add Review     | Display & Fill  | If field not completed then directed to field to be filled         | Pass      |
+| Submit Button              | Add Review     | Click & Display | If any field not completed then directed to fields to be filled    | Pass      |
+| Form Post                  | Add Review     | Post            | Post form to admin panel for viewing                               | Pass      |
+| Success Message            | Add Review     | Message         | Waiting for approval success message                               | Pass      |
+
+<img src="docs/test-images/delete_review.png" alt = "Testing" style="height:200px; width: 100%;">
+
+### Profile Page 
+Manual Testing was carried out throughout the site to check the whether the site met the requirements of the expected results below.
+
+| Element                    | Location       | Action          | Expected Result                                                    | Pass/Fail |
+| -------------------------- | -------------- | --------------- | -------------------------------------------------------------------| --------- |
+| Profile Page               | Profile Page   | Display         | User information is saved and view order history if user is logged in| Pass    |
+| User Logged Out Mode       | Profile Page   | Display         | Unable to view profile                                             | Pass      |
+| User Logged In Mode        | Profile Page   | Display & Fill  | Able to update profile page and view existing orders               | Pass      |
+| Update Button              | Profile Page   | Submit Form     | Update profile information for user                                | Pass      |
+| Form sent                  | Profile Page   | Form send       | Updated information send to the admin panel                        | Pass      |
+| Order History              | Profile Page   | Display         | View order History and click order number to see checkout success  | Pass      |
+
+
+<img src="docs/test-images/profile.png" alt = "Testing" style="height:200px; width: 100%;">
