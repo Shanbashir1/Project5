@@ -514,3 +514,214 @@ A robots.txt file was created to tell search engines where not to go on the webs
 
 ## Testing
 All of the testing and validation for the project can be viewed here  [Testing and Validation](TESTING.md)
+
+
+## AWS Setup Process
+
+### Create AWS S3 Bucket
+The deployed site uses AWS S3 Buckets to store the webpages static and media files. More information on how you can set up an AWS S3 Bucket can be found below:
+1. Create an AWS account [Aws Account](https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26state%3DhashArgsFromTB_eu-north-1_2d47c418cc545d17&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=idLMXSYzWM_UznrYO8-wN9DkMOqXbVBiEDfrbGcwHHc&code_challenge_method=SHA-256)
+2. Login to your account and within the search bar type in "S3".
+3. Within the S3 page click on the button that says "Create Bucket".
+4. Name the bucket and select the region which is closest to you.
+5. Underneath "Object Ownership" select "ACLs enabled".
+6. Uncheck "Block Public Access" and acknowledge that the bucket will be made public, then click "Create Bucket".
+7. Inside the created bucket click on the "Properties" tab. Below "Static Website Hosting" click "Edit" and change the Static website hosting option to "Enabled". Copy the default values for the index and error documents and click "Save Changes".
+8. Click on the "Permissions" tab, below "Cross-origin Resource Sharing (CORS)", click "Edit" and then paste in the following code:
+
+```
+  [
+      {
+          "AllowedHeaders": [
+          "Authorization"
+          ],
+          "AllowedMethods": [
+          "GET"
+          ],
+          "AllowedOrigins": [
+          "*"
+          ],
+          "ExposeHeaders": []
+      }
+  ]
+  ```
+  9. Within the "Bucket Policy" section. Click "Edit" and then "Policy Generator". Click the "Select Type of Policy" dropdown and select "S3 Bucket Policy" and within "Principle" allow all principals by typing "*".
+  10. Within the "Actions" dropdown menu select "Get Object" and in the previous tab copy the "Bucket ARN number". Paste this within the policy generator within the field labelled "Amazon Resource Name (ARN)".
+  11. Click "Add statement > Generate Policy" and copy the policy that's been generated and paste this into the "Bucket Policy Editor".
+  12. Before saving, add /* at the end of your "Resource Key", this will allow access to all resources within the bucket.
+  13. Once saved, scroll down to the "Access Control List (ACL)" and click "Edit".
+  14. Next to "Everyone (public access)", check the "list" checkbox and save your changes.
+
+### Create IAM
+1. Search for IAM within the AWS navigation bar and select it.
+2. Click "User Groups" that can be seen in the side bar and then click "Create group" and name the group 'manage-your-project-name'.
+3. Click "Policies" and then "Create policy".
+4. Navigate to the JSON tab and click "Import Managed Policy", within here search "S3" and select "AmazonS3FullAccess" followed by "Import".
+5. Navigate back to the recently created S3 bucket and copy your "ARN Number". Go back to "This Policy" and update the "Resource Key" to include your ARN Number, and another line with your ARN followed by a "/*".
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "s3-object-lambda:*"
+            ],
+            "Resource": [
+                "YOUR-ARN-NO-HERE",
+                "YOUR-ARN-NO-HERE/*"
+            ]
+        }
+    ]
+}
+```
+6. Ensure the policy has been given a name and a short description, then click "Create Policy".
+7. Click "User groups", and then the group you created earlier. Under permissions click "Add Permission" and from the dropdown click "Attach Policies".
+8. Select "Users" from the sidebar and click "Add User".
+9. Provide a username and check "Programmatic Access", then click 'Next: Permissions'.
+10. Ensure your policy is selected and navigate through until you click "Add User".
+11. Download the "CSV file", which contains the user's access key and secret access key.
+
+### Inside your Terminal and Workspace 
++ Inside your terminal install the following, using the below commands. 
+```
+  pip3 install boto3
+  pip3 install django-storages 
+```
+
++ Freeze the requirements.txt file by using the following command 
+```
+pip3 freeze > requirements.txt
+```
+
++ Add "storages" to your installed apps within your settings.py file.
++ At the bottom of the settings.py file add the following code:
+```
+if 'USE_AWS' in os.environ:
+    AWS_STORAGE_BUCKET_NAME = 'insert-bucket-name-here'
+    AWS_S3_REGION_NAME = 'insert-your-region-here'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+```
+
++ Add the following keys within your Heroku Settings Convig Vars: 
+```
+"AWS_ACCESS_KEY_ID" and "AWS_SECRET_ACCESS_KEY". These can be found in your CSV file.
+```
+
++ Add the key "USE_AWS", and set the value to True within Heroku.
+Remove the "DISABLE_COLLECTSTAIC" variable from Heroku.
+
++ Within your settings.py file inside the code just written add:
+```  
+AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
+Inside the settings.py file inside the bucket config if statement add the following lines of code:
+STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+STATICFILES_LOCATION = 'static'
+DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+MEDIAFILES_LOCATION = 'media'
+
+STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
+AWS_S3_OBJECT_PARAMETERS = {
+    'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+    'CacheControl': 'max-age=94608000',
+}
+```
+
++ In the root directory of your project create a file called "custom_storages.py". Import the following at the top of this file and add the classes below:
+```
+  from django.conf import settings
+  from storages.backends.s3boto3 import S3Boto3Storage
+
+  class StaticStorage(S3Boto3Storage):
+    location = settings.STATICFILES_LOCATION
+
+  class MediaStorage(S3Boto3Storage):
+    location = settings.MEDIAFILES_LOCATION
+
+```
+
++ Navigate back to you AWS S3 Bucket and click on "Create Folder" name this folder "media", within the media file click "Upload > Add Files" and select the images for your site.
++ Under "Permissions" select the option "Grant public-read access" and click "Upload".
+
+## Stripe
+Stripe is a online payment system to allow online payments, using credit/debit cards. Store owners will need to register for a stripe account, in order to use it's services. To register with stripe you can visit their site [via this link -- STRIPE](https://dashboard.stripe.com/login)
+
++ The site contains lots of useful documentation and codes to get you started up, once registered you will be able to easily set up test payments and use a developer account to test payments etc. 
+
+### Webhooks 
+1. To set up a webhook, sign into your stripe account and click 'Developers' located in the top right of the navbar.
+
+2. Then in the side-nav under the Developers title, click on "Webhooks", then "Add endpoint".
+
+3. On the next page you will need to input the link to your heroku app followed by /checkout/wh/. It should look something like this:
+
+    ```
+    https://your-app-name.herokuapp.com/checkout/wh/
+    ```
+4. Then click "+ Select events" and check the "Select all events" checkbox at the top before clicking "Add events" at the bottom. Once this is done finish the form by clicking "Add endpoint".
+
+5. Your webhook is now created and you should see that it has generated a secret key. You will need this to add to your heroku config vars.
+
+6. On your Heroku app navigate to the config vars section under settings. You will need the secret key you have just generated for your webhook, in addition to your Publishable key and secret key that you can find in the API keys section back in stripe.
+
+Add these values under these keys:
+
+    ```
+    STRIPE_PUBLIC_KEY = 'insert your stripe publishable key'
+    STRIPE_SECRET_KEY = 'insert your secret key'
+    STRIPE_WH_SECRET = 'insert your webhooks secret key'
+
+    Finally, back in your settings.py file in django, insert the following near the bottom of the file:
+
+    STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+    STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+    STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+    ```
+
+
++ Below is successful working webhook response page. 
+
+<img src="docs/readme-images/webhooks.png" alt = "Webhooks" style="height:300px; width: 100%;">
+
+## Technologies
++ HTML - for the structure of the website
++ CSS - to provide styling to the page.
++ JavaScript
++ Python - to write all the logic of the app
++ Django - used as main framework for the app, which both all backend and most frontend elements are built on.
++ Django-allauth: for handing all user models and login functionality.
++ Amazon AWS - was used to host the static files and media
++ Django-crispy-forms: for making the django forms look better.
++ ElephantSQL - used to manage a PostgreSQL database.
++ Bootstrap - Widely used for the design of the site
++ Jquery - to allow some functions to delay or prompt messages.
++ Lucidchart used to make a database diagram.
++ Gitpod - used to connect a browser based VScode to github.
++ Github - used for version control and deployment of the website.
++ Heroku - to deploy the app.
++ CI PEP8 Online Checker - Check all Python code and ammend errors and warnings.
++ JShint - used to validate javascript/Jquery.
++ NuHtmlChecker - used to validate HTML.
++ W3C Jigsaw - CSS checker.
++ Lighthouse - To check the following aspects of a URL: Performance, Progressive Web App, Accessibility, Best Practices and SEO.
++ Google Developer Tools - to view pages on different media screens and ammend changes as developing.
++ Balsamiq Wireframes
+Responsive design
++ HTML Viewer - Code Beautify
+
+## Libraries
+### Packages/Modules Installed
++ Gunicorn as the server for Heroku
++ Dj_database_url to parse the database URL from the environment variables in Heroku
++ Psycopg2 as an adaptor for Python and PostgreSQL databases
+Summernote as a text editor
++ Allauth for authentication, registration and account management
++ Stripe for processing all online and credit card purchases on the website
++ Crispy Forms to style the forms
++ Pillow to process and save all the images downloaded through the database
++ Bootstrap frameworks was used to style the website, add responsiveness and interactivity 
+
