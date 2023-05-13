@@ -725,3 +725,76 @@ Summernote as a text editor
 + Pillow to process and save all the images downloaded through the database
 + Bootstrap frameworks was used to style the website, add responsiveness and interactivity 
 
+## Deployment of This Project
+
+I developed this site on Gitpod, using git for version control. Then deployed to Heroku using the following steps
+
++ Log in to Heroku or create an account [via this link -- Heroku](https://id.heroku.com/login)
+
++ Click New and Create New App
+
++ Select your region.
+
++ Click Create App button
+
+You will then need to create a database to connect to the new created app. We have used ElephantSQL [via this link -- ElephantSQL](https://www.elephantsql.com/)
+
++ Login to ElephantSQL
+
++ Create new instance
+
++ Set up your plan - Give the plan a name and select Tiny Turtle free plan
+
++ Select region button
+
++ Select a data center near you. My selected region was eu-west2
+
++ Click Review
+
++ Click Create instance
+
++ Return to elephantsql dashboard, click on database instance name
+
++ In the url section, clicking the copy icon will copy the database url to the clipboard
+
++ Go back to Heroku to your created app, go to Settings
+
++ Add config var DATABASE-URL, and for the value, copy in your databse url from ElephantSQL. do not add quotation marks around your database
+
++ In Gitpod install dj-database_url and psycopg2 to connect to your external database
+
++ Update requirements.txt: pip freeze > requirements
+
++ Import dj_database_url in settings and update your database
+
++ Migrate your database
+
++ Create a new superuser for your database and at this point your database is exposed do not commit it to github
+
++ Install gunicorn and freeze into the requirements file
+
++ Then create Procfile
+
++ DISABLE_COLLECTSTATIC
+
++ Commit and push to github
+
++ On your app in Heroku go to Deploy and connect it to github and search your repository, click connect.
+
++ Choose automatic deployment
+
++ When complete click View to open the deployed app.
+
+## Github 
+### Forking
++ Open GitHub page that hosts the repository you wish to fork.
++ Find the 'Fork' button at the top right of the page
++ Once you click the button the fork will be in your repository
+### Cloning
++ Open Go to the repository page on Github
++ Click on the green button that says "Code".
++ You can choose to download a zip file of the repository, unpack it on your local machine, and open it in your IDE.
++ Copy the URL under the HTTPS tab to clone using https.
++ In a new window, and set the current directory to the one you want to contain the clone from.
++ Type git clone and paste the URL copied from the GitHub page.
++ The repository clone will now be created on your machine.
