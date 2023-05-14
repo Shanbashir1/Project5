@@ -725,6 +725,16 @@ Summernote as a text editor
 + Pillow to process and save all the images downloaded through the database
 + Bootstrap frameworks was used to style the website, add responsiveness and interactivity 
 
+## Security Features and Defensive Design
+### User authentication
++ Django's all auth was used for login and sign up functionality.
++ Django's superuser is used to limit access to admin panel.
+### Form Feature & Validation
++ Crispy Form was used for the front end.
++ Extensive form validation is used on front end as well as backend.
+### Database Security
+All secret keys connecting to the database are stored in a env.py file that is never pushed to github. Furthermore, Cross-Site Request Forgery (CSFR) tokens were used on all forms throughout the project.
+
 ## Deployment of This Project
 
 I developed this site on Gitpod, using git for version control. Then deployed to Heroku using the following steps
@@ -798,3 +808,30 @@ You will then need to create a database to connect to the new created app. We ha
 + In a new window, and set the current directory to the one you want to contain the clone from.
 + Type git clone and paste the URL copied from the GitHub page.
 + The repository clone will now be created on your machine.
+
+## Credits
+A list of my credits are below
+
++ Code Institue Learning guide and past coding examples
++ Boutique Ado Project
++ Django Blog Project
++ Testing Module for Code Institue
++ Learn Django Youtube
++ Learn Python, Youtube
++ Python Automated Testing - Youtube
++ W3schools.com - Help with Python coding.
++ Stackoverflow.com - help with coding, by visiting past forums.
++ Slack - support from colleagues and mentors
++ Thorin - Flask Walkthrough Project for Bootstrap ideas
++ Pexels.com for Images
++ Rolex Watches for images 
++ Goldsmith.co.uk for text information
++ Django Framework Documentation.
++ Bootstrap Documentation
++ Other Google watches websites.
+
+## Acknowledgement
++ My mentor Rohit Sharma @rohit_mentor - Great advice and support throughout my project journey, I was guided well with plenty of advise and support.
++ Tutor Suport - So much help from a wide diversity of tutors. They were able to support me in good time and made me realise when things became difficult.
++ Slack - Always so much help from colleagues, the level of support is undoubtedly amazing.
++ Finally my family who have been with me always, I have been through so much up and down with this course. At times I wanted to quit but then at times I wanted to give it my all. I learnt so much by taking this course, not only coding knowledge but a way of life. When things got tough I became even more determine to compelete the course, I would wake up in the middle of the night and battle through the course, even despite my hectic life, my personal problems, today typing these words, make my proud, that I never gave up. I hope now my life improves for the best. Firstly, Thank you God and then Code Institue for all your support. 

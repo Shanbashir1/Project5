@@ -7,4 +7,4 @@ class TestViews(TestCase):
     def test_get_contact(self):
         response = self.client.get("/contactus")
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'index.html')
+        self.assertTemplateUsed(response, 'base.html')

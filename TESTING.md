@@ -460,4 +460,33 @@ Manual Testing was carried out throughout the site to check the whether the site
 
 ## Automated Testing 
 
-I managed to get some automated tests done for my project. Ideally I wanted to use the automated testing way of coding as this prevents writing additional code which may not be required. However they way I started my project, prevented me from this approach. Automated Testing is handy in case packages need upgrading, or major changes to the app are made. In this case, automated tests can be run first, to find obvious errors caused by the changes. After that, manual testing should still be performed.
+I managed to get some automated tests done for my project. Ideally I wanted to much more automated tested but I was informed for this project that automated testing is not a necessity. Automated was done on most of the apps. I have attached coverage reports for the some of the app, which automated testing was carried out for.
+
++ To undertake Automated Testing the following code need to be entered in the Database section, any other code need to be commented out so the testing can take place. 
+```
+   DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+```
+
+
++ Coverage report for blog app
+
+<img src="docs/test-images/coverage_blog.png" alt = "Automated Testing" style="height:300px; width: 100%;">
+
++ Coverage report for contact us app
+
+<img src="docs/test-images/coverage_contact.png" alt = "Automated Testing" style="height:300px; width: 100%;">
+
++ Coverage report for Main app
+
+<img src="docs/test-images/coverage_main_app.png" alt = "Automated Testing" style="height:300px; width: 100%;">
+
++ Coverage report for Reviews app
+
+<img src="docs/test-images/coverage_reviews.png" alt = "Automated Testing" style="height:300px; width: 100%;">
+
+
