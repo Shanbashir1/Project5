@@ -17,20 +17,18 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container-fluid d-flex flex-column">
+<div class="container">
     <div class="row">
-        <div class="col text-center">
-            <hr class="w-50 mb-1">
-            <h2 class="mb-4 text-black"><i class="fa-solid fa-envelopes-bulk fa-beat"></i> Blog Management</h2>
-            <p class="text-primary">Add Blog</p>
+        <div class="col-12 col-md-6">
+            <hr>
+            <h2 class="logo-font mb-4"><i class="fa-solid fa-wrench fa-beat"></i> Blog Management</h2>
+            <h5 class="text-success small">Add a blog as:</h5>
+            <h5 class="text-black small"><i class="fas fa-user text-primary"></i> {{ user }}</h5>
             <hr>
         </div>
     </div>
-</div>
-</div>
-    <div class="col-md-8 mt-3 offset-md-2">
-        <div class="row">
-            <div class="col text-center">
+    <div class="row">
+        <div class="col-12 col-md-6">
                 <form action="{% url 'add_blog' %}" method="POST" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
@@ -40,14 +38,12 @@
                     {{ field }}
                     {% endif %}
                     {% endfor %}
-                    <div class="col">
-                        <a class="btn btn-danger" href="{% url 'blog' %}">Cancel</a>
-                        <button type="submit" class="btn btn-success">Save</button>
-                    </div>
-                </form>
+                <a class="btn btn-danger" href="{% url 'blog' %}">Cancel</a>
+                <button type="submit" class="btn btn-success">Save</button>
             </div>
-        </div>
+        </form>
     </div>
+</div>
 {% endblock %}
 {% block postloadjs %}
 {{ block.super }}

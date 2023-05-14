@@ -16,8 +16,8 @@
         <div class="row">
             <div class="col-12 col-md-6">
                 <hr>
-                <h2 class="logo-font mb-4">Product Management</h2>
-                <h5 class="text-muted">Add a Product</h5>
+                <h5 class="text-success small">Add a product as:</h5>
+                <h5 class="text-black small"><i class="fas fa-user text-primary"></i> {{ user }}</h5>
                 <hr>
             </div>
         </div>
@@ -33,10 +33,8 @@
                     {{ field }}
                     {% endif %}
                     {% endfor %}
-                    <div class="col text-center">
-                        <a class="btn btn-danger" href="{% url 'products' %}">Cancel</a>
-                        <button type="submit" class="btn btn-success">Save</button>
-                    </div>
+                    <a class="btn btn-danger" href="{% url 'products' %}">Cancel</a>
+                    <button type="submit" class="btn btn-success">Save</button>
                 </form>
             </div>            
         </div>

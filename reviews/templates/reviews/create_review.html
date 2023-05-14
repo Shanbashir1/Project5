@@ -8,29 +8,29 @@
         <div class="col"></div>
     </div>
 </div>
+</div>
 {% endblock %}
 
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container-fluid flex-column">
-        <div class="row">
-            <div class="col text-center">
-                <hr>
-                <h2 class="mb-4 text-black mt-3"><i class="fa-solid fa-envelopes-bulk fa-beat"></i> Create Reviews</h2>
-                <hr>
-            <div class="col-12 text-center">
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <hr>
+            <h2 class="logo-font mb-4"><i class="fa-solid fa-wrench fa-beat"></i> Create Reviews</h2>
             {% if reviews %}
-            <h4 class="mt-30 text-primary">Edit Review:</h4>
-            <p class="text-black"><i class="fas fa-user text-primary"></i> {{ user.username  | slice:":10" }}</p>
+            <h5 class="text-success small">Edit a review as :</h5>
+            <h5 class="text-black small"><i class="fas fa-user text-primary"></i> {{ user.username  | slice:":10" }}</h5>
             {% else %}
-            <h4 class="mt-30 text-primary">Add a Review:</h4>
-            <p class="text-black"><i class="fas fa-user text-primary"></i> {{ user.username  | slice:":10" }}</p>
+            <h5 class="text-success small">Add a review as :</h5>
+            <h5 class="text-black small"><i class="fas fa-user text-primary"></i> {{ user.username  | slice:":10" }}</h5>
             {% endif %}
+            <hr>
         </div>
     </div>
-</div>
-    <div class="col md-12 text-center">
+
+    <div class="col-12 col-md-6">
         {% if reviews %}
         <h3 class="mb-4 text-black">We Value Customer Feedback</h3>
         {% else %}
@@ -44,23 +44,18 @@
         <p class="text-black">Then please make us aware, so we can improve on any service which is not of a 5 star rating.</p>
         <p class="text-black">Thank You</p>
         <p class="text-info">Prestige|Watches</p>
-    </div>
-</div>
-    <div class="col-md-8 mt-3 offset-md-2">
-        <div class="row">
-            <div class="col text-center">
-                <form method="post" enctype="multipart/form-data">
-                {% csrf_token %}
-                {% for field in form %}
-                {% if field.name != 'image' %}
-                {{ field | as_crispy_field }}
-                {% else %}
-                {{ field }}
-                {% endif %}
-                {% endfor %}
-                    <button class="btn btn-success mb-4" type="submit" value="Save" aria-label="Submit Review">Submit</button>
-                </form>
-            </div>
+
+        <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% for field in form %}
+        {% if field.name != 'image' %}
+        {{ field | as_crispy_field }}
+        {% else %}
+        {{ field }}
+        {% endif %}
+        {% endfor %}
+        <button class="btn btn-success mb-4" type="submit" value="Save" aria-label="Submit Review">Submit</button>
+        </form>
         </div>
     </div>
 {% endblock %}

@@ -5,48 +5,45 @@
 {% block extra_title %} Edit Blog {% endblock %}
 
 {% block page_header %}
-<div class="overlay">
+
 <div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
+   <div class="row">
+      <div class="col"></div>
+   </div>
 </div>
+
 {% endblock %}
-
-
 {% block content %}
+
+<!-- Edit Blog section-->
 <div class="overlay"></div>
-<div class="container-fluid flex-column">
-        <div class="row">
-            <div class="col text-center">
-            <hr>
-            <h2 class="mb-4 text-black"><i class="fa-solid fa-wrench fa-beat"></i> Blog Management</h2>
-            <p class="text-danger">Edit Blog</p>
-            <hr>
-        </div>
-</div>
-</div>
-        
-    <div class="col-md-8 mt-3 offset-md-2">
-        <div class="row">
-            <div class="col text-center">
-                <form action="{% url 'edit_blog' post.slug %}" method="POST" class="form mb-2"
-                    enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {% for field in postForm %}
-                    {% if field.name != 'image' %}
-                    {{ field | as_crispy_field }}
-                    {% else %}
-                    {{ field }}
-                    {% endif %}
-                    {% endfor %}
-                    <div class=" col text-center">
-                        <a class="btn btn-danger" href="{% url 'blog' %}">Cancel</a>
-                        <button type="submit" class="btn btn-success">Save</button>
-                        <hr>
-                    </div>
-                </form>
-            </div>
+<div class="container">
+   <div class="row">
+      <div class="col-12 col-md-6">
+         <hr>
+         <h2 class="sub-title mb-4 text-black"><i class="fa-solid fa-wrench fa-beat"></i> Blog Management</h2>
+         <h5 class="text-success small">Edit a Blog as:</h5>
+         <h5 class="text-black small"><i class="fas fa-user text-primary"></i> {{ user }}</h5>
+         <hr>
+      </div>
+   </div>
+   <div class="row">
+    <div class="col-12 col-md-6">
+            <form action="{% url 'edit_blog' post.slug %}" method="POST" class="form mb-2"
+                enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in postForm %}
+                {% if field.name != 'image' %}
+                {{ field | as_crispy_field }}
+                {% else %}
+                {{ field }}
+                {% endif %}
+                {% endfor %}
+                <a class="btn btn-danger" href="{% url 'blog' %}">Cancel</a>
+                <button type="submit" class="btn btn-success">Save</button>
+                    <hr>
+            </form>
         </div>
     </div>
+</div>
 {% endblock %}

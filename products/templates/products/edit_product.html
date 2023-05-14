@@ -17,9 +17,9 @@
    <div class="row">
       <div class="col-12 col-md-6">
          <hr>
-         <h2 class="sub-title mb-4 text-black">Product Management</h2>
-         <h5 class="text-black">Edit a Product as:</h5>
-         <h5 class="text-uppercase text-black"><i class="fas fa-user text-primary"></i> {{ user }}</h5>
+         <h2 class="sub-title mb-4 text-black"><i class="fa-solid fa-wrench fa-beat"></i> Product Management</h2>
+         <h5 class="text-success small">Edit a product as:</h5>
+         <h5 class="text-black small"><i class="fas fa-user text-primary"></i> {{ user }}</h5>
          <hr>
       </div>
    </div>
@@ -34,10 +34,8 @@
             {{ field }}
             {% endif %}
             {% endfor %}
-            <div class="text-center">
-               <a href="{% url 'products' %}" aria-label="Go to the products page" class="btn btn-danger">Cancel</a>
-               <button class="btn btn-success" type="submit" aria-label="Update Product">Update Product</button>
-            </div>
+            <a href="{% url 'products' %}" aria-label="Go to the products page" class="btn btn-danger">Cancel</a>
+            <button class="btn btn-success" type="submit" aria-label="Update Product">Update Product</button>
          </form>
       </div>
    </div>
