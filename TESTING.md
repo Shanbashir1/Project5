@@ -489,4 +489,33 @@ I managed to get some automated tests done for my project. Ideally I wanted to m
 
 <img src="docs/test-images/coverage_reviews.png" alt = "Automated Testing" style="height:300px; width: 100%;">
 
+## Bugs 
 
+### Fixed Bugs 
+
+| Element         | Location      | Action           | Expected Result                                                              | Pass/Fail |
+| --------------- | ------------- | ---------------- | ---------------------------------------------------------------------------- | --------- |
+| Bug 1            | Login, Logout, Register| No Success Message        | When the user was signing in, or out the success messages was not displaying.                         | Pass      |
+
++ This particular bug was realised during testing. I realised that when users were using the all auth templates, the success messages were not displaying. I managed to fixed the bug, as the issue related to missing text script in my Home app, template index.html. This was rectified and the bug fixed. 
+
+<img src="docs/test-images/bug1.png" alt = "Bugs" style="height:100px; width: 60%;">
+
+
+| Element         | Location      | Action           | Expected Result                                                              | Pass/Fail |
+| --------------- | ------------- | ---------------- | ---------------------------------------------------------------------------- | --------- |
+| Bug 2           | Banner        | Marquee tag      | Initially created a banner with a marquee tag, during testing I realised that this tag was invalid and therefore not compliant with the W3C HTML validator checker. This had to be removed and reverted to CSS.                         | Pass      |
+
++ This bug was also realised during testing. I realised that the marquee tag was outdated and invalid during my HTML validaton. I also got some feedback from tutor support, who informed me that this should be implemented via css. I decided to use a different format and so used CSS and the bug was fixed. 
+
+<img src="docs/readme-images/banner.png" alt = "Bugs" style="height:100px; width: 100%;">
+
+| Element         | Location      | Action           | Expected Result                                                              | Pass/Fail |
+| --------------- | ------------- | ---------------- | ---------------------------------------------------------------------------- | --------- |
+| Bug 3           | Responsive    | All site         | I had alot of reponsive design issues, but these were rectified using bootstrap classes.                         | Pass      |
+
++ This bug was also realised during testing. I realised that alot of pages had alot of z-scrolls, alot of time went into resolving these from the app templates. Hopefully now I feel like I have now mastered the boostrap format. 
+
+
+## Unfixed Bugs
+Fortunately I did not have any bugs which I was not able to fix, I set myself targets and with a thorough testing plan I was able to eliminate all bugs and errors, which were identified during building my project.

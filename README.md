@@ -39,15 +39,19 @@
          + [Robots.txt](#robots.txt)
     + [Mailchimp Email marketing](#mailchimp-email-marketing)
 + [Testing](#testing)
++ [AWS Setup Process](#aws-setup-process)
+    + [Create AWS S3 Bucket](#create-aws-s3-bucket)
+    + [Create IAM](#create-iam)
++ [Stripe](#stripe)
+    + [Webhooks](#webhooks)
 + [Technologies](#technologies)
 + [Libraries](#libraries)
 + [Security Features](#security-features-and-defensive-design)
 + [Form Features](#form-feature--validation)
 + [Database Security](#database-security)
-+ [Deployment](#deployment)
-    + [Local Deployment](#local-deployment)
-    + [Heroku Deployment](#heroku-deployment-initial-stage-as-advised-by-code-institute)
-    + [Elephant Postgressql](#postgresql-database-elephantsql)
++ [Deployment of this project](#deployment-of-this-project)
+    + [Heroku](#heroku)
+    + [Elephant SQL Database](#elephant-sql-database)
     + [Github](#github)
 
 + [Credits](#credits)
@@ -737,8 +741,9 @@ All secret keys connecting to the database are stored in a env.py file that is n
 
 ## Deployment of This Project
 
-I developed this site on Gitpod, using git for version control. Then deployed to Heroku using the following steps
+I developed this site on Gitpod, using git for version control. Then deployed to Heroku using the following steps:
 
+### Heroku
 + Log in to Heroku or create an account [via this link -- Heroku](https://id.heroku.com/login)
 
 + Click New and Create New App
@@ -747,6 +752,7 @@ I developed this site on Gitpod, using git for version control. Then deployed to
 
 + Click Create App button
 
+### Elephant SQL Database
 You will then need to create a database to connect to the new created app. We have used ElephantSQL [via this link -- ElephantSQL](https://www.elephantsql.com/)
 
 + Login to ElephantSQL
@@ -795,12 +801,12 @@ You will then need to create a database to connect to the new created app. We ha
 
 + When complete click View to open the deployed app.
 
-## Github 
-### Forking
+### Github 
+#### Forking
 + Open GitHub page that hosts the repository you wish to fork.
 + Find the 'Fork' button at the top right of the page
 + Once you click the button the fork will be in your repository
-### Cloning
+#### Cloning
 + Open Go to the repository page on Github
 + Click on the green button that says "Code".
 + You can choose to download a zip file of the repository, unpack it on your local machine, and open it in your IDE.
