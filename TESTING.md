@@ -462,7 +462,7 @@ Manual Testing was carried out throughout the site to check the whether the site
 
 I managed to get some automated tests done for my project. Ideally I wanted to much more automated tested but I was informed for this project that automated testing is not a necessity. Automated was done on most of the apps. I have attached coverage reports for the some of the app, which automated testing was carried out for.
 
-+ To undertake Automated Testing the following code need to be entered in the Database section, any other code need to be commented out so the testing can take place. 
++ To undertake Automated Testing the following code need to be entered in the Database section in the Setting.py file, any other code need to be commented out so the testing can take place. 
 ```
    DATABASES = {
         'default': {
