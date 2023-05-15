@@ -126,8 +126,16 @@ To complete the overall aim of the website, 21 issues were created as specific t
 
 <img src="docs/readme-images/user-stories.png" alt = "Prestige|Watches" style="height: 300px; width: 100%;">
 
++ Completed Project User Stories 
+
+<img src="docs/readme-images/project_completed.png" alt = "Prestige|Watches" style="height: 300px; width: 100%;">
+
 All my user stories were completed and succesfully actioned. The design was based on the Agile Methodology.
 
+
++ Issues (User Stories)
+
+<img src="docs/readme-images/issues.png" alt = "Prestige|Watches" style="height: 300px; width: 100%;">
 
  My Projects and User Stories can be viewed here :  [Issues and Projects](https://github.com/users/Shanbashir1/projects/6/views/1 "Github Issues")
 
@@ -140,9 +148,12 @@ The wireframes was edited a few times during the project to be inline witht he p
 
 <img src="docs/wireframes-images/home.png" alt = "Prestige Watche" style="height: 400px; width: 100%;">
 
++ Mobile Screen for Home Page
+<img src="docs/readme-images/mobile_screen.png" alt = "Mobile Screen" style="height:800px; width: 80%;">
+
 + Product Page design
 
-<img src="docs/wireframes-images/product.png" alt = "Prestige Watche" style="height: 600px; width: 100%;">
+<img src="docs/wireframes-images/product.png" alt = "Prestige Watche" style="height: 600px; width: 60%;">
 
 <img src="docs/wireframes-images/product_detail.png" alt = "Prestige Watche" style="height: 600px; width: 100%;">
 
@@ -207,7 +218,7 @@ The selection of the colours for the web page was chosen from Color Hex. The col
 <img src="docs/readme-images/banner.png" alt = "Delivery Banner" style="height:70px; width: 100%;">
 
 + The delivery banner displays to the user a "Free delivery charge on orders over £1000"
-+ The banner has been designed using a marquee, with floating text offer the free delivery charge. 
++ The banner has been designed using a marquee, with floating text offer the free delivery charge. However after HTML validation this was removed and I used CSS and a blink text animation to display the banner. 
 + A delivery van has been used as the icon for the banner. 
 + The colour contrast has been used of a dark grey background with white text.
 
@@ -493,7 +504,10 @@ What I could possibily add as a Future Feature?
 ## Web Marketing 
 
 ### Social Media
-+ A facebook page was created to build community from the target market. Facebook is free and it also takes little to no time to set up and also it has so many users whom a business can strive to maintain a certain relationship, create content and connect with a target audience. 
+#### Facebook Page - Complusory for this Project
++ A facebook page was created to build community from the target market. Facebook is free and it also takes little to no time to set up and also it has so many users whom a business can strive to maintain a certain relationship, create content and connect with a target audience. My Facebook page for Prestige Watches can be [viewed here:](https://www.facebook.com/people/Prestige-Watches/100092689920499/)
+
+
 
 <img src="docs/readme-images/facebook.png" alt = "Facebook page" style="height:300px; width: 100%;">
 
