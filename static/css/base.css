@@ -164,10 +164,15 @@ input[name='q']::placeholder {
     color: #730C02;
 }
 
-/* Marquee for free delivery text */
-.wrapper{
-    height: 40px;
-    text-align: right;
+/* Image sizes */
+.review-img {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.card-img-top {
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 /* Main Nav.html nav bar */

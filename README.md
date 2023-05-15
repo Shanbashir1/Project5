@@ -475,7 +475,7 @@ Customer Reviews Admin Page - Django Administration
 <img src="docs/readme-images/review_approval.png" alt = "Message" style="height:200px; width: 80%;">
 
 + Customer review successfully deleted
-<img src="docs/readme-images/review_delete.png" alt = "Message style="height:200px; width: 70%;">
+<img src="docs/readme-images/review_delete.png" alt = "Message" style="height:200px; width: 70%;">
 
 + New user registers to the site 
 <img src="docs/readme-images/email_sent.png" alt = "Message" style="height:200px; width: 80%;">
